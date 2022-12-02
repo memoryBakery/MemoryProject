@@ -1,0 +1,158 @@
+:root {
+    --primary_color: #E75C6B;
+    --sub_color: #FFEAE9;
+}
+
+.line {
+    background-color: var(--primary_color);
+    height: 1px;
+    margin: 5px 0 5px 0;
+}
+
+.main {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+/* Cho vô giữa */
+.body {
+    margin: auto;
+}
+
+/* CSS cho tất cả IMG */
+.left-container img {
+    width: 60%;
+    display: block;
+}
+/* Nếu chiều cao của box img không đủ chứa thì ẩn đi */
+.img-display {
+    overflow: hidden;
+}
+.img-showcase {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+    /* Chưa thấy gì xảy ra */
+}
+.img-showcase img {
+    min-width: 100%; /*cho hiện 1 hình lớn 1 lần*/
+}
+.img-select {
+    display: flex;
+}
+.img-item {
+    margin: 3px;
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+    /* Khi hover vô thì có độ mờ mờ */
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+/* Mô tả */
+.title {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+:root {
+    --height: 35px;
+}
+.new-price {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 0;
+    height: var(--height);
+    line-height: var(--height);
+}
+
+.old-price{
+    font-size: 23px;
+    padding-right: 0;
+    width: 180px;
+    text-align: center;
+    height: var(--height);
+    line-height: var(--height);
+}
+
+.sub_title {
+    font-weight: bold;
+    font-size: 22px;
+}
+.description {
+    font-size: 20px;
+}
+.quantity {
+    display: flex;
+}
+.quantity-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.quantity-box button,
+.quantity-box input {
+    height: 35px;
+    width: 35px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    color: #333333;
+    font-size: 16px;
+    padding: 0;
+}
+
+.quantity-decrease {
+    border-radius: 50% 0 0 50%;
+    cursor: pointer;
+}
+
+.quantity-increase {
+    border-radius: 0 50% 50% 0;
+    cursor: pointer;
+}
+.row {
+    margin: 5px;
+}
+
+.input {
+    background-color: var(--primary_color);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15px;
+    font-size: 22px;
+
+}
+.back {
+    width: 250px;
+}
+
+.button {
+    display: flex;
+}
+
+.buy_now {
+    width: 200px;
+}
