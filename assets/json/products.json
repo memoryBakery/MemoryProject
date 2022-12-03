@@ -1,0 +1,476 @@
+[
+    {
+        "id":1,
+        "name":"Bánh Mousse Chocolate",
+        "newPrice":"80.000 VNĐ",
+        "oldPrice":"90.000 VNĐ",
+        "description":"Thành phần: Mousse socola, 2 lớp bánh vani, sốt socola phủ mặt bánh, trang trí socola và bông đường bi đồng. ",
+        "img":[
+	        "73.png",
+            "74.png",
+            "75.png",
+	        "76.png"
+        ],
+        "vote":"100",
+        "category":"Bánh kem"
+    },
+    {
+        "id":2,
+        "name":"Bánh Kem Cat Cake",
+        "newPrice":"200.000 VNĐ",
+        "oldPrice":"250.000",
+        "description":"Bánh kem tươi Cat Cake Fresh Garden có cốt bánh 7 lớp vani, nhân kem tươi, trang trí socola và hoa kem tươi hình con mèo ngộ nghĩnh ",
+        "img":[
+	        "77.png",
+            "78.png",
+            "79.png",
+	        "80.png"
+        ],
+        "vote":"550",
+        "category":"Bánh kem"
+    },
+    {
+        "id":3,
+        "name":"Bánh Kem Romantic",
+        "newPrice":"220.000",
+        "oldPrice":"235.000",
+        "description":"Thành phần: Bánh kem tươi cốt bánh 6 lớp vani nhân kem tươi, trang trí socola nhiều màu.",
+        "img":[
+	        "81.png",
+            "82.png",
+            "83.png",
+	        "84.png"
+        ],
+        "vote":"200",
+        "category":"Bánh kem"
+    },
+    {
+        "id":4,
+        "name":"Bánh Kem Blue Ocean",
+        "newPrice":"185.000",
+        "oldPrice":"200.000",
+        "description":"Thành phần: Bánh kem tươi cốt bánh 6 lớp socola nhân kem tươi, trang trí socola nhiều màu.",
+        "img":[
+	        "85.png",
+            "86.png",
+            "87.png",
+	        "88.png"
+        ],
+        "vote":"103",
+        "category":"Bánh kem"
+    },
+    
+
+    {
+        "id":5,
+        "name":"Bánh Mousse Mango",
+        "newPrice":"250.000",
+        "oldPrice":"270.000",
+        "description":"Bánh Mousse xoài, cốt bánh vani, kem tươi và xoài tươi, mặt bánh trang trí hoa kem tươi.",
+        "img":[
+	        "89.png",
+            "90.png",
+            "91.png",
+	        "92.png"
+        ],
+        "vote":"77",
+        "category":"Bánh kem"
+    },
+    {
+        "id":6,
+        "name":"Bánh Kem Tasty Love",
+        "newPrice":"210.000",
+        "oldPrice":"240.000",
+        "description":"Bánh Tasty Love Fresh Garden với cốt bánh vani 4 lớp, nhân kem tươi, phủ ganache, trang trí bằng bánh donut, socola và trái tim đường.",
+        "img":[
+	        "92.png",
+            "93.png",
+            "94.png",
+	        "95.png"
+        ],
+        "vote":"115",
+        "category":"Bánh kem"
+    },
+    {
+        "id": 7,
+        "name":"Bánh Kem Seasonal Fruit",
+        "newPrice":"210.000",
+        "oldPrice":"240.000",
+        "description":"Bánh kem Seasonal Fruit Fresh Garden với cốt bánh vani 3 lớp, 2 lớp nhân cocktail hoa quả, trang trí hoa quả và hạnh nhân.(Mứt phủ tùy chọn 3 màu: vàng, đỏ, xanh)",
+        "img":[
+	        "96.png",
+            "97.png",
+            "98.png",
+	        "99.png"
+        ],
+        "vote":"250",
+        "category":"Bánh kem"
+    },
+    {
+        "id": 8,
+        "name":"Bánh Kem Chocolate Fruit",
+        "newPrice":"210.000",
+        "oldPrice":"240.000",
+        "description":"Thành phần: Bánh kem tươi cốt bánh 6 lớp vani nhân kem tươi, trang trí socola nhiều màu.",
+        "img":[
+	        "100.png",
+            "101.png",
+            "102.png",
+	        "103.png"
+        ],
+        "vote":"113",
+        "category":"Bánh kem"
+    },
+    {
+        "id": 9,
+        "name":"Pumpkin Cupcake",
+        "newPrice":"110.000",
+        "oldPrice":"125.000",
+        "description":"Được đóng gói với hương vị bí ngô và phủ một lớp kem phô mai thú vị, những chiếc bánh cupcake này rất phù hợp cho những người yêu thích bí ngô. Gia vị hoàn hảo, những chiếc bánh nướng nhỏ này không chỉ được làm bằng gia vị bánh bí ngô mà còn với bột bí ngô.",
+        "img":[
+	        "1.png",
+            "2.png",
+            "3.png",
+	        "4.png"
+        ],
+        "vote":"155",
+        "category":"Cupcakes"
+    },
+    {
+        "id": 10,
+        "name":"Vanilla Pink Cupcake",
+        "newPrice":"120.000",
+        "oldPrice":"125.000",
+        "description":"Bánh cupcake vani phủ bên trên và phủ đầy kem bơ vani Susie Pink",
+        "img":[
+	        "5.png",
+            "6.png",
+            "7.png",
+	        "8.png"
+        ],
+        "vote":"144",
+        "category":"Cupcakes"
+    },
+    {
+        "id": 11,
+        "name":"Vanilla Blue Cupcake",
+        "newPrice":"130.000",
+        "oldPrice":"140.000",
+        "description":"Sản phẩm được làm hoàn toàn từ các nguyên liệu tự nhiên cao cấp như: bột mì hảo hạng, hương hoa cúc tự nhiên, bơ thực vật cao cấp, đường kính, mật ong, trứng, sữa… giàu chất dinh dưỡng thích hợp sử dụng cho mọi lứa tuổi.Đặc trưng của những chiếc bánh là khối lượng bơ rất lớn trong thành phần của bánh nên nó giúp cho bánh khi ăn luôn có sự béo ngậy, đậm đà nhưng không hề bị ngấy.",
+        "img":[
+	        "9.png",
+            "10.png",
+            "11.png",
+	        "12.png"
+        ],
+        "vote":"133",
+        "category":"Cupcakes"
+    },
+    {
+        "id": 12,
+        "name":"Flourless Chocolate Cupcake",
+        "newPrice":"140.000",
+        "oldPrice":"155.000",
+        "description":"Bánh thơm nồng quyện cùng socola vụn rải đều khắp bánh. Vừa mềm mịn lại bùi béo ngọt thanh. Sản phẩm từ thiên nhiên: bột mì hảo hạng, hương hoa cúc tự nhiên, bơ thực vật cao cấp, đường kính, mật ong, trứng, sữa. Khối lượng bơ rất lớn trong thành phần của bánh nên nó giúp cho bánh khi ăn luôn có sự béo ngậy, đậm đà nhưng không hề bị ngấy. Tính chất bánh mềm, mịn, dẻo, ngọt thanh rất dễ ăn.Bánh mì mềm nướng thơm nồng quyện cùng socola vụn rải đều khắp bánh. Vừa mềm mịn lại bùi béo ngọt thanh.",
+        "img":[
+	        "13.png",
+            "14.png",
+            "15.png",
+	        "16.png"
+        ],
+        "vote":"11",
+        "category":"Cupcakes"
+    },
+    {
+        "id": 13,
+        "name":"Mini Bouquet Box",
+        "newPrice":"150.000",
+        "oldPrice":"168.000",
+        "description":"Đơn giản và dinh dưỡng là 2 từ có thể dùng để miêu tả bánh mì sandwich một cách chính xác nhất, không chỉ sử dụng cho bữa ăn sáng mà còn có thể dùng để chế biến các món ăn khác trong ngày.Bánh mềm, ẩm có mùi thơm nhẹ kích thích vị giác, khi ăn không có cảm giác khô, dễ nghẹn.",
+        "img":[
+	        "17.png",
+            "18.png",
+            "19.png",
+	        "20.png"
+        ],
+        "vote":"333",
+        "category":"Cupcakes"
+    },
+    {
+        "id": 14,
+        "name":"Standard Cupcake - Sprinkles",
+        "newPrice":"120.000",
+        "oldPrice":"134.000",
+        "description":"Với hương vị thơm ngon, hấp dẫn, bánh mì phô mai bơ tỏi được rất nhiều người ưa thích, có thể sử dụng làm bữa sáng dinh dưỡng cho cả gia đình hoặc món ăn vặt trong ngày.Thành phần:  Bột mì, Đường, Trứng, Muối, Sữa tươi, Men, Bơ lạt, Whipping cream, Bơ lạt",
+        "img":[
+	        "21.png",
+            "22.png",
+            "23.png",
+	        "24.png"
+        ],
+        "vote":"222",
+        "category":"Cupcakes"
+    },
+    {
+        "id": 15,
+        "name":"Donut Chocolate",
+        "newPrice":"80.000",
+        "oldPrice":"90.000",
+        "description":"Thành phần: Bột mì, sữa tươi (16,5%), đường, nước, shortening, men, muối, chất tạo xốp (E500ii, E450i, E341i), hương sữa tổng hợp.",
+        "img":[
+	        "25.png",
+            "26.png",
+            "27.png",
+	        "28.png"
+        ],
+        "vote":"41",
+        "category":"Donuts"
+    },
+    {
+        "id": 16,
+        "name":"Wholesome Bluberry Donuts",
+        "newPrice":"50.000",
+        "oldPrice":"65.000",
+        "description":"Thành phần: Bột mì, đậu xanh (15%), sữa tươi, đường, nước, bột nếp, đường mạch nha, dầu thực vật, shortening, men, muối, chất tạo xốp (E500ii, E450i, E341i), hương sữa tổng hợp, hương đậu xanh tổng hợp, bột trà xanh.",
+        "img":[
+	        "29.png",
+            "30.png",
+            "31.png",
+	        "32.png"
+        ],
+        "vote":"152",
+        "category":"Donuts"
+    },
+    {
+        "id": 17,
+        "name":"Orange Creamsicle ",
+        "newPrice":"60.000",
+        "oldPrice":"80.000",
+        "description":"Thành phần: bột mì, thịt heo, trứng muối, trứng cút, nước, gia vị… cho ra những chiếc bánh bao thơm ngon, bổ dưỡng",
+        "img":[
+	        "33.png",
+            "34.png",
+            "35.png",
+	        "36.png"
+        ],
+        "vote":"143",
+        "category":"Donuts"
+    },
+    {
+        "id": 18,
+        "name":"Almond Butter",
+        "newPrice":"40.000",
+        "oldPrice":"50.000",
+        "description":"Thành phần: bột mì, thịt heo xá xíu, trứng muối, nước, gia vị… cho ra những chiếc bánh bao thơm ngon, bổ dưỡng.  Bánh thường được dùng cho bữa sáng hoặc bữa ăn nhẹ để bổ sung dinh dưỡng, giúp cơ thể luôn sẵn sàng năng lượng cho các hoạt động hàng ngày.",
+        "img":[
+	        "37.png",
+            "38.png",
+            "39.png",
+	        "40.png"
+        ],
+        "vote":"85",
+        "category":"Donuts"
+    },
+    {
+        "id": 19,
+        "name":"Homemade Pumpkin",
+        "newPrice":"80.000",
+        "oldPrice":"85.000",
+        "description":"Thành phần: Bột mỳ, thịt lợn (16%), nước, đường, sữa tươi, bơ, dầu thực vật, bột khoai tây, bột mỳ nguyên cám, dầu hào, nước tương đậu nành, rượu, hành khô, tỏi, hành tươi, xì dầu, muối, men, chất tạo đông gelatine, dầu điều 80g",
+        "img":[
+	        "41.png",
+            "42.png",
+            "43.png",
+	        "44.png"
+        ],
+        "vote":"80",
+        "category":"Donuts"
+    },
+    {
+        "id": 20,
+        "name":"S'mores",
+        "newPrice":"65.000",
+        "oldPrice":"240.000",
+        "description":"Thành phần: chính là các loại ngũ cốc, bột mì, trứng, sữa",
+        "img":[
+	        "45.png",
+            "46.png",
+            "47.png",
+	        "48.png"
+        ],
+        "vote":"157",
+        "category":"Donuts"
+    },
+    {
+        "id": 21,
+        "name":"Macaron",
+        "newPrice":"90.000",
+        "oldPrice":"110.000",
+        "description":"Macaron là một loại bánh ngọt dựa trên bánh trứng đường (một loại bánh bánh tráng miệng đặc trưng của ẩm thực Pháp, được làm bằng cách đánh lòng trứng đều lên và thêm chút đường cùng chút axit từ chanh tây hay giấm). Ngoài lòng trắng trứng đánh lên, macaron còn được làm từ các nguyên liệu khác như đường bột, đường hạt và màu thực phẩm 1 hộp 5 cái bánh đủ vị - với 5 hương vị socola, dâu, trà xanh, vani, chuối",
+        "img":[
+	        "49.png",
+            "50.png",
+            "51.png",
+	        "52.png"
+        ],
+        "vote":"113",
+        "category":"Bánh quy"
+    },
+    {
+        "id": 22 ,
+        "name":"Bánh Quy Trái Cây",
+        "newPrice":"60.000",
+        "oldPrice":"70.000",
+        "description":"Bột mì, hỗn hợp trái cây khô cắt miếng, trứng gà, kem sữa tươi.",
+        "img":[
+	        "53.png",
+            "54.png",
+            "55.png",
+	        "56.png"
+        ],
+        "vote":"135",
+        "category":"Bánh quy"
+    },
+
+    {
+        "id": 23 ,
+        "name":"Lưỡi Mèo Nhật",
+        "newPrice":"40.000",
+        "oldPrice":"50.000",
+        "description":"Bánh Languly có hương vị thơm ngon hấp dẫn, ngọt dịu, vị dưa lưới đặc trưng mang đến trải nghiệm vị giác thú vị khi thưởng thức. Phần nhân mềm mịn, đặc biệt rất thơm béo. Kết hợp với lớp vỏ bánh giòn xốp tan ngay khi cho vào miệng sẽ khiến bạn ăn hoài không chán. Bánh rất ngon với hương vị thơm ngon và giòn tan, chắc chắn sẽ làm hài lòng bạn ngay từ miếng cắn đầu tiên! Bổ sung nhiều chất dinh dưỡng cho cơ thể. Đóng hộp tiện lợi cho việc sử dụng và bảo quản.",
+        "img":[
+	        "57.png",
+            "58.png",
+            "59.png",
+	        "60.png"
+        ],
+        "vote":"85",
+        "category":"Bánh quy"
+    },
+
+    {
+        "id": 24 ,
+        "name":"Cookies Trà Xanh",
+        "newPrice":"80.000",
+        "oldPrice":"90.000",
+        "description":"Thành phần: Bột mỳ, thịt lợn (16%), nước, đường, sữa tươi, bơ, dầu thực vật, bột khoai tây, bột mỳ nguyên cám, dầu hào, nước tương đậu nành, rượu, hành khô, tỏi, hành tươi, xì dầu, muối, men, chất tạo đông gelatine, dầu điều 80g",
+        "img":[
+	        "61.png",
+            "62.png",
+            "63.png",
+	        "64.png"
+        ],
+        "vote":"300",
+        "category":"Bánh quy"
+    },
+
+    {
+        "id": 25 ,
+        "name":"Bánh Quy Dứa",
+        "newPrice":"50.000",
+        "oldPrice":"80.000",
+        "description":"Bánh quy dứa là món bánh tráng miệng tuyệt hảo, với lớp vỏ bánh thơm mịn cùng với hương vị dưa lưới ngọt ngào, thanh mát bên trong sẽ đem lại cảm giác khó quên cho bất cứ ai đã thưởng thức. Sản phẩm đóng gói nhỏ gọn rất tiện lợi cho bạn mang đi dã ngoại hay đi chơi xa. Bánh được sản xuất trên dây chuyền hiện đại, tuân thủ nghiêm ngặt mọi quy định về vệ sinh an toàn thực phẩm, đảm bảo sức khỏe cho người tiêu dùng.",
+        "img":[
+	        "65.png",
+            "66.png",
+            "67.png",
+	        "68.png"
+        ],
+        "vote":"120",
+        "category":"Bánh quy"
+    },
+
+    {
+        "id": 26 ,
+        "name":"Parmesan Cheese And Seaweed Cookies",
+        "newPrice":"80.000",
+        "oldPrice":"100.000",
+        "description":"Đây là sự hòa quyện hoàn hảo của miếng chocolate ở giữa cùng với hai miếng bánh quy đặc biệt. Việc kết hợp cứng và mềm trong thành phần của bánh đã cho người dùng cảm nhận vừa mềm vừa thơm. Bạn sẽ cảm nhận được hậu vị của bơ và vị ngọt của chocolate trong khoang miệng khi dùng loại bánh này. ",
+        "img":[
+	        "69.png",
+            "70.png",
+            "71.png",
+	        "72.png"
+        ],
+        "vote":"111",
+        "category":"Bánh quy"
+    },
+
+    {
+        "id": 27 ,
+        "name":"Bánh Mì Hoa Cúc",
+        "newPrice":"20.000",
+        "oldPrice":"22.000",
+        "description":"Sản phẩm được làm hoàn toàn từ các nguyên liệu tự nhiên cao cấp như: bột mì hảo hạng, hương hoa cúc tự nhiên, bơ thực vật cao cấp, đường kính, mật ong, trứng, sữa… giàu chất dinh dưỡng thích hợp sử dụng cho mọi lứa tuổi. Đặc trưng của những chiếc bánh mì hoa cúc là khối lượng bơ rất lớn trong thành phần của bánh nên nó giúp cho bánh khi ăn luôn có sự béo ngậy, đậm đà nhưng không hề bị ngấy.",
+        "img":[
+	        "104.png",
+            "105.png",
+            "106.png",
+	        "107.png"
+        ],
+        "vote":"80",
+        "category":"Bánh mỳ"
+    },
+
+    {
+        "id": 28 ,
+        "name":"Bánh Mì Chocolate",
+        "newPrice":"35.000",
+        "oldPrice":"40.000",
+        "description":"Bánh mì mềm nướng thơm nồng quyện cùng socola vụn rải đều khắp bánh. Vừa mềm mịn lại bùi béo ngọt thanh. Sản phẩm từ thiên nhiên: bột mì hảo hạng, hương hoa cúc tự nhiên, bơ thực vật cao cấp, đường kính, mật ong, trứng, sữa. Khối lượng bơ rất lớn trong thành phần của bánh nên nó giúp cho bánh khi ăn luôn có sự béo ngậy, đậm đà nhưng không hề bị ngấy. Tính chất bánh mềm, mịn, dẻo, ngọt thanh rất dễ ăn.Bánh mì mềm nướng thơm nồng quyện cùng socola vụn rải đều khắp bánh. Vừa mềm mịn lại bùi béo ngọt thanh. ",
+        "img":[
+	        "108.png",
+            "109.png",
+            "110.png",
+	        "111.png"
+        ],
+        "vote":"75",
+        "category":"Bánh mỳ"
+    },
+
+    {
+        "id": 29 ,
+        "name":"Sandwich nguyên cám",
+        "newPrice":"15.000",
+        "oldPrice":"18.000",
+        "description":"Từ lâu bánh mì Sandwich là một món ăn nhanh, tiện lợi cho bạn và gia đình. Đơn giản và dinh dưỡng là 2 từ có thể dùng để miêu tả bánh mì sandwich một cách chính xác nhất, không chỉ sử dụng cho bữa ăn sáng mà sandwich còn có thể dùng để chế biến các món ăn khác trong ngày. Bánh mềm, ẩm có mùi thơm nhẹ kích thích vị giác, khi ăn không có cảm giác khô, dễ nghẹn. Bạn có thể thỏa sức sáng tạo nhiều món món đối với sandwich mà không chỉ đơn giản là dùng trực tiếp.",
+        "img":[
+	        "112.png",
+            "113.png",
+            "114.png",
+	        "115.png"
+        ],
+        "vote":"66",
+        "category":"Bánh mỳ"
+    },
+    {
+        "id": 30 ,
+        "name":"Bánh mì phô mai bơ tỏi",
+        "newPrice":"15.000",
+        "oldPrice":"17.000",
+        "description":"Với hương vị thơm ngon, hấp dẫn, bánh mì phô mai bơ tỏi được rất nhiều người ưa thích, có thể sử dụng làm bữa sáng dinh dưỡng cho cả gia đình hoặc món ăn vặt trong ngày. Thành phần:  Bột mì, Đường, Trứng, Muối, Sữa tươi, Men, Bơ lạt, Whipping cream, Bơ lạt",
+        "img":[
+	        "116.png",
+            "117.png",
+            "118.png",
+	        "119.png"
+        ],
+        "vote":"45",
+        "category":"Bánh mỳ"
+    },
+    {
+        "id": 31 ,
+        "name":"Tart dừa",
+        "newPrice":"24.000",
+        "oldPrice":"26.000",
+        "description":"Bánh tart dừa thơm ngon, lạ miệng với lớp vỏ xốp ngon, lớp nhân dừa vừa thơm béo, vừa ngọt ngào.  Thành phần:  Bơ lạt, Đường, Trứng gà, Dừa nạo sấy khô",
+        "img":[
+	        "120.png",
+            "121.png",
+            "122.png",
+	        "123.png"
+        ],
+        "vote":"41",
+        "category":"Bánh mỳ"
+    }
+]
