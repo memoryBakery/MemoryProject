@@ -1,0 +1,82 @@
+
+html {
+    max-width: 1000px;
+}
+.left{
+    border: 1px solid #E75C6B ;
+    border-radius: 10px; 
+}
+.avata{
+    border: 1px solid #E75C6B ;
+    border-radius: 10px;
+}
+.taskbar{
+    padding: 20px; 
+    height: auto;
+}
+.account{
+    margin-bottom: 20px;
+}
+.accountchild{
+    padding-left: 15px;
+}
+.span{
+    font-size: 100px;
+}
+.activeB{
+    display: none;
+}
+.form__row{
+    padding-bottom: 20px;
+    display: flex;
+    padding-right: 50px;
+}
+#number{
+    width: 200px;
+}
+.form__input{
+    border-radius: 20px;
+    justify-items: right;
+    width: 300px;
+    height: 35px;
+    background-color: rgb(246, 225, 225);
+    border: none;
+}
+.gendergeneral{
+    min-width: 90px;
+}
+.form___input{
+    min-width: 20px;
+}
+.form__label{
+    min-width: 110px;
+}
+#save{
+    margin-top: 8px;
+    border-radius: 7px;
+    width: 80px;
+    background-color: #E75C6B;
+    margin-left: 150px;
+}
+.edit{
+    margin-left: 10px;
+    border-radius: 7px;
+    width: 90px;
+    background-color: #E75C6B;
+}
+.information{
+    width: 70%;
+}
+.image{
+    text-align: center;
+}
+.chooseimage{
+    margin-left: 10px;
+    border-radius: 7px;
+    width: 100px;
+    background-color: #E75C6B;
+}
+
+
+
+
