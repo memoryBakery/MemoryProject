@@ -1,3 +1,4 @@
+
 .container{
     margin: 0;
     padding: 0; 
@@ -86,6 +87,7 @@ a{
 .right-header-top div{
     margin: 0 20px;  
 }
+
 .right-header-top li a{
     padding: 0 24px;
     line-height: 46px;
@@ -121,6 +123,10 @@ a{
 /* .header-bottom */
 .header-top .logo img{
     width: 200px;
+}
+.header-bottom .nav{
+    display: flex;
+    flex-wrap: nowrap;
 }
 ul{
     list-style: none;
@@ -249,7 +255,7 @@ h1{
     height: 3rem;
 }
 .prev-newproduct, .next-newproduct{
-    background-color: #ea818b;
+    background-color: #d0cdcd;
 }
 .carousel-control-next-icon{
     margin-left: 120px;
@@ -281,6 +287,7 @@ section{
     /* margin: 30px; */
     display: inline-block;
     padding: 10px;
+    border-radius: 25px;
 }
 .product > *{
     padding: 5px;
@@ -312,7 +319,9 @@ section{
     color: yellow;
 }
 
-
+.swiper-button-prev, .swiper-button-next{
+    /* color: white!important; */
+}
 
 
 .swiper {
