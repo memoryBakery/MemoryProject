@@ -1,0 +1,91 @@
+.banner img{
+    width: 100%;
+    height: 600px;
+}
+.shortscut{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.background-voucher{
+    background-color: #f0b8be;
+    border: 2px solid rgb(249, 247, 247);
+    margin: 20px;
+}
+.voucher{
+    display: inline-flex;
+    border: 2px solid rgb(248, 247, 247);
+    margin: 40px;
+    background-color: white;
+}
+.voucher .logo{
+    margin: auto;
+    border-right: 2px dashed rgb(126, 121, 121);
+    padding: 43px 10px;
+}
+.discount{
+    margin-left: 10px;
+    padding: 10px;
+}
+.discount input{
+    background-color:#E75C6B   ;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;  
+}
+hr{
+    margin: 10px 0;  
+}
+.btn-input{
+    text-align: right;
+}
+.voucher .logo img{
+    width: 140px;
+}
+
+
+.shortscut{
+    display: flex;
+    font-size: 25px;
+    margin: 50px auto;
+    width: 1000px;
+}
+.shortscut img{
+    width: 200px;
+}
+.shortscut a{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f2f2;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+.shortscut span{
+    font-weight: bold;
+    color: black;
+}
+
+.shortscut a:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+.vouchers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-voucher{
+    background-color: #f9f2f2;
+    margin-top: 50px;
+    padding: 20px 0;
+}
