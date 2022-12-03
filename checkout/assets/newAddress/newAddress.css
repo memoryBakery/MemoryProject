@@ -1,0 +1,126 @@
+html {
+    font-size: 62.5%;
+}
+:root {
+    --primary_color: #E75C6B;
+    --sub_color: #FFEAE9;
+}
+
+.main-3 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    max-width: 600px;
+}
+
+.title {
+    padding: 10px;
+}
+
+.main-title {
+    width: 100%;
+    font-size: 2.5rem;
+    color: var(--primary_color);
+    font-weight: bold;
+}
+
+.line {
+    background-color: var(--primary_color);
+    height: 1px;
+    margin: 5px 0 5px 0;
+}
+
+.name {
+    font-weight: bold;
+    color: black;
+}
+
+.form__row {
+    padding: 10px;
+}
+
+.form__row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.form__row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.form__row3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+input, select {
+    border: 1px solid var(--primary_color);
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 25px;
+    vertical-align: middle;
+}
+
+#fname {
+    margin-right: 25px;
+}
+
+#phone {
+    margin-left: 25px;
+}
+
+.detail {
+    height: 50px;
+}
+
+.district {
+    margin-right: 25px;
+}
+
+.city {
+    margin-right: 25px;
+}
+
+#default {
+    accent-color: var(--primary_color)
+}
+.default {
+    margin-left: 30px;
+}
+
+.input {
+    
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    width: auto;
+}
+
+.back {
+    width: 80px;
+    background-color: var(--sub_color);
+}
+
+.confirm {
+    background-color: var(--primary_color);
+    color: white;
+}
+    
+.button {
+    text-align: right;
+}
+
+.button a {
+    text-decoration: none;
+}

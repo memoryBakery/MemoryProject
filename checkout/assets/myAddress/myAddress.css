@@ -6,16 +6,16 @@ html {
     --sub_color: #FFEAE9;
 }
 
-.main {
+.main-sub {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-size: 16px;
     max-width: 1000px;
 }
 
-.main-title {
+.main-title-sub {
     width: 100%;
     font-size: 2.5rem;
     color: var(--primary_color);
@@ -39,8 +39,9 @@ html {
 .def {
     border: 1px solid var(--primary_color);
     color: var(--primary_color);
-    width: 75px;
+    width: 80px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .button a {
@@ -74,7 +75,7 @@ input[type=radio] {
     border: 1px solid var(--primary_color);
     border-radius: 20px;
     background-color: var(--sub_color);
-    width: 150px;
+    width: 200px;
     padding: 5px;
     margin-top: 10px;
 }

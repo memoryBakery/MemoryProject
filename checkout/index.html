@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/checkout.css">
     <link rel="stylesheet" href="./assets/css/styte.css">
     <link rel="stylesheet" href="./assets/myAddress/myAddress.css">
+    <link rel="stylesheet" href="./assets/updateAddress/updateAddress.css">
+    <link rel="stylesheet" href="./assets/newAddress/newAddress.css">
   </head>
   <body>
     <div class="header">
@@ -311,8 +313,8 @@
           <div class="modal__body">
               <div class="modal__inner">
                   <!-- Form thêm địa chỉ mới -->
-                  <div class="main">
-                    <div class="main-title">
+                  <div class="main-sub">
+                    <div class="main-title-sub">
                         Địa chỉ của tôi
                     </div>
             
@@ -327,8 +329,8 @@
                                 <div class="def"> Mặc định </div>
                             </div>
                             <div class="button">
-                                <a href="#">Cập nhật |</a>
-                                <a href="">Xoá</a>
+                                <a href="#" onclick="showModal2()">Cập nhật |</a>
+                                <a href="" >Xoá</a>
                             </div>
                             
                         </div>
@@ -342,14 +344,14 @@
                             </div>
             
                             <div class="button">
-                                <a href="#">Cập nhật |</a>
+                                <a href="#" onclick="showModal2()">Cập nhật |</a>
                                 <a href="">Xoá</a>
                             </div>
                         </div>
                     </div>
                     <div class="add">
                         <img src="././assets/myAddress/plus.png" alt="">
-                        <button>Thêm địa chỉ mới</button>
+                        <button onclick="showModal3()">Thêm địa chỉ mới</button>
                     </div>
                     <div class="line"></div>
                     <div class="button">
@@ -358,20 +360,181 @@
                             </a>
                             <button class="input confirm">Xác nhận</button>
                     </div>
-                </div>
+                  </div>
               </div>
           </div>
         </div>
-        <script>
-          const modal = document.querySelector(".modal")
-          function showModal() {
-              modal.classList.add("open")
-          }
-          function hideModal(){
-              modal.classList.remove("open")
-          }
-    </script>
+
+        <div class="modal2">
+          <div class="modal__overlay"></div>
+          <div class="modal__body">
+            <div class="modal__inner">
+              <div class="main-2">
+                <div class="title">
+                    <span class="main-title">Cập nhật địa chỉ</span>
+                </div>
+                <div class="main-2">
+                    <form action="#" method="get">
+                        <div class="form__row form__row1">
+                            <input type="text" name="fname" id="fname" value="Phạm Quang Linh">
+                            <input type="text" name="phone" id="phone" value="0395969798">
+                        </div>
+        
+                        <div class="form__row form__row2">
+                            <select class="city">
+                                <option value="bd" selected>Tỉnh Bình Dương</option>
+                                <option value="hcm">Thành phố Hồ Chí Minh</option>
+                            </select>
+        
+                            <select class="district">
+                                <option value="td">Quận Thủ Đức</option>
+                                <option value="q12">Quận 12</option>
+                                <option value="q1">Quận 1</option>
+                                <option value="q9">Quận 9</option>
+                                <option value="gv">Quận Gò Vấp</option>
+                                <option value="bth">Quận Bình Thành</option>
+                                <option value="da" selected>Thành phố Dĩ An</option>
+                                <option value="ta">Thành phố Thuận An</option>
+                                <option value="tu">Thị xã Tân Uyên</option>
+                            </select>
+        
+                            <select class="wards">
+                                <option value="">Phường Linh Xuân</option>
+                                <option value="">Phường Linh Tây</option>
+                                <option value="">Phường Linh Trung</option>
+                                <option value="">Phường Hiệp Phú</option>
+                                <option value="">Phường Bến Thành</option>
+                                <option value="">Phường Bến Nghé</option>
+                                <option value="" selected>Phường Dĩ An</option>
+                                <option value="">Phường Tân Đông Hiệp </option>
+                            </select>
+                        </div>
+        
+                        <div class="form__row form__row3">
+                            <input class="detail" type="text" value = "98/21, đường Nguyễn Văn Trỗi, khu phố Thắng Lợi">
+                        </div>
+                    </form>
+        
+                    <div class="default">
+                        <input type="checkbox" name="default" id="default" checked> Đặt làm địa chỉ mặc định
+                    </div>
+        
+                    <div class="button">
+                        <a href="#">
+                            <button class="input back" onclick="hideModal2()">Trở lại</button>
+                        </a>
+                        <button class="input confirm" onclick="hideModal2()">Hoàn thành</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="modal3">
+          <div class="modal__overlay"></div>
+          <div class="modal__body">
+            <div class="modal__inner">
+              <div class="main-3">
+                <div class="title">
+                    <span class="main-title">Địa chỉ mới</span> <br>
+                    <span>Để đặt hàng, vui lòng thêm địa chỉ nhận hàng</div></span>
+                </div>
+                <div class="main-3">
+                    <form action="#" method="get">
+                        <div class="form__row form__row1">
+                            <input type="text" name="fname" id="fname" placeholder="Họ và tên">
+                            <input type="text" name="phone" id="phone" placeholder="Số điện thoại">
+                        </div>
+        
+                        <div class="form__row form__row2">
+                            <select class="city">
+                                <option value="" disabled selected>Tỉnh/Thành phố</option>
+                                <option value="bd">Tỉnh Bình Dương</option>
+                                <option value="hcm">Thành phố Hồ Chí Minh</option>
+                            </select>
+        
+                            <select class="district">
+                                <option value="" disabled selected>Quận/Huyện</option>
+                                <option value="td">Quận Thủ Đức</option>
+                                <option value="q12">Quận 12</option>
+                                <option value="q1">Quận 1</option>
+                                <option value="q9">Quận 9</option>
+                                <option value="gv">Quận Gò Vấp</option>
+                                <option value="bth">Quận Bình Thành</option>
+                                <option value="da">Thành phố Dĩ An</option>
+                                <option value="ta">Thành phố Thuận An</option>
+                                <option value="tu">Thị xã Tân Uyên</option>
+                            </select>
+        
+                            <select class="wards">
+                                <option value="" disabled selected>Phường/Xã</option>
+                                <option value="">Phường Linh Xuân</option>
+                                <option value="">Phường Linh Tây</option>
+                                <option value="">Phường Linh Trung</option>
+                                <option value="">Phường Hiệp Phú</option>
+                                <option value="">Phường Bến Thành</option>
+                                <option value="">Phường Bến Nghé</option>
+                                <option value="">Phường Dĩ An</option>
+                                <option value="">Phường Tân Đông Hiệp </option>
+        
+        
+        
+                            </select>
+                        </div>
+        
+                        <div class="form__row form__row3">
+                            <input class="detail" type="text" placeholder = "Địa chỉ cụ thể">
+                        </div>
+                    </form>
+        
+                    <div class="default">
+                        <input type="checkbox" name="default" id="default" checked> Đặt làm địa chỉ mặc định
+                    </div>
+        
+                    <div class="button">
+                        <a href="#">
+                            <button class="input back" onclick="hideModal3()">Trở lại</button>
+                        </a>
+                        <button class="input confirm" onclick="hideModal3()">Hoàn thành</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
     </div>
+
+
+    <script>
+      const modal = document.querySelector(".modal")
+      function showModal() {
+          modal.classList.add("open")
+      }
+      function hideModal(){
+          modal.classList.remove("open")
+      }
+
+      const modal2 = document.querySelector(".modal2")
+      function showModal2() {
+      modal2.classList.add("open")
+      }
+      function hideModal2(){
+      modal2.classList.remove("open")
+      }
+
+      const modal3 = document.querySelector(".modal3")
+      function showModal3() {
+      modal3.classList.add("open")
+      }
+      function hideModal3(){
+      modal3.classList.remove("open")
+      }
+    </script>
 
 
 
