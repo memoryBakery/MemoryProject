@@ -1,0 +1,64 @@
+.body{
+    display: flex;
+}
+.body-left{
+    width: 618px;
+    padding: 0 20px
+}
+h2{
+    color: #E75C6B;
+}
+.form{
+    padding-top: 40px;
+    background-color: #FFEAE9;
+    width: 771px;
+    height: 572px;
+    text-align: center;
+     border-radius: 25px;
+}
+.form__row{
+    padding-top:  12px ;
+    padding-bottom: 15px;
+    display: block;
+    align-items: center;
+}
+
+.form__label{
+    float: left;
+    max-width: 200px;
+    color: #E75C6B;
+    font-weight: bold;
+    padding-left: 100px;
+}
+.form__input{
+    width: 570px;
+    height: 54px;
+    border-radius: 25px;
+    border-bottom: solid rgb(227, 224, 221) 5px;
+    border-top: solid #FFFF 5px;
+    border-left: solid #FFFF 5px;;
+    border-right:solid #FFFF 5px;;
+}
+#message{
+    height: 111px;
+    width: 570px;
+}
+.Button{
+    padding-top: 20px;
+}
+#submit{
+    justify-self: center;
+    background-color: #E75C6B;
+    text-decoration-color: white;
+    border-radius: 8px ;
+    color: black;
+    width: 150px;
+    height: 40px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s ; 
+}
+#submit:hover{
+    background-color: #FFFF;
+}
+
+
