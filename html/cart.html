@@ -18,7 +18,7 @@
     <div class="header">
         <div class="header-top">
            <div class="logo">
-                <a href=""><img src="./assets/img/logo.jpg" alt=""></a>
+                <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
            </div>
            <div class="btn-search" >
                 <input 
@@ -34,7 +34,7 @@
                     </a>
                     <ul class="sub-nav">
                         <li>
-                            <a href="">
+                            <a href="../html/account_voucher.html">
                                 <i class="fa-solid fa-user"></i> Tài khoản của tôi
                             </a>
                         </li>
@@ -52,7 +52,7 @@
                     </ul>
                 </div>
                 <div class="cart">
-                    <a href="">
+                    <a href="./cart.html">
                         <i class="fa-solid fa-cart-shopping"></i>
                         Giỏ hàng</a>
                 </div>
@@ -67,7 +67,7 @@
         <div class="header-bottom">
             <ul class="nav">
             <li >
-                    <a href="">
+                    <a href="../html/listProduct.html">
                         <i class="fa-sharp fa-solid fa-list"></i>
                         Danh mục sản phẩm
                         <i class="nav-arrow-down ti-angle-down"></i>
@@ -81,237 +81,248 @@
                         <li><a href=""> Phụ kiện</a></li>
                     </ul>
             </li>
-            <li><a href="./main.html">Trang chủ</a></li>
-            <li><a href="">Câu chuyện thương hiệu</a></li>
-            <li><a href="">Khuyến mãi</a></li>
-            <li><a href="">Tin tức</a></li>
-            <li><a href="">Liên hệ</a></li> 
+            <li class="main"><a href="../html/main.html">Trang chủ</a></li>
+            <li class="story"><a href="./">Câu chuyện thương hiệu</a></li>
+            <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
+            <li class="blog"><a href="">Tin tức</a></li>
+            <li class="contact"><a href="">Liên hệ</a></li> 
             </ul>
         </div>
     </div>
 
     <div class="body">
-        <div class="cart-container">
-            <div class="cart-title">
-                <h4>Giỏ hàng</h4>
+        <div class="main">
+            <div class="navigation">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                      <li class="breadcrumb-item" aria-current="page"><a href="#">Giỏ hàng</a></li>
+                    </ol>
+                  </nav>
             </div>
-            <div class="line"></div>
-            <div class="cart-info-container">
-                <div class="cart-header">
-                    <div><input type="checkbox" name="all" id="all" checked></div>
-                    <div>Sản phẩm</div>
-                    <div>Đơn giá</div>
-                    <div>Số lượng</div>
-                    <div>Thành tiền</div>
-                    <div>Xoá</div>
+            <div class="cart-container">
+                <div class="cart-title">
+                    <h4>Giỏ hàng</h4>
                 </div>
-    
                 <div class="line"></div>
-    
-                <div class="cart-product-container">
-                    <div class="cart-product">
-                        <!-- chekbox -->
-                        <div><input type="checkbox" name="pr1" id="pr1" checked></div>
-                        <!-- Tên sản phẩm -->
-                        <div class="cart-info">
-                            <div>
-                                <img src="../assets/img/ẢNH SẢN PHẨM/25.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Donut Chocolate</b>
-                            </div>
-                        </div>
-                        <!-- Giá sản phẩm -->
-                        <div class="price-info">
-                            <div class="price">
-                                30.000
-                            </div>
-                            <div class="currency">
-                                VNĐ
-                            </div>
-                        </div>
-                        <!-- Số lượng -->
-                        <div class="quantity-box">
-                            <button class="quantity-decrease" id="decrease" onclick="decreaseValue1(quantity1.value)" onblur="Check1(quantity1.value)">-</button>
-                            <input type="text" value="2" class="quantity-input" id="quantity1" onblur="Check1(quantity1.value)">
-                            <button class="quantity-increase" id="increase" onclick="increaseValue1(quantity1.value)" onblur="Check1(quantity1.value)">+</button>
-                        </div>
-    
-                        <!-- Thành tiền -->
-                        <div class="price-info">
-                            <div class="price">
-                                60.000
-                            </div>
-                            <div class="currency">
-                                VNĐ
-                            </div>
-                        </div>
-    
-                        <!-- Button xoá -->
-                        <div>
-                            <img src="./assets/img/trash.jpg" style="width: 25px">
-                        </div>
+                <div class="cart-info-container">
+                    <div class="cart-header">
+                        <div><input type="checkbox" name="all" id="all" checked></div>
+                        <div>Sản phẩm</div>
+                        <div>Đơn giá</div>
+                        <div>Số lượng</div>
+                        <div>Thành tiền</div>
+                        <div>Xoá</div>
                     </div>
-    
-                    <div class="cart-product">
-                        <!-- chekbox -->
-                        <div><input type="checkbox" name="pr1" id="pr1" checked></div>
-                        <!-- Tên sản phẩm -->
-                        <div class="cart-info">
-                            <div>
-                                <img src="../assets/img/ẢNH SẢN PHẨM/13.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Flourless Chocolate Cupcake</b>
-                            </div>
-                        </div>
-                        <!-- Giá sản phẩm -->
-                        <div class="price-info">
-                            <div class="price">
-                                45.000
-                            </div>
-                            <div class="currency">
-                                VNĐ
-                            </div>
-                        </div>
-                        <!-- Số lượng -->
-                        <div class="quantity-box">
-                            <button class="quantity-decrease" id="decrease" onclick="decreaseValue2(quantity2.value)" onblur="Check2(quantity2.value)">-</button>
-                            <input type="text" value="1" class="quantity-input" id="quantity2" onblur="Check2(quantity2.value)">
-                            <button class="quantity-increase" id="increase" onclick="increaseValue2(quantity2.value)" onblur="Check2(quantity2.value)">+</button>
-                        </div>
-    
-                        <!-- Thành tiền -->
-                        <div class="price-info">
-                            <div class="price">
-                                45.000
-                            </div>
-                            <div class="currency">
-                                VNĐ
-                            </div>
-                        </div>
-    
-                        <!-- Button xoá -->
-                        <div>
-                            <img src="./assets/img/trash.jpg" style="width: 25px">
-                        </div>
-                    </div>
-    
-                    <div class="cart-product">
-                        <!-- chekbox -->
-                        <div><input type="checkbox" name="pr1" id="pr1" checked></div>
-                        <!-- Tên sản phẩm -->
-                        <div class="cart-info">
-                            <div>
-                                <img src="../assets/img/ẢNH SẢN PHẨM/81.png" width="100%">
-                            </div>
-                            <div class="product-description">
-                                <b>Bánh Kem Romantic</b>
-                            </div>
-                        </div>
-                        <!-- Giá sản phẩm -->
-                        <div class="price-info">
-                            <div class="price">
-                                320.000
-                            </div>
-                            <div class="currency">
-                                VNĐ
-                            </div>
-                        </div>
-                        <!-- Số lượng -->
-                        <div class="quantity-box">
-                            <button class="quantity-decrease" id="decrease" onclick="decreaseValue3(quantity3.value)" onblur="Check3(quantity3.value)">-</button>
-                            <input type="text" value="1" class="quantity-input" id="quantity3" onblur="Check3(quantity3.value)">
-                            <button class="quantity-increase" id="increase" onclick="increaseValue3(quantity3.value)" onblur="Check3(quantity3.value)">+</button>
-                        </div>
-    
-                        <!-- Thành tiền -->
-                        <div class="price-info">
-                            <div class="price">
-                                320.000
-                            </div>
-                            <div class="currency">
-                                VNĐ
-                            </div>
-                        </div>
-    
-                        <!-- Button xoá -->
-                        <div>
-                            <img src="./assets/img/trash.jpg" style="width: 25px">
-                        </div>
-                    </div>   
-                </div>
-            </div>
-                <div class="line"></div>
-
-            <div class="container text-center">
-                    
-                    <div class="row-">
-                      <div class="col left-title">
-                        Mã giảm giá
-                      </div>
-                    </div>
-              
-                    <div class="row2">
-                      <div class="col-3 voucher-info">
-                        <div>
-                          <input type="text" placeholder="Nhập vào mã giảm giá" id="input-voucher" onkeyup="changeState();">
-                      </div>
-                      <div>
-                          <input type="button" value="ÁP DỤNG" id="apply" disabled="disabled">
-                          </button>
-                      </div>
-                      </div>
-
-                      <div class="col-6">
-                        <div class="row">
-                          <div class="col-5 left-title">Tổng số tiền (tạm tính)</div>
-                          <div class="col-5 right-title">
-                            <div class="row">
-                              <div class="col-5">425.000</div>
-                              <div class="col-4 left-title">VNĐ</div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-5 left-title">Giảm giá</div>
-                            <div class="col-5 right-title">
-                              <div class="row">
-                                <div class="col-5">20.000</div>
-                                <div class="col-4 left-title">VNĐ</div>
+        
+                    <div class="line"></div>
+        
+                    <div class="cart-product-container">
+                        <div class="cart-product">
+                            <!-- chekbox -->
+                            <div><input type="checkbox" name="pr1" id="pr1" checked></div>
+                            <!-- Tên sản phẩm -->
+                            <div class="cart-info">
+                                <div>
+                                    <img src="../assets/img/ẢNH SẢN PHẨM/25.png" width="100%">
+                                </div>
+                                <div class="product-description">
+                                    <b>Donut Chocolate</b>
                                 </div>
                             </div>
+                            <!-- Giá sản phẩm -->
+                            <div class="price-info">
+                                <div class="price">
+                                    30.000
+                                </div>
+                                <div class="currency">
+                                    VNĐ
+                                </div>
+                            </div>
+                            <!-- Số lượng -->
+                            <div class="quantity-box">
+                                <button class="quantity-decrease" id="decrease" onclick="decreaseValue1(quantity1.value)" onblur="Check1(quantity1.value)">-</button>
+                                <input type="text" value="2" class="quantity-input" id="quantity1" onblur="Check1(quantity1.value)">
+                                <button class="quantity-increase" id="increase" onclick="increaseValue1(quantity1.value)" onblur="Check1(quantity1.value)">+</button>
+                            </div>
+        
+                            <!-- Thành tiền -->
+                            <div class="price-info">
+                                <div class="price">
+                                    60.000
+                                </div>
+                                <div class="currency">
+                                    VNĐ
+                                </div>
+                            </div>
+        
+                            <!-- Button xoá -->
+                            <div>
+                                <img src="../assets/img/trash.png" style="width: 25px">
+                            </div>
                         </div>
+        
+                        <div class="cart-product">
+                            <!-- chekbox -->
+                            <div><input type="checkbox" name="pr1" id="pr1" checked></div>
+                            <!-- Tên sản phẩm -->
+                            <div class="cart-info">
+                                <div>
+                                    <img src="../assets/img/ẢNH SẢN PHẨM/13.png" width="100%">
+                                </div>
+                                <div class="product-description">
+                                    <b>Flourless Chocolate Cupcake</b>
+                                </div>
+                            </div>
+                            <!-- Giá sản phẩm -->
+                            <div class="price-info">
+                                <div class="price">
+                                    45.000
+                                </div>
+                                <div class="currency">
+                                    VNĐ
+                                </div>
+                            </div>
+                            <!-- Số lượng -->
+                            <div class="quantity-box">
+                                <button class="quantity-decrease" id="decrease" onclick="decreaseValue2(quantity2.value)" onblur="Check2(quantity2.value)">-</button>
+                                <input type="text" value="1" class="quantity-input" id="quantity2" onblur="Check2(quantity2.value)">
+                                <button class="quantity-increase" id="increase" onclick="increaseValue2(quantity2.value)" onblur="Check2(quantity2.value)">+</button>
+                            </div>
+        
+                            <!-- Thành tiền -->
+                            <div class="price-info">
+                                <div class="price">
+                                    45.000
+                                </div>
+                                <div class="currency">
+                                    VNĐ
+                                </div>
+                            </div>
+        
+                            <!-- Button xoá -->
+                            <div>
+                                <img src="../assets/img/trash.png" style="width: 25px">
+                            </div>
+                        </div>
+        
+                        <div class="cart-product">
+                            <!-- chekbox -->
+                            <div><input type="checkbox" name="pr1" id="pr1" checked></div>
+                            <!-- Tên sản phẩm -->
+                            <div class="cart-info">
+                                <div>
+                                    <img src="../assets/img/ẢNH SẢN PHẨM/81.png" width="100%">
+                                </div>
+                                <div class="product-description">
+                                    <b>Bánh Kem Romantic</b>
+                                </div>
+                            </div>
+                            <!-- Giá sản phẩm -->
+                            <div class="price-info">
+                                <div class="price">
+                                    320.000
+                                </div>
+                                <div class="currency">
+                                    VNĐ
+                                </div>
+                            </div>
+                            <!-- Số lượng -->
+                            <div class="quantity-box">
+                                <button class="quantity-decrease" id="decrease" onclick="decreaseValue3(quantity3.value)" onblur="Check3(quantity3.value)">-</button>
+                                <input type="text" value="1" class="quantity-input" id="quantity3" onblur="Check3(quantity3.value)">
+                                <button class="quantity-increase" id="increase" onclick="increaseValue3(quantity3.value)" onblur="Check3(quantity3.value)">+</button>
+                            </div>
+        
+                            <!-- Thành tiền -->
+                            <div class="price-info">
+                                <div class="price">
+                                    320.000
+                                </div>
+                                <div class="currency">
+                                    VNĐ
+                                </div>
+                            </div>
+        
+                            <!-- Button xoá -->
+                            <div>
+                                <img src="../assets/img/trash.png" style="width: 25px">
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                    <div class="line"></div>
+    
+                <div class="container text-center">
                         
-                        <div class="row total-payment">
-                            <div class="col-5 left-title">Thành tiền</div>
-                            <div class="col-5 right-title">
-                              <div class="row">
-                                <div class="col-5">405.000</div>
-                                <div class="col-4">VNĐ</div>
-                              </div>
+                        <div class="row-">
+                          <div class="col left-title">
+                            Mã giảm giá
                           </div>
                         </div>
-                      </div>
-                    </div>
+                  
+                        <div class="row2">
+                          <div class="col-3 voucher-info">
+                            <div>
+                              <input type="text" placeholder="Nhập vào mã giảm giá" id="input-voucher" onkeyup="changeState();">
+                          </div>
+                          <div>
+                              <input type="button" value="ÁP DỤNG" id="apply" disabled="disabled">
+                              </button>
+                          </div>
+                          </div>
+    
+                          <div class="col-6">
+                            <div class="row">
+                              <div class="col-5 left-title">Tổng số tiền (tạm tính)</div>
+                              <div class="col-5 right-title">
+                                <div class="row">
+                                  <div class="col-5">425.000</div>
+                                  <div class="col-4 left-title">VNĐ</div>
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-5 left-title">Giảm giá</div>
+                                <div class="col-5 right-title">
+                                  <div class="row">
+                                    <div class="col-5">20.000</div>
+                                    <div class="col-4 left-title">VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row total-payment">
+                                <div class="col-5 left-title">Thành tiền</div>
+                                <div class="col-5 right-title">
+                                  <div class="row">
+                                    <div class="col-5">405.000</div>
+                                    <div class="col-4">VNĐ</div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+    
+                <div class="line"></div>
+    
+                <div class="button">
+                <div class="button_left">
+                    <!-- Chèn link vào -->
+                    <a href="#">
+                        <button class="input back">Quay lại mua hàng</button>
+                    </a>
+                    <button class=" input remove-all">Xoá hết</button>
+                </div>
+    
+                <div class="button_right">
+                    <a href="#">
+                        <button class="input order">Đặt hàng</button>
+                    </a>
+                </div>
             </div>
-
-            <div class="line"></div>
-
-            <div class="button">
-            <div class="button_left">
-                <!-- Chèn link vào -->
-                <a href="#">
-                    <button class="input back">Quay lại mua hàng</button>
-                </a>
-                <button class=" input remove-all">Xoá hết</button>
-            </div>
-
-            <div class="button_right">
-                <a href="#">
-                    <button class="input order">Đặt hàng</button>
-                </a>
             </div>
         </div>
     </div>

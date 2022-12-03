@@ -9,6 +9,34 @@ html {
 }
 :root {
     --primary_color: #E75C6B;
+    --color_button: #F38A95;
+    --background-color: #F9F2F2
+}
+
+.body {
+    display: flex;
+}
+.main {
+    margin: auto;
+}
+/* Thanh điều hướng */
+.navigation {
+    width: auto;
+    height: 35px;
+    background-color: var(--background-color);
+    margin: 15px 0 15px 0;
+}
+
+ol {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    line-height: 35px;
+    margin-left: 10px;
+}
+ol li {
+    margin-left: 10px;
+    font-size: 14px ;
 }
 
 .cart-title h4 {
@@ -16,8 +44,6 @@ html {
     font-size: 23px;
     color: var(--primary_color);
     font-weight: bold;
-
-    padding: 25px 0 18px 25px;
 }
 
 .line {

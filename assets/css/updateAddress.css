@@ -1,9 +1,9 @@
-html {
-    font-size: 62.5%;
-}
+
 :root {
     --primary_color: #E75C6B;
     --sub_color: #FFEAE9;
+    --hover:#6c584c;
+    --button: #F38A95;
 }
 
 .main-2 {
@@ -11,19 +11,12 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    max-width: 600px;
+    font-size: 13px;
+    max-width: auto;
 }
 
 .title {
     padding: 10px;
-}
-
-.main-title {
-    width: 100%;
-    font-size: 2.5rem;
-    color: var(--primary_color);
-    font-weight: bold;
 }
 
 .line {
@@ -56,34 +49,50 @@ html {
 }
 
 input, select {
-    border: 1px solid var(--primary_color);
-    outline: none;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     height: 25px;
     vertical-align: middle;
+    outline: none;
+    line-height: 25px;
+}
+input:focus, select:focus {
+    border: 1px solid var(--primary_color);
 }
 
-#fname {
+#row1 {
+    display: flex;
+}
+.fname {
     margin-right: 25px;
-}
+    height: auto;
 
-#phone {
-    margin-left: 25px;
+}
+.phone {
+    height: auto;
 }
 
 .detail {
     height: 50px;
 }
+.form-control, .form-select {
+    font-size: 15px;
+}
+.city {
+    height: auto;
+}
 
 .district {
-    margin-right: 25px;
+    height: auto;
+    margin-left: 10px;
 }
 
-.city {
-    margin-right: 25px;
+.wards {
+    height: auto;
+    margin-left: 10px;
 }
+
 
 #default {
     accent-color: var(--primary_color)
@@ -93,7 +102,6 @@ input, select {
 }
 
 .input {
-    
     border: none;
     outline: none;
     border-radius: 20px;
@@ -103,18 +111,21 @@ input, select {
     text-align: center;
     vertical-align: middle;
     margin-top: 10px;
-    font-size: 1.6rem;
-    width: auto;
+    font-size: 15px;
+    background-color: var(--button);
+    line-height: 30px;
+    
 }
 
 .back {
-    width: 80px;
+    width: 90px;
     background-color: var(--sub_color);
 }
 
 .confirm {
     background-color: var(--primary_color);
     color: white;
+    width: 150px;
 }
     
 .button {
