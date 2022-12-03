@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Montserrat;
+    font-size: 15px;
+}  
+.blogdetail{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+/* bên trái */
+/* baivietnoibat */
+.baivietnoibat{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+}
+.baivietnoibat h2{
+    font-size: 30px;
+}
+hr{
+    width: 440px;
+    border: solid #C4C4C4; 
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.baiviet-item{
+    margin-bottom: 15px ;
+    display: flex;
+}
+.baiviet-img img{
+    width: 120px;
+    height: 100px;
+}
+.baiviet-mota{
+    float: right;
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 12px;
+}
+.baiviet-tieude a{
+    text-decoration: none;
+    color: #EB7884;
+    font-size: 18px;
+    justify-content: center;
+}
+
+/* bên phải */
+/* banner */
+/* blog detail */
+.detail img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.detail{
+    flex-basis: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.detail-tieude{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+.detail-tieude h1{
+    color: #EB7884;
+    font-size: 30px;
+}
+.detail-thongtin {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.detail-thongtin span{
+    font-size: 14px;
+    padding: 0;
+    display: inline-block;
+    margin-top: 0.6em;
+    margin: 0px 10px;
+}
+.detail-noidung p{
+    font-size: 18px;
+    text-align: justify;
+}
+.detail-img{
+    text-align: center;
+    margin: 10px;
+}
+.detail-img p{
+    font-size: 14px;
+    text-align: center;
+}
+.detail-img img{
+    height: 500px;
+    width: 500px;
+}
+.binhluan h3{
+    color: #EB7884;
+    font-size: 30px;
+}
+.binhluan-item{
+    display: flex;
+    margin: 20px 0px;
+}
+.binhluan-content p{
+    /* font-size: 18px; */
+    justify-content: center;
+}
+.binhluan{
+    margin-top: 50px;
+    
+}
+.binhluan-content{
+    margin-left: 10px;
+}
+.binhluan-item h4{
+    font-size: 18px;
+}
+.binhluan-item img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+}
+.binhluan-input input{
+    border-radius: 24px;
+    border: 1px solid #FFEAE9;
+    background-color: #FFFFFF;
+    height: 45px;
+    width:  500px;
+    color: #C4C4C4;
+    font-size: 15px;
+    outline: none;
+    font-family: Montserrat;
+    margin-right: 50px;
+
+}
+.binhluan-input button{
+    height: 35px;
+    width:  100px;
+    /* color: white; */
+    background-color: #E75C6B;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.binhluan-input{
+    margin-left: 80px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
