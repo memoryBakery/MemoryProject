@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất cả đơn hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/accountOrder.css">
+    <script>
+        function showActivate() {
+            document.getElementById("waitting").classList.toggle("activate");
+            document.getElementById("all").classList.toggle("activate");
+        }
+
+        function hideActivate() {
+            document.getElementById("waitting").classList.toggle("hideActivate");
+            document.getElementById("all").classList.toggle("hidectivate");
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="container text-center main">
+          <div class="row">
+            <div class="col" id="all">
+              <a href="./allOrder.html" target="my_iframe1" onclick="hideActivate()">Tất cả</a>
+            </div>
+            <div class="col" id="waitting">
+              <a href="./deliveringOrder.html" target="my_iframe1" onclick="showActivate()">Chờ lấy hàng</a>
+              
+            </div>
+            <div class="col">
+              <a href="#">Đang giao</a>
+            </div>
+            <div class="col">
+              <a href="#">Đã giao</a>
+              
+            </div>
+            <div class="col">
+              <a href="#">Đã huỷ</a>
+              
+            </div>
+          </div>
+        </div>
+  
+       
+        <div class="right">
+            <iframe name="my_iframe1" src="./allOrder.html" frameborder="0" height="100%" width="100%"></iframe>
+        </div>
+    </div>
+</body>
+</html>
