@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
+   
 }
 
 html{
@@ -17,7 +18,7 @@ html{
 .header{
     background-color: white;
     position: fixed;
-    padding: 0px 140px;
+    padding: 0px 5%;
     top: 0px;
     left: 0;
     right:0;
@@ -44,6 +45,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
 }
 .header-top img{
     height: 80px;
@@ -61,15 +63,18 @@ a:hover{
     position: relative;
 }
 .header-top .btn-search .ti-search {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
+    height: 40px;
+    width: 40px;
     position: absolute;
     top: 0;
     right: 0;
     text-align: center;
     cursor: pointer;
     font-weight: bold;
+    background-color: #FFEAE9;
+    border-radius: 50%;
+    margin: 2px;
+    border:  none;
 }
 .header-top .btn-search .ti-search:hover{
     color: var(--hover_color);
@@ -84,21 +89,24 @@ a:hover{
 
 .header-top{
     display: flex;
-   
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 .header-top .logo img{
     width: 200px;
 }
 .right-header-top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    display: flex; 
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 .right-header-top div{
     margin: 0 20px;
+    width: max-content;
     
 } 
+
 
 .right-header-top li a{
     padding: 0 24px;
@@ -132,12 +140,19 @@ a:hover{
 
 
 
-/* .header-bottom */
 
-.header-bottom .nav{
+
+/* .header-bottom {
     display: flex;
     flex-wrap: nowrap;
-    
+    height: 46px;
+} */
+.header-bottom{
+    overflow:hidden;
+    height: 46px;
+    display: flex;
+    justify-content: space-around;
+
 }
 ul{
     list-style: none;
@@ -146,7 +161,7 @@ ul{
     display: inline-block;
 }
 .nav li{
-    position: relative;
+    /* position: relative; */
 }
 .nav >li > a{
     font-weight: bold;
@@ -154,7 +169,7 @@ ul{
     
 }
 .nav li a{
-    padding: 0 10px;
+    padding: 0 5px;
     line-height: 46px;
     display: block;
 }
@@ -288,6 +303,7 @@ h1{
 section{
     height: 450px;
     width: 1075px;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: auto;
@@ -331,9 +347,9 @@ section{
     color: yellow;
 }
 
-.swiper-button-prev, .swiper-button-next{
-    /* color: var(--hover_color)!important; */
-}
+/* .swiper-button-prev, .swiper-button-next{
+    color: var(--hover_color)!important;
+} */
 
 
 .swiper {
