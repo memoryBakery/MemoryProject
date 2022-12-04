@@ -86,6 +86,9 @@ a:hover{
     display: flex;
    
 }
+.header-top .logo img{
+    width: 200px;
+}
 .right-header-top{
     display: flex;
     justify-content: center;
@@ -93,8 +96,9 @@ a:hover{
 
 }
 .right-header-top div{
-    margin: 0 20px;  
-}
+    margin: 0 20px;
+    
+} 
 
 .right-header-top li a{
     padding: 0 24px;
@@ -129,12 +133,11 @@ a:hover{
 
 
 /* .header-bottom */
-.header-top .logo img{
-    width: 200px;
-}
+
 .header-bottom .nav{
     display: flex;
     flex-wrap: nowrap;
+    
 }
 ul{
     list-style: none;
@@ -148,6 +151,7 @@ ul{
 .nav >li > a{
     font-weight: bold;
     margin: 0 26px;
+    
 }
 .nav li a{
     padding: 0 10px;
