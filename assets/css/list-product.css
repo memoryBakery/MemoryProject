@@ -113,3 +113,11 @@
     font-size: 18px;
     margin: 0px 20px;
 }
+
+.price-search{
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 20px;
+    border: currentColor;
+    background-color: var(--button_color);
+}

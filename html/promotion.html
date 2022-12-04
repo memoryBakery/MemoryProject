@@ -22,12 +22,11 @@
                     <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
                </div>
                <div class="btn-search" >
-                <form onsubmit="submit(event)">
+                <form onsubmit="submitForm(event)">
                     <input
                         type="text" class="search" id="inputvalue"> 
                     </input>
                     <i class="ti-search"></i>
-                <!-- </form>  -->
                </div> 
                 <div class="right-header-top">
                     <div class="account">
@@ -286,19 +285,6 @@
         </div>
     </div>
 </body>
-<script>
-    function submit(event){ 
-                        event.preventDefault();
-                        var ele = document.getElementById("inputvalue");                
-               
-                        if (ele.value+""==='bánh kem'){
-                            window.location.replace("../listProduct.html")
-                        }
-                        else if (ele.value +""==="bánh quy"){
-                        window.location.replace("listProduct.html")
-                        }
-                        else if (ele.value +""==="bánh donuts"){
-                        window.location.replace("listProduct.html")
-                        }}
+<script src="../assets/javascript/main.js">
 </script>
 </html>
