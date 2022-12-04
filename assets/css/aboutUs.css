@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3{
+    text-decoration: none;
+    color: #E75C6B;
+}
+.center{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.intro{
+ background-color: #FFEAE9;
+ width: 1134px;
+ height: auto;
+ text-align: center;
+ padding: 0 80px 0;
+ justify-content: center;
+}
+.intro-center{
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.content1{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    text-align: center;
+}
+.content2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+table, tr, td {
+    border: solid 1px #E84D4D;
+    width: 234px;
+}
+.co1{
+    height: 241px;
+}
+.co2{
+    background-color: #FFEAE9;
+    height: auto;
+}
+.member{
+    padding: 20px;
+}
+
+
+
+    
+

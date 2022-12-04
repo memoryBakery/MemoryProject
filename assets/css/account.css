@@ -15,6 +15,12 @@
 .account_nav .nav{
     font-size: 22px;
 }
+.account_nav .nav .sub-nav{
+    display: none;
+}
+.account_nav .nav:hover .sub-nav a{
+    background-color: white;
+}
 
 .profile{
     display: flex;
@@ -32,10 +38,6 @@
 i{
     color: #E75C6B;
 }
-
-
-
-
 /* Vouchers */
 .vouchers{
     width: 100%;

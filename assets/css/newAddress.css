@@ -1,0 +1,135 @@
+
+:root {
+    --primary_color: #E75C6B;
+    --sub_color: #FFEAE9;
+    --hover : #6c584c;
+    --button: #F38A95;
+    --button_hover: #81C6E8;
+}
+
+.main-3 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    max-width: auto;
+}
+
+.title {
+    padding: 10px;
+}
+
+.line {
+    background-color: var(--primary_color);
+    height: 1px;
+    margin: 5px 0 5px 0;
+}
+
+.name {
+    font-weight: bold;
+    color: black;
+}
+
+.form__row {
+    padding: 10px;
+}
+
+.form__row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.form__row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.form__row3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+input, select {
+    border: 1px solid var(--hover);
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 25px;
+    vertical-align: middle;
+    outline: none;
+    
+}
+
+input:focus, select:focus {
+    border: 1px solid var(--primary_color);
+}
+
+#fname {
+    margin-right: 25px;
+}
+
+#phone {
+    margin-left: 25px;
+}
+
+.detail {
+    height: 50px;
+}
+
+#row2 {
+    display: flex;
+ }
+ .city {
+     height: auto;
+
+ }
+ 
+ .district {
+     height: auto;
+
+ }
+ 
+ .wards {
+     height: auto;
+
+ }
+#default {
+    accent-color: var(--primary_color)
+}
+.default {
+    margin-left: 30px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.input:hover {
+    background-color: var(--button_hover);
+}
+.back {
+    width: 90px;
+    background-color: var(--button);
+}
+
+.confirm {
+    background-color: var(--button);
+    color: white;
+    width: 150px;
+}
+    
+.button {
+    text-align: right;
+}
+
+.button a {
+    text-decoration: none;
+}

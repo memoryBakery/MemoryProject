@@ -1,0 +1,141 @@
+
+:root {
+    --primary_color: #E75C6B;
+    --sub_color: #FFEAE9;
+    --hover:#6c584c;
+    --button: #F38A95;
+}
+
+.main-2 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    max-width: auto;
+}
+
+.title {
+    padding: 10px;
+}
+
+.line {
+    background-color: var(--primary_color);
+    height: 1px;
+    margin: 5px 0 5px 0;
+}
+
+.name {
+    font-weight: bold;
+    color: black;
+}
+
+.form__row {
+    padding: 10px;
+}
+
+.form__row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.form__row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.form__row3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+input, select {
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 25px;
+    vertical-align: middle;
+    outline: none;
+    line-height: 25px;
+}
+input:focus, select:focus {
+    border: 1px solid var(--primary_color);
+}
+
+#row1 {
+    display: flex;
+}
+.fname {
+    margin-right: 25px;
+    height: auto;
+
+}
+.phone {
+    height: auto;
+}
+
+.detail {
+    height: 50px;
+}
+.form-control, .form-select {
+    font-size: 15px;
+}
+.city {
+    height: auto;
+}
+
+.district {
+    height: auto;
+    margin-left: 10px;
+}
+
+.wards {
+    height: auto;
+    margin-left: 10px;
+}
+
+
+#default {
+    accent-color: var(--primary_color)
+}
+.default {
+    margin-left: 30px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: var(--button);
+    line-height: 30px;
+    
+}
+
+.back {
+    width: 90px;
+    background-color: var(--sub_color);
+}
+
+.confirm {
+    background-color: var(--primary_color);
+    color: white;
+    width: 150px;
+}
+    
+.button {
+    text-align: right;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+::placeholder {
+    color: black;
+}

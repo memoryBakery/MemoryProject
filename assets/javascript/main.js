@@ -17,7 +17,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // list product
   function LoadJson(){
-    fetch("./assets/json/products.json")
+    fetch("../assets/json/products.json")
     .then(function(response){
         if(!response.ok){
             throw new Error("Đã có lỗi xảy ra :(")
@@ -29,7 +29,7 @@ var swiper = new Swiper(".mySwiper", {
         for (let p of data){
             html+="<div class='product'>";
             html+="<div class='img-product'>";
-            html+="<img src='./assets/img/ẢNH SẢN PHẨM/"+p.img[1]+"'>";
+            html+="<img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'>";
             html+="<div class='cart-love'>";
             html+="<a href=''><i class='fa-solid fa-cart-shopping'></i> </a><a href=''><i class='fa-solid fa-heart'></i></a>"
             html+="</div>"
@@ -60,14 +60,14 @@ var swiper = new Swiper(".mySwiper", {
                                 ma ='Donuts'
                                 break;
                             case 4:
-                                ma='Bánh mỳ'}e
+                                ma='Bánh mỳ'}
 
                            let html=""     
                     for(let p of data){
                         if(p.category == ma){
                           html+="<div class='product'>";
                           html+="<div class='img-product'>";
-                          html+="<img src='./assets/img/ẢNH SẢN PHẨM/"+p.img[1]+"'>";
+                          html+="<img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'>";
                           html+="<div class='cart-love'>";
                           html+="<a href=''><i class='fa-solid fa-cart-shopping'></i> </a><a href=''><i class='fa-solid fa-heart'></i></a>"
                           html+="</div>"
@@ -90,6 +90,16 @@ var swiper = new Swiper(".mySwiper", {
 }
 
 
+
+
+const button = document.querySelectorAll('.btnn');
+
+button.addEventListener('click',changeColor);
+
+function changeColor(){
+    const arrayColor = ['green'];
+    btnn.style.color = arrayColor;
+}
 
 
 
