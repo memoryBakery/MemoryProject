@@ -11,84 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/styte.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/account.css">
+    <link rel="stylesheet" href="../assets/css/account.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="header-top">
-               <div class="logo">
-                    <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
-               </div>
-               <div class="btn-search" >
-                    <input 
-                        type="text" class="search"> 
-                    </input>
-                    <i class="ti-search"></i>
-               </div> 
-                <div class="right-header-top">
-                    <div class="account">
-                        <a href="" >
-                            <i class="fa-solid fa-user"></i>
-                            Tài khoản
-                        </a>
-                        <ul class="sub-nav">
-                            <li>
-                                <a href="">
-                                    <i class="fa-solid fa-user"></i> Tài khoản của tôi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-solid fa-user-plus"></i> Đăng kí
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
-                                </a>
-                            </li>
-                          
-                        </ul>
-                    </div>
-                    <div class="cart">
-                        <a href="">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Giỏ hàng</a>
-                    </div>
-                    <div class="phone">
-                        <a href="" >
-                            <i class="fa-solid fa-phone"></i>
-                            0905792559
-                        </a>
-                    </div>   
-                </div>
-            </div>
-            <div class="header-bottom">
-                <ul class="nav">
-                <li >
-                        <a href="./list-product.html">
-                            <i class="fa-sharp fa-solid fa-list"></i>
-                            Danh mục sản phẩm
-                            <i class="nav-arrow-down ti-angle-down"></i>
-                        </a>
-                       
-                        <ul class="sub-nav">
-                            <li><a href=""> Bánh kem</a></li>
-                            <li><a href=""> Cupcakes</a></li>
-                            <li><a href=""> Bánh quy</a></li>
-                            <li><a href=""> Donuts</a></li>
-                            <li><a href=""> Phụ kiện</a></li>
-                        </ul>
-                </li>
-                <li><a href="./main.html">Trang chủ</a></li>
-                <li><a href="">Câu chuyện thương hiệu</a></li>
-                <li><a href="">Khuyến mãi</a></li>
-                <li><a href="">Tin tức</a></li>
-                <li><a href="">Liên hệ</a></li> 
-                </ul>
-            </div>
-        </div>
+        <div class="header"></div>
         <div class="body">
             <div class="account_nav">
                 <div class="profile">
@@ -106,12 +33,12 @@
                                 <ul class="sub-nav">
                                     <li><a href="./html/account_profile.html" target="my_iframe"> Hồ sơ</a></li>
                                     <li><a href="./html/account_changePassword.html" target="my_iframe"> Đổi mật khẩu</a></li>
-                                    <li><a href="./html/myAddress.html" target="my_iframe"> Địa chỉ</a></li>
+                                    <li><a href="./myAddress.html" target="my_iframe"> Địa chỉ</a></li>
                                 </ul>
                             </a>
                         </li>
-                        <li><a href=""> <i style="padding-right: 6px" class="fa-regular fa-clipboard"></i> <span> Đơn hàng</span></a></li>
-                        <li><a href="./html/account_voucher.html" target="my_iframe"> <i style="padding-right: 6px" class="fa-solid fa-tag"></i> <span> Voucher</span></a> </li>
+                        <li><a href="./accountOrder.html" target="my_iframe"> <i style="padding-right: 6px" class="fa-regular fa-clipboard"></i> <span> Đơn hàng</span></a></li>
+                        <li><a href="./account_voucher.html" target="my_iframe"> <i style="padding-right: 6px" class="fa-solid fa-tag"></i> <span> Voucher</span></a> </li>
                         <li><a href=""> <i style="padding-right: 4px" class="fa-regular fa-heart"></i> <span> Sản phẩm yêu thích</span></a></li>
                         <li><a href="./account_review.html" target="my_iframe"> <i class="fa-regular fa-comments"></i> <span> Đánh giá</span></a></li>
                         <li><a href=""> <i style="padding-right: 3px" class="fa-solid fa-arrow-right-from-bracket"></i> <span> Đăng xuất</span></a></li>
@@ -122,9 +49,68 @@
 
             <div class="right">
                 <iframe name="my_iframe" src="" frameborder="0" height="100%" width="100%"></iframe>
+                <iframe name="my_iframe1" src="" frameborder="0" height="80%" width="100%"></iframe>
 
 
+            </div>
+        </div>
 
+         <!-- Footer -->
+         <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top__left">
+                    <i class="ti-email"></i>
+                    <div class="content">
+                        <p class="title">ĐĂNG KÍ NHẬN BẢN TIN</p>
+                        <p class="para">Bạn sẽ luôn nhận được thông tin khuyến mãi mới và đặc biệt nhất!</p>
+                    </div>
+                </div>
+                <div class="footer-top__right">
+                    <input type="text" placeholder="Nhập email của bạn tại đây!">
+                    <button>GỬI</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="introduction col-5">
+                    <h5>Giới thiệu</h5>
+                    <p>Memory Bakery là một kênh bán hàng trực tuyến chuyên cung cấp các mặt hàng bánh ngọt bao gồm các loại bánh và phụ kiện dành cho các buổi tiệc. Memory Bakery hướng tới cung cấp một kênh bán hàng sinh động, đơn giản nhưng đầy đủ các tính năng cần thiết để mang tới những trải nghiệm tốt nhất cho khách hàng</p>
+                    <a href=""><img src="../assets/img/logo.jpg" alt=""></a><br>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a> 
+                </div>
+                <div class="contact col-3" >
+                    <h5>Thông tin liên hệ</h5>
+                    <span style="display:flex"><i style="margin-top: 5px;padding-right: 10px;" class="fa-solid fa-location-dot"></i> Ký túc xá khu B, Linh Trung, Thủ Đức, Hồ Chí Minh</span>
+                    <span><i class="fa-solid fa-phone"></i> 0395.663.068</span> <br>
+                    <span><i class="fa-solid fa-fax"></i> 1900.900.900</span><br>
+                    <span><i class="fa-sharp fa-solid fa-envelope"></i> memory@gmail.com</span>
+                    <h5>Phương thức thanh toán</h5>
+                    <div class="payment-top">
+                        <img class="payment-method" src="../assets/img/PHƯƠNG THỨC THANH TOÁN/DOB.png" alt="">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/Momo.png" alt="" class="payment-method">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/Mastercard.png" alt="" class="payment-method">
+                    </div>
+                    <div class="payment-bottom">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/JCB.png" alt="" class="payment-method">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/VISA.png" alt="" class="payment-method">
+                    </div>
+                </div>
+                <div class="support col-2" >
+                    <h5>Hỗ trợ</h5>
+                    <a href="">Tìm kiếm</a><br>
+                    <a href="">Giới thiệu</a><br>
+                    <a href="">Chính sách thanh toán</a><br>
+                    <a href="">Chính sách bảo mật</a><br>
+                    <a href="">Liên hệ</a>
+                </div>
+                <div class="link col-2">
+                    <h5>Liên kết</h5>
+                    <a href="">Bánh kem</a><br>
+                    <a href="">Bánh quy</a><br>
+                    <a href="">Cupcakes</a><br>
+                    <a href="">Donuts</a><br>
+                    <a href="">Phụ kiện</a>
+                </div>
             </div>
         </div>
     </div>
