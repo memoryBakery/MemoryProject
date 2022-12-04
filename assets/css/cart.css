@@ -39,16 +39,22 @@ ol li {
     font-size: 14px ;
 }
 
-.cart-title h4 {
+.cart-title{
+    background-color: rgb(212, 224, 224);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+h4 {
     width: 100%;
-    font-size: 23px;
+    font-size: 25px;
     color: var(--primary_color);
     font-weight: bold;
+    margin: auto ;
 }
 
-.line {
-    background-color: var(--primary_color);
-    height: 1px;
+hr {
+    background-color: #E75C6B;
+    height: 2px;
 }
 
 .cart-header {
@@ -61,6 +67,7 @@ ol li {
     font-size: 19px;
     color: var(--primary_color);
     padding: 20px 0 20px 0;
+    background-color: var(--button_hover);
 }
 
 .cart-product {
@@ -278,12 +285,23 @@ ol li {
 }
 
 .total-payment {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
     color: var(--primary_color);
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .col {
     font-weight: bold;
     color: var(--primary_color);
+}
+
+.text-center{
+    margin-top: 20px!important;
+}
+.payment{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);;
 }

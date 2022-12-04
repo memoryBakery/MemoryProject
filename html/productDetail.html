@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sản phẩm</title>
@@ -11,97 +11,27 @@
     <link rel="stylesheet" href="../assets/css/productDetail.css">
     <link rel="stylesheet" href="../assets/css/styte.css">
     <script src="../assets/javascript/productDetail.js"> </script>
-  </head>
-  <body>
-    <!-- Phần header -->
+</head>
+<body>
     <div class="header">
-        <div class="header-top">
-           <div class="logo">
-                <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
-           </div>
-           <div class="btn-search" >
-                <input 
-                    type="text" class="search"> 
-                </input>
-                <i class="ti-search"></i>
-           </div> 
-            <div class="right-header-top">
-                <div class="account">
-                    <a href="" >
-                        <i class="fa-solid fa-user"></i>
-                        Tài khoản
-                    </a>
-                    <ul class="sub-nav">
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-user"></i> Tài khoản của tôi
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-user-plus"></i> Đăng kí
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
-                            </a>
-                        </li>
-                      
-                    </ul>
-                </div>
-                <div class="cart">
-                    <a href="">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Giỏ hàng</a>
-                </div>
-                <div class="phone">
-                    <a href="" >
-                        <i class="fa-solid fa-phone"></i>
-                        0905792559
-                    </a>
-                </div>   
-            </div>
-        </div>
-        <div class="header-bottom">
-            <ul class="nav">
-            <li >
-                    <a href="">
-                        <i class="fa-sharp fa-solid fa-list"></i>
-                        Danh mục sản phẩm
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                   
-                    <ul class="sub-nav">
-                        <li><a href=""> Bánh kem</a></li>
-                        <li><a href=""> Cupcakes</a></li>
-                        <li><a href=""> Bánh quy</a></li>
-                        <li><a href=""> Donuts</a></li>
-                        <li><a href=""> Phụ kiện</a></li>
-                    </ul>
-            </li>
-            <li><a href="./main.html">Trang chủ</a></li>
-            <li><a href="">Câu chuyện thương hiệu</a></li>
-            <li><a href="">Khuyến mãi</a></li>
-            <li><a href="">Tin tức</a></li>
-            <li><a href="">Liên hệ</a></li> 
-            </ul>
-        </div>
+
     </div>
-  
-    <!-- Phần body -->
-    <div class="main">
+
+    <!-- Thanh điều hướng -->
+    <div class="navigation">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./main.html">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="./listProduct.html">Tất cả sản phẩm</a></li>
+                <li class="breadcrumb-item"><a href="#">Bánh kem</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Bánh kem Cat Cake</li>
+            </ol>
+          </nav>
+    </div>
+
+    <!-- Chi tiết sản phẩm -->
+    <div class="container_main">
         <div class="body">
-            <div class="navigation">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                      <li class="breadcrumb-item" aria-current="page"><a href="#">Tất cả sản phẩm</a></li>
-                      <li class="breadcrumb-item" ><a href="#">Bánh kem</a></li>
-                      <li class="breadcrumb-item" ><a href="#">Bánh kem Cat Cake</a></li>
-                    </ol>
-                  </nav>
-            </div>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-4 left-container">
@@ -215,7 +145,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                                                  <a href="./cart.html" target="_blank">
+                                                  <a href="./cart.html">
                                                     <button type="button" class="btn btn-primary input">Đi đến giỏ hàng</button>
                                                 </a>
                                                 </div>
@@ -225,7 +155,7 @@
                             </div>
     
                             <div class="col">
-                                <a href="./cart.html" target="_blank">
+                                <a href="./cart.html">
                                     <button type="button" class="btn btn-primary input">
                                         Mua ngay
                                     </button>
@@ -236,22 +166,40 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="review">
-                <p class="sub_title">Đánh giá sản phẩm</p>
-                <div class="comments">
-                    <div class="comments-left">
-                        <div><img src="../assets/img/CUSTOMERS/ThuyTien.jpg" alt=""></div>
-                        <div>Thùy Tiên</div>
-                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <!-- Review -->
+
+        <div class="review">
+            <h4 class="sub_title left">Đánh giá sản phẩm</h4>
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col-1">
+                    <img src="../assets/img/thanhthuy.jpg" alt="">
+                  </div>
+                  <div class="col-11">
+                    <div class="col left" style="display:flex;font-weight: bold;">Thanh Thuỳ
+                        <div><span class="star star1"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span></div>
                     </div>
-                    <div class="comments-right">
-                        “Shop ngon lắm ạ. Chất lượng rất tốt, shop tư vấn nhiệt tình. Bánh có thể để dùng lâu. Em dùng từ đầu nhiệm kỳ đến hết nhiệm kỳ vẫn rất okela ạ. Anh Nawat cũng rất mê ạ, hãy ăn bánh của shop để mãi xinh như tôi!”
-                    </div>
+                    <div class="col left">Bài viết hữu ích quá Memory ơi. Trào lưu bánh này thật sự thú vị. Còn có nhiều chiếc bánh ngọt độc lạ hơn nhiêu luôn đó ạ. Hihi</div>
+                  </div>
                 </div>
             </div>
-         
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col-1">
+                    <img src="../assets/img/thuyenthuyen.jpg" alt="">
+                  </div>
+                  <div class="col-11">
+                    <div class="col left" style="display:flex;font-weight: bold;">Thuyên Thuyên
+                        <div><span class="star star1"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span></div>
+                    </div>
+                    <div class="col left">Trên đời này cái quái gì cũng xảy ra được luôn. Con người luôn không ngừng sáng tạo, phát minh những cái rất mới lạ. Cảm ơn shop đã mang đến bài viết vừa hài hước vừa bổ ích. Thôi em làm BA tiếp đây shop ơi.</div>
+                  </div>
+                </div>
+            </div>         
         </div>
+
     </div>
-    <!-- Phần footer -->
-  </body>
+</body>
+</html>

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+:root {
+    --primary_color: #E75C6B;
+    --color_button: #F38A95;
+    --background-color: #F9F2F2;
+    --button: #F38A95;
+    --button_hover: #81C6E8;
+    --height : 35px;
+}
+.main {
+    max-width: 1000px;
+}
+
+.container {
+    border: 1px solid var(--primary_color);
+    border-radius: 20px;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.status {
+    font-size: 19px;
+}
+
+.row2, .row3 {
+    margin: 10px;
+}
+.star{
+    color: yellow;
+}
+
+.input {
+    background-color: var(--primary_color);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+
+}
+
+.input:hover {
+    background-color: var(--button_hover);
+    color: black;
+}
+
+.row4 {
+    display: flex;
+    justify-content: space-between;
+    height: var(--height);
+}
+.left {
+    line-height: var(--height);
+}
+.right a {
+    text-decoration: none;
+}
+
+.review-item {
+    margin-top: 10px;
+}
+
+.star1 {
+    font-size: 20px;
+    margin-left: 5px;
+}
