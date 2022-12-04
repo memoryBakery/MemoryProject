@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        .main {
+            max-width: 1000px;
+        }
+        input[type="file"]{
+            color: transparent;
+            font-size: 18px;
+        }
+        img {
+            width:60%; 
+            height: 60%;
+            border-radius: 100px;
+        }
+        #formFile {
+            margin: 5px 0 0 27%;
+        }
+
+        .main {
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+          font-weight: bold;
+        }
+        
+        p {
+          color: gray;
+          font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">
+          <h1 class="title">Hồ sơ của tôi</h1>
+          <div class="row">
+            <div class="col-9">
+                <div class="content1">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-3 col-form-label">Tên đăng nhập</label>
+                        <div class="col-sm-9">
+                          <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="linh2002">
+                        </div>
+                        </div>
+                        <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">Họ và tên</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="inputFullName">
+                        </div>
+                        </div>
+                        <div class="mb-3 row">
+                      <label for="inputPassword" class="col-sm-3 col-form-label">Email</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputEmail">
+                      </div>
+                        </div>
+                </div>
+                <div class="content1">
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">Số điện thoại</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="inputPhone">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">Giới tính</label>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" checked name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Nam</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Nữ</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Khác</label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="inputPassword" class="col-sm-3 col-form-label">Ngày sinh</label>
+                      <div class="col-sm-9">
+                        <input type="date" class="form-control" id="inputEmail">
+                      </div>
+                    </div>
+                </div>
+                    
+            </div>
+
+            <div class="col-3">
+                <div class="text-center">
+                    <img src="../assets/img/CUSTOMERS/QuangLinh.jpg" class="rounded" alt="...">
+                </div>
+                <div class="row">
+                    <input type="file" name="app_cvupload" class="fullwidth input rqd" id="formFile">
+                </div>
+                <p class="text-center">Dung lượng file tối đa 3 MB</p>
+                <p class="text-center">Định dạng: .JPEG, .PNG</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
