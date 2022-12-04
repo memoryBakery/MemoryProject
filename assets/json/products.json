@@ -457,20 +457,5 @@
         ],
         "vote":"45",
         "category":"Bánh mỳ"
-    },
-    {
-        "id": 31 ,
-        "name":"Tart dừa",
-        "newPrice":"24.000",
-        "oldPrice":"26.000",
-        "description":"Bánh tart dừa thơm ngon, lạ miệng với lớp vỏ xốp ngon, lớp nhân dừa vừa thơm béo, vừa ngọt ngào.  Thành phần:  Bơ lạt, Đường, Trứng gà, Dừa nạo sấy khô",
-        "img":[
-	        "120.png",
-            "121.png",
-            "122.png",
-	        "123.png"
-        ],
-        "vote":"41",
-        "category":"Bánh mỳ"
     }
 ]

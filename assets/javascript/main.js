@@ -92,7 +92,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-const button = document.querySelector('.btnn');
+const button = document.querySelectorAll('.btnn');
 
 button.addEventListener('click',changeColor);
 

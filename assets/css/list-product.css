@@ -19,11 +19,11 @@
     font-size: 20px;
 }
 .list-product ul a{
-    color: #E75C6B;
+    color: var(--primary_color);
 }
 .list-product ul a:hover>li{
     padding: 5px 25px;
-    color: #a11725;
+    color: var(--hover_color);
     transform: scale(1.2);
 }
 .list-product .title{
@@ -40,8 +40,10 @@
 .list-product .fa-solid {
     color: rgb(240, 240, 16);
 }
-
-
+.star-product:hover{
+    transform: scale(1.1);
+    color:currentColor;
+}
 
 #products{
     margin-left: 50px;
@@ -97,4 +99,17 @@
     text-align: right;
     color: rgb(143, 143, 133);
     font-weight: 500;
+}
+
+
+.sotrang{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-left: 400px;
+}
+.sotrang a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0px 20px;
 }

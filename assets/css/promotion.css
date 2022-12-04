@@ -14,12 +14,14 @@
     background-color: #f0b8be;
     border: 2px solid rgb(249, 247, 247);
     margin: 20px;
+    width: 451px;
 }
 .voucher{
     display: inline-flex;
     border: 2px solid rgb(248, 247, 247);
     margin: 40px;
     background-color: white;
+    
 }
 .voucher .logo{
     margin: auto;
