@@ -27,6 +27,8 @@ var swiper = new Swiper(".mySwiper", {
     .then(function(data){
         let html="";
         for (let p of data){
+          for(i=0;i<9;i++){
+            if(p.id==i+1){
             html+="<div class='product'>";
             html+="<div class='img-product'>";
             html+="<a href='./productDetail.html'><img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'></a>";
@@ -39,9 +41,41 @@ var swiper = new Swiper(".mySwiper", {
             html+="<div class='vote'><span class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i></span> "+ p.vote  ;              
             html+= "</div>";
             html+= "</div>";
-          }
+          }}}
         
         document.getElementById("products").innerHTML=html;
+
+        const priceFrom=document.getElementById("price-from")
+        const priceTo=document.getElementById("price-to")
+        const search=document.querySelectorAll(".price-search")
+        let text=""
+        search.onclick=function(){
+        for(let p of data){
+            if(p.newPrice=='80.000'){
+              text+="<div class='product'>";
+              text+="<div class='img-product'>";
+              text+="<a href='./productDetail.html'><img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'></a>";
+              text+="<div class='cart-love'>";
+              text+="<a href=''><i class='fa-solid fa-cart-shopping'></i> </a><a href=''><i class='fa-solid fa-heart'></i></a>"
+              text+="</div>"
+              text+="</div>"
+              text+="<p class='name'>"+ p.name+"</p>";
+              text+="<p class='price'><span class='old-price'>"+p.oldPrice+" VNĐ "+"</span><span class='new-price'>"+p.newPrice+" VNĐ"+"</span></p>";
+              text+="<div class='vote'><span class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i></span> "+ p.vote  ;              
+              text+= "</div>";
+              text+= "</div>";
+              document.getElementById("products").innerHTML=text;
+          }
+        }}
+        
+        
+
+
+
+
+
+
+
         const typeCategorys = document.querySelectorAll(".type_category");
             for(let i=0; i<typeCategorys.length;i++){
                 typeCategorys[i].onclick=function(){
@@ -80,7 +114,7 @@ var swiper = new Swiper(".mySwiper", {
                           document.getElementById("products").innerHTML=html;
                         }}
                        
-                        // return product1;  
+                        
                 }
     }
   })
@@ -91,11 +125,46 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+// tìm kiếm sản phẩm
+function submitForm(event){ 
+  event.preventDefault();
+  var ele = document.getElementById("inputvalue");                
+
+  if (ele.value =='bánh kem'){
+      window.location.replace("./productBanhkem.html")
+  }
+  else if (ele.value =="bánh quy"){
+  window.location.replace("./productBanhquy.html")
+  }
+  else if (ele.value +""==="bánh donuts"){
+  window.location.replace("./productDonuts.html")
+  }
+  else if (ele.value +""==="bánh mì"){
+  window.location.replace("./productBanhmi.html")
+  }
+  else if (ele.value +""==="cupcakes"){
+  window.location.replace("./productCupcakes.html")
+  }
+  else if (ele.value +""==="bánh donuts"){
+  window.location.replace("./productDonuts.html")
+  }
+  else{
+  window.location.replace("./noProduct.html")
+  }
+  }
+
+
+
+
+
+
+
+
+
+
 
 const button = document.querySelectorAll('.btnn');
-
 button.addEventListener('click',changeColor);
-
 function changeColor(){
     const arrayColor = ['green'];
     btnn.style.color = arrayColor;

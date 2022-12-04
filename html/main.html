@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <script>
+        let search= document.querySelectorAll(".ti-search")
+        search.onclick = submitForm(event)
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,10 +29,12 @@
                     <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
                </div>
                <div class="btn-search" >
-                    <input 
-                        type="text" class="search"> 
+                <form class="inputSearch" onsubmit="submitForm(event)">
+                    <input
+                        type="text" class="search" id="inputvalue"> 
                     </input>
-                    <i class="ti-search"></i>
+                    <button style="border:0; padding:0"><i class="ti-search"></i></button>
+                </form>
                </div> 
                 <div class="right-header-top">
                     <div class="account">
@@ -78,18 +84,17 @@
                             </a>
                         
                             <ul class="sub-nav">
-                                <li class="type_category"><a href="./listProduct.html#"> Bánh kem</a></li>
-                                <li class="type_category"><a href=""> Cupcakes</a></li>
-                                <li class="type_category"><a href=""> Bánh quy</a></li>
-                                <li class="type_category"><a href=""> Donuts</a></li>
-                                <li class="type_category"><a href=""> Bánh mì</a></li>
+                                <li class="type_category"><a href="./productBanhkem.html"> Bánh kem</a></li>
+                                <li class="type_category"><a href="./productCupcakes.html"> Cupcakes</a></li>
+                                <li class="type_category"><a href="./productBanhquy.html"> Bánh quy</a></li>
+                                <li class="type_category"><a href="./productDonuts.html"> Donuts</a></li>
+                                <li class="type_category"><a href="./productBanhmi.html"> Bánh mì</a></li>
                             </ul>
                     </li>
                     <li class="main btnn"><a href="../html/main.html"><span> Trang chủ</span></a></li>
                     <li class="story btnn"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
                     <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
                     <li class="blog"><a href="./blog.html">Tin tức</a></li>
-                    <li class="contact"><a href="./"><span> Liên hệ</span></a></li> 
                     <li class="contact"><a href="./contact.html">Liên hệ</a></li> 
                 </ul>
             </div>
@@ -126,11 +131,11 @@
             </div>   
         <!-- Category -->
         <div class="category">
-            <a href="" class="type_category"><img src="../assets/img/Category/Bánh sinh nhật.png" alt=""><span>Bánh kem</span></a>
-            <a href="" class="type_category"><img src="../assets/img/Category/Cupcake.png" alt=""><span>Cupcakes</span></a>
-            <a href="" class="type_category"><img src="../assets/img/Category/Bánh quy.png" alt=""><span>Bánh quy</span></a>
-            <a href="" class="type_category"><img src="../assets/img/Category/Donut.png" alt=""><span>Donuts</span></a>
-            <a href="" class="type_category"><img src="../assets/img/Category/Phụ kiện.png" alt=""><span>Bánh mì</span></a>
+            <a href="./productBanhkem.html" class="type_category"><img src="../assets/img/Category/Bánh sinh nhật.png" alt=""><span>Bánh kem</span></a>
+            <a href="./productCupcakes.html" class="type_category"><img src="../assets/img/Category/Cupcake.png" alt=""><span>Cupcakes</span></a>
+            <a href="./productBanhquy.html" class="type_category"><img src="../assets/img/Category/Bánh quy.png" alt=""><span>Bánh quy</span></a>
+            <a href="./productDonuts.html" class="type_category"><img src="../assets/img/Category/Donut.png" alt=""><span>Donuts</span></a>
+            <a href="./productBanhmi.html" class="type_category"><img src="../assets/img/Category/Phụ kiện.png" alt=""><span>Bánh mì</span></a>
         </div>
 
         <!-- New Product -->  
@@ -355,7 +360,7 @@
             </div>
             <div class="product final">
                 <div class="img-product">
-                    <a href=""> <img src="../assets/img/ẢNH SẢN PHẨM KHUYẾN MÃI/9.png" alt="">
+                    <a href="./productDetail.html"> <img src="../assets/img/ẢNH SẢN PHẨM KHUYẾN MÃI/9.png" alt="">
 </a>                     <div class="cart-love">
                         <a href="./productDetail.html"> <i class="fa-solid fa-cart-shopping"></i></a> <a href=""> <i class="fa-solid fa-heart"></i></a>
                     </div>

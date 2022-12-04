@@ -12,12 +12,25 @@
     <link rel="stylesheet" href="../assets/css/styte.css">
     <link rel="stylesheet" href="../assets/css/list-product.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-  
+    <style>
+        .content{
+            margin-top: 240px;
+            text-align: center;
+            
+        }
+        .content i{
+            font-size: 200px;
+        }
+        .content p{
+            font-size: 25px;
+        }
+    </style>
     <script>
         window.onload=function(){
                     LoadJson()
                 }
     </script>
+
 </head>
 <body>
     <div class="container">
@@ -97,50 +110,11 @@
             </div>
         </div>
         <!-- Body -->
-        <div class="body">
-            <div class="list-product">
-                <p class="title">Danh mục sản phẩm</p>
-                <hr>
-                <ul>
-                    <a href="./listProduct.html" ><li>Tất cả</li></a>
-                    <a href="#" class="type_category"> <li>Bánh kem</li></a>
-                    <a href="#" class="type_category"> <li>Bánh quy</li></a>
-                    <a href="#" class="type_category"> <li>Cupcakes</li></a>
-                    <a href="#" class="type_category"> <li>Donuts</li></a>
-                    <a href="#" class="type_category"> <li>Bánh mì</li></a>
-                </ul>
-                <p class="title">Khoảng giá</p>
-                <hr>
-                <form>
-                <p>Từ</p>
-                <input id="price-from" type="text">
-                <p> Đến</p>
-                <input id="price-to" type="text">
-                <button class="price-search">Tìm kiếm</button>
-                </form>
-                <p class="title">Đánh giá</p>
-                <hr>
-                <a class="star-product" href="#"> <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></a>
-                <a class="star-product" href="#"> <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <span>trở lên</span></div> </a>
-                <a class="star-product" href="#"> <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> <span>trở lên</span></div></a>
-                <a class="star-product" href="#"> <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> <span>trở lên</span></div></a>
-                <a class="star-product" href="#"> <div><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> <span>trở lên</span></div></a>
-            </div>
-            <div id="products">
-                
-            </div>
-            
-        </div>  
-        <div class="sotrang">
-            <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#"> <i class="fa-solid fa-chevron-right"></i></a>
-        </div>  
-
+        <div class="content">
+            <i class="fa-regular fa-face-frown"></i>
+            <p style="font-weight:bold">Không tìm thấy kết quả</p>
+            <p>Hãy thử sử dụng các từ khóa khác</p>
+        </div>
     </div>
 </body>
 <script src="../assets/javascript/main.js"></script>
