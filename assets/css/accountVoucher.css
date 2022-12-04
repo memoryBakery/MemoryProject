@@ -1,0 +1,58 @@
+.vouchers {
+    margin-top: 0 !important;
+    max-width: 1000px;
+    height: 50px;
+}
+
+.vouchers .title{
+    display: flex;
+    justify-content: space-around;
+}
+.background-voucher{
+    background-color: #f0b8be;
+    border: 2px solid rgb(249, 247, 247);
+    margin: 20px;
+}
+.vouchers .title input{
+    width: 300px;
+    height: 57px;
+    padding: 0 60px 0 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1b9b9;
+}
+.voucher{
+    display: inline-flex;
+    border: 2px solid rgb(248, 247, 247);
+    margin: 40px;
+    background-color: white;
+}
+.voucher .logo{
+    margin: auto;
+    border-right: 2px dashed rgb(126, 121, 121);
+    padding: 43px 10px;
+}
+.discount{
+    margin-left: 10px;
+    padding: 10px;
+}
+.discount input{
+    background-color:#E75C6B   ;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;  
+}
+hr{
+    margin: 10px 0;  
+}
+.btn-input{
+    text-align: right;
+}
+.voucher .logo img{
+    width: 140px;
+}
+
+.list-voucher{
+    display: flex;
+    flex-wrap: wrap;
+}
