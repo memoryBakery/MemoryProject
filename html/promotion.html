@@ -22,10 +22,12 @@
                     <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
                </div>
                <div class="btn-search" >
-                    <input 
-                        type="text" class="search"> 
+                <form onsubmit="submit(event)">
+                    <input
+                        type="text" class="search" id="inputvalue"> 
                     </input>
                     <i class="ti-search"></i>
+                <!-- </form>  -->
                </div> 
                 <div class="right-header-top">
                     <div class="account">
@@ -92,7 +94,7 @@
         </div>
         <div class="body">
             <div class="banner">
-                <img src="./assets/img/BANNER/1.png" alt="">
+                <img src="../assets/img/BANNER/1.png" alt="">
             </div>
             <div class="shortscut">
                 <a href=""><img src="../assets/img/PROMOTION/1.png" alt=""><span>Miễn phí ship</span></a>
@@ -284,4 +286,19 @@
         </div>
     </div>
 </body>
+<script>
+    function submit(event){ 
+                        event.preventDefault();
+                        var ele = document.getElementById("inputvalue");                
+               
+                        if (ele.value+""==='bánh kem'){
+                            window.location.replace("../listProduct.html")
+                        }
+                        else if (ele.value +""==="bánh quy"){
+                        window.location.replace("listProduct.html")
+                        }
+                        else if (ele.value +""==="bánh donuts"){
+                        window.location.replace("listProduct.html")
+                        }}
+</script>
 </html>

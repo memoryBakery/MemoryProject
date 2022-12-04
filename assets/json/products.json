@@ -2,8 +2,8 @@
     {
         "id":1,
         "name":"Bánh Mousse Chocolate",
-        "newPrice":"80.000 VNĐ",
-        "oldPrice":"90.000 VNĐ",
+        "newPrice":"80.000",
+        "oldPrice":"90.000",
         "description":"Thành phần: Mousse socola, 2 lớp bánh vani, sốt socola phủ mặt bánh, trang trí socola và bông đường bi đồng. ",
         "img":[
 	        "73.png",
@@ -17,7 +17,7 @@
     {
         "id":2,
         "name":"Bánh Kem Cat Cake",
-        "newPrice":"200.000 VNĐ",
+        "newPrice":"200.000",
         "oldPrice":"250.000",
         "description":"Bánh kem tươi Cat Cake Fresh Garden có cốt bánh 7 lớp vani, nhân kem tươi, trang trí socola và hoa kem tươi hình con mèo ngộ nghĩnh ",
         "img":[
