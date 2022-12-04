@@ -1,8 +1,8 @@
 
 :root {
     --primary_color: #E75C6B;
-    --sub_color: #FFEAE9;
-    --hover : #6c584c;
+    --color_button: #F38A95;
+    --background-color: #F9F2F2;
     --button: #F38A95;
     --button_hover: #81C6E8;
 }
@@ -99,35 +99,41 @@ input:focus, select:focus {
 .default {
     margin-left: 30px;
 }
-
 .input {
+    background-color: var(--primary_color);
+    color: white;
     border: none;
     outline: none;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    height: 30px;
     text-align: center;
     vertical-align: middle;
-    margin-top: 10px;
-    font-size: 15px;
-}
-.input:hover {
-    background-color: var(--button_hover);
-}
-.back {
-    width: 90px;
-    background-color: var(--button);
+    margin: 15px;
+    font-size: 22px;
+
 }
 
-.confirm {
-    background-color: var(--button);
-    color: white;
-    width: 150px;
+.input:hover {
+    background-color: var(--button_hover);
+    color: black;
 }
-    
+.remove-all {
+    width: 100px;
+    margin-left: 20px;
+}
 .button {
+    display: flex;
+    justify-content: right;
+}
+
+.button_left {
+    flex:1;
+}
+.button_right {
+    flex:1;
     text-align: right;
+    margin-right: 10px;
 }
 
 .button a {
