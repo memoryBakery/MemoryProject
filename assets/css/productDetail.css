@@ -1,6 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 :root {
     --primary_color: #E75C6B;
-    --sub_color: #FFEAE9;
+    --color_button: #F38A95;
+    --background-color: #F9F2F2;
+    --button: #F38A95;
+    --button_hover: #81C6E8;
+}
+/* Thanh điều hướng */
+.navigation {
+    margin-left: 0 !important;
+    width: auto;
+    height: 35px;
+    background-color: var(--background-color);
+    margin: 15px 0 15px 0;
+}
+
+ol {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    line-height: 35px;
+    margin-left: 10px;
+}
+ol li {
+    margin-left: 10px;
+    font-size: 14px ;
 }
 
 .line {
@@ -69,21 +93,16 @@
 :root {
     --height: 35px;
 }
-.new-price {
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 0;
-    height: var(--height);
-    line-height: var(--height);
-}
 
 .old-price{
-    font-size: 23px;
-    padding-right: 0;
-    width: 180px;
-    text-align: center;
-    height: var(--height);
-    line-height: var(--height);
+    color: #887e7d;
+    text-decoration: line-through;
+    font-size: 22px;
+}
+.new-price{
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .sub_title {
@@ -91,7 +110,9 @@
     font-size: 22px;
 }
 .description {
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
 }
 .quantity {
     display: flex;
@@ -138,14 +159,18 @@
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    height: 40px;
     text-align: center;
     vertical-align: middle;
     margin: 15px;
     font-size: 22px;
 
 }
-.back {
+
+.input:hover {
+    background-color: var(--button_hover);
+    color: black;
+}
+.add {
     width: 250px;
 }
 
@@ -155,4 +180,44 @@
 
 .buy_now {
     width: 200px;
+}
+
+.star{
+    color: yellow;
+ 
+}
+
+/* comments */
+.comments{
+    display: flex;
+    border: 2px solid #E75C6B;
+    border-radius: 30px;
+    margin: 50px 350px;
+    padding: 20px 50px;
+    background-color: #ffeae9;
+    align-items: center;
+
+}
+.comments img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.comments-left .star{
+    color: yellow;
+    text-align: center;
+}
+.comments .star i{
+    padding: 5px 3px;
+}
+.comments-left div{
+    text-align: center;
+    font-weight: bold;
+}
+
+.comments .comments-right{
+    font-style: italic;
+    margin-left:20px ;
+    font-size: 20px;
+    
 }
