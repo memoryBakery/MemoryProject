@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div class="body">
+        <div class="body-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0731212783217!2d106.78039021744384!3d10.882043100000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d89aad780e49%3A0x54542761d4c22175!2zS8O9IHTDumMgeMOhIEtodSBCIMSQ4bqhaSBo4buNYyBRdeG7kWMgZ2lhIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1669530877466!5m2!1svi!2s" width="618" height="297" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Liên hệ với chúng tôi</h2>
+        <p><iconify-icon icon="mdi:map-marker"style="color: #e75c6b;""></iconify-icon>Ký túc xá khu B, Linh Trung, Thủ Đức, HCM</p>
+        <p><iconify-icon icon="material-symbols:phone-enabled"style="color: #e75c6b;"></iconify-icon>024 3856 3856</p>
+        <p><iconify-icon icon="mdi:email"></iconify-icon style="color: #e75c6b;">congtybanhXXX@gmail.com</p>
+        <p> <iconify-icon icon="ic:twotone-store-mall-directory" style="color: #e75c6b;"></iconify-icon>Cửa hàng bánh Memory</p>
+        <p>Mã số doanh nghiệp: 0103833363</p>
+        <p>Cấp ngày: 14/05/2021</p>
+        </div>
+        <div class="body-right">
+            <h2>Chat với chúng tôi</h2>
+        <form action="" class="form">
+            <div class="form__row">
+                <label class="form__label" for="name"> Họ và tên </label>
+                <br>
+                <input
+                  type="text"
+                  class="form__input"
+                  name="name"
+                  id="name"
+                  placeholder="Họ và tên của bạn" 
+                />
+            </div>
+            <div class="form__row">
+                    <label class="form__label" for="email"> Địa chỉ Email </label>
+                    <br>
+                    <input
+                      type="text"
+                      class="form__input"
+                      name="email"
+                      id="email"
+                      placeholder="Địa chỉ Email" 
+                    />
+            </div>
+            <div class="form__row">
+                    <label class="form__label" for="message"> Tin nhắn </label>
+                    <br>
+                    <textarea class="form__input" 
+                    type="text" 
+                    name="message" 
+                    id="message" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Tin nhắn">
+                </textarea>
+            </div>
+            <div class="Button">
+                    <input type="button" id="submit" value="Gửi" />
+                    <script>
+                        var button = document.getElementById("submit");
+                        button.onclick = function () {
+                        alert("Bạn đã gửi tin nhắn cho chúng tôi thành công");
+                        };
+                    </script>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
