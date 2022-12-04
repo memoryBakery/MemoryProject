@@ -1,9 +1,9 @@
-html {
-    font-size: 62.5%;
-}
+
 :root {
     --primary_color: #E75C6B;
     --sub_color: #FFEAE9;
+    --hover:#6c584c;
+    --button: #F38A95;
 }
 
 .main-sub {
@@ -13,14 +13,6 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     max-width: 1000px;
-}
-
-.main-title-sub {
-    width: 100%;
-    font-size: 2.5rem;
-    color: var(--primary_color);
-    font-weight: bold;
-    padding: 10px;
 }
 
 .line {
@@ -106,19 +98,19 @@ input[type=radio] {
     height: 30px;
     text-align: center;
     vertical-align: middle;
-    margin-top: 10px;
-    font-size: 1.6rem;
-    width: auto;
+    line-height: 30px;
 }
 
 .back {
-    width: 80px;
+    width: 90px;
     background-color: var(--sub_color);
 }
 
 .confirm {
+    width: 100px;
     background-color: var(--primary_color);
     color: white;
+    
 }
     
 .button {
