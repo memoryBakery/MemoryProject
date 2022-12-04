@@ -59,7 +59,7 @@
 
 
 
-    .product{
+    #products .product{
         background-color: #f0d9d8;
         text-align: center;
         border-radius: 10px;
@@ -69,26 +69,26 @@
         height: 300px;
         width: 210px;  
     }
-    .product > *{
+    #products .product > *{
         padding: 5px;
     }
-    .product p{
+    #products .product p{
         margin-bottom: 0;
     }
-    .product img{
+    #products .product img{
         width: 180px;
         padding: 20px;
         border-radius: 40px;
     }
-    .product .img-product{
+    #products .product .img-product{
         position: relative;
     }
-    .product .name{
+    #products .product .name{
         font-weight: bold;
         text-transform:uppercase;
         font-size: 15px;
     }
-    .product .cart-love{
+    #products .product .cart-love{
         background-color: #f38a95;
         width: 40%;
         position: absolute;
@@ -97,7 +97,7 @@
         border-radius: 10px;
         font-size: 25px;
     }
-    .product .star{
+    #products .product .star{
         color: yellow;
         font-size: 15px;
     }
