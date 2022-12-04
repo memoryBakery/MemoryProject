@@ -1,10 +1,12 @@
 
 :root {
     --primary_color: #E75C6B;
-    --sub_color: #FFEAE9;
-    --hover:#6c584c;
+    --color_button: #F38A95;
+    --background-color: #F9F2F2;
     --button: #F38A95;
+    --button_hover: #81C6E8;
 }
+
 
 .main-sub {
     padding: 0;
@@ -74,8 +76,14 @@ input[type=radio] {
 .add img {
     width: 18px;
     height: 18px;
+    margin-top: 3px;
+    margin-left: 3px;
 }
-
+.add:hover {
+    color: black;
+    background-color: var(--button_hover);
+    transition:cubic-bezier(0.23, 1, 0.320, 1)
+}
 .add button {
     border: none;
     background: none;
@@ -90,31 +98,39 @@ input[type=radio] {
     background: fixed;
 }
 .input {
+    background-color: var(--primary_color);
+    color: white;
     border: none;
     outline: none;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    height: 30px;
     text-align: center;
     vertical-align: middle;
-    line-height: 30px;
+    margin: 15px;
+    font-size: 22px;
+
 }
 
-.back {
-    width: 90px;
-    background-color: var(--sub_color);
+.input:hover {
+    background-color: var(--button_hover);
+    color: black;
 }
-
-.confirm {
+.remove-all {
     width: 100px;
-    background-color: var(--primary_color);
-    color: white;
-    
+    margin-left: 20px;
 }
-    
 .button {
+    display: flex;
+}
+
+.button_left {
+    flex:1;
+}
+.button_right {
+    flex:1;
     text-align: right;
+    margin-right: 10px;
 }
 
 .button a {

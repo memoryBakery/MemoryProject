@@ -1,14 +1,17 @@
 :root {
     --primary_color: #E75C6B;
-    --background-color: #F9F2F2
+    --color_button: #F38A95;
+    --background-color: #F9F2F2;
+    --button: #F38A95;
+    --button_hover: #81C6E8;
 }
 .body {
-    padding: 0;
+
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     display: flex;
-    margin: 0 !important;
+    margin-top: 0 !important;
 }
 .main {
     margin: auto;
@@ -229,33 +232,34 @@ ol li {
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    height: 40px;
     text-align: center;
     vertical-align: middle;
     margin: 15px;
-    font-size: 25px;
+    font-size: 22px;
 
 }
-.back {
-    width: auto;
-}
 
+.input:hover {
+    background-color: var(--button_hover);
+    color: black;
+}
+.remove-all {
+    width: 100px;
+    margin-left: 20px;
+}
 .button {
     display: flex;
 }
 
 .button_left {
     flex:1;
-    margin-left: 20px;
 }
 .button_right {
     flex:1;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 10px;
 }
-.order {
-    width: auto;
-}
+
 
 /* Modal */
 .modal{
