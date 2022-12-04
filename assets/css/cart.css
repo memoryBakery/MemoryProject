@@ -202,7 +202,8 @@ hr {
 }
 
 #apply:hover {
-    background-color: gray;
+    background-color: var(--button_hover);
+    color: black;
 }
 
 #apply:disabled {

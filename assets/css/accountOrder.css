@@ -37,32 +37,14 @@
     font-weight: bold;
 }
 
-#all a {
-    text-decoration: underline ;
-    font-weight: bold;
-    color: var(--primary_color);
-}
-
 #waitting.activate a  {
-    text-decoration: underline !important; 
-    font-weight: bold !important;
-    color: var(--primary_color) !important;
-}
-
-#all.hideActivate a {
-    text-decoration: none !important;
-    font-weight: normal !important;
-    color: black !important;
-}
-
-#waitting.hideActivate a  {
-    text-decoration: underline !important; 
-    font-weight: bold !important;
-    color: var(--primary_color) !important;
+    text-decoration: underline  ;
+    font-weight: bold ;
+    color: var(--primary_color) ;
 }
 
 #all.activate a {
-    text-decoration: none !important;
-    font-weight: normal !important;
-    color: black !important;
+    text-decoration: underline  ;
+    font-weight: bold ;
+    color: var(--primary_color) ;
 }
