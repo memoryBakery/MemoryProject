@@ -1,3 +1,4 @@
+/* Khai báo biến màu */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 :root {
     --primary_color: #E75C6B;
@@ -6,13 +7,14 @@
     --button: #F38A95;
     --button_hover: #81C6E8;
 }
+
 /* Thanh điều hướng */
 .navigation {
     margin-left: 0 !important;
     width: auto;
     height: 35px;
     background-color: var(--background-color);
-    margin: 15px 0 15px 0;
+    margin: 140px 0 0px 0;   
 }
 
 ol {
@@ -27,24 +29,25 @@ ol li {
     font-size: 14px ;
 }
 
-.line {
-    background-color: var(--primary_color);
-    height: 1px;
-    margin: 5px 0 5px 0;
+/*  */
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+/*  */
+
+.container_main {
+    display: flex;
+    flex-direction: column;
 }
 
-.main {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    display: flex;
-}
-/* Cho vô giữa */
 .body {
-    margin: auto;
+    margin: auto !important ;
+    margin-top: 0 !important;
 }
+/* Chi tiết sản phẩm */
 
 /* CSS cho tất cả IMG */
 .left-container img {
@@ -76,13 +79,7 @@ ol li {
     /* Khi hover vô thì có độ mờ mờ */
 }
 
-.left {
-    text-align: left;
-}
-.right {
-    text-align: right;
-}
-
+/* Right */
 /* Mô tả */
 .title {
     text-align: left;
@@ -187,37 +184,22 @@ ol li {
  
 }
 
-/* comments */
-.comments{
-    display: flex;
-    border: 2px solid #E75C6B;
-    border-radius: 30px;
-    margin: 50px 350px;
-    padding: 20px 50px;
-    background-color: #ffeae9;
-    align-items: center;
+
+
+/* Bình luận */
+
+.review {
+    margin: auto !important;
 
 }
-.comments img{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-}
-.comments-left .star{
-    color: yellow;
-    text-align: center;
-}
-.comments .star i{
-    padding: 5px 3px;
-}
-.comments-left div{
-    text-align: center;
-    font-weight: bold;
+
+.star1 {
+    margin-left: 10px;
 }
 
-.comments .comments-right{
-    font-style: italic;
-    margin-left:20px ;
-    font-size: 20px;
-    
+.col-1 img {
+    width:80px;
+    height:80px;
+    border-radius: 50px;
 }
+
