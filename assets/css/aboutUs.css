@@ -6,6 +6,16 @@ h1, h2, h3{
     text-decoration: none;
     color: #E75C6B;
 }
+p {
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+.intro-center p {
+    text-align: center;
+}
+.co2 p {
+    text-align: center;
+}
 .center{
 display: flex;
 align-items: center;

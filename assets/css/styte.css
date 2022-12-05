@@ -391,7 +391,7 @@ section{
     display: flex;
     justify-content: space-evenly;
 }
-.continute{
+#continute{
     /* background-color: var(--button_color); */
     width: max-content;
     margin: auto;
@@ -399,11 +399,9 @@ section{
     /* border-radius: 20px; */
     padding: 0 20px;
     margin-top: 30px;
+    
 }
-#continute:hover{
-    background-color: var(--hover_color);
-    border: 2px solid white;
-}
+
 #continute:hover a{
     color: black;
 }

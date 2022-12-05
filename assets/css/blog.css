@@ -85,6 +85,7 @@ hr{
 /* tintuc */
 .tintuc h1{
     font-size: 45px;
+    text-align: left;
 }
 .tintuc-item{
     margin: 20px 0px;
@@ -102,6 +103,12 @@ hr{
     text-decoration: none;
     color: #EB7884;
     font-size: 25px;
+}
+.tintuc-tieude a:hover {
+    color:#81C6E8 ;
+}
+.baiviet-tieude a:hover {
+    color:#81C6E8 ;
 }
 .tintuc-nguoiviet{
     font-size: 12px;
