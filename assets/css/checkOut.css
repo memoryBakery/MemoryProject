@@ -6,7 +6,6 @@
     --button_hover: #81C6E8;
 }
 .body {
-
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -56,14 +55,14 @@
     margin: 140px 0 0px 0;   
 }
 
-ol {
+.navigation ol {
     list-style: none;
     display: flex;
     padding: 0;
     line-height: 35px;
     margin-left: 10px;
 }
-ol li {
+.navigation ol li {
     margin-left: 10px;
     font-size: 14px ;
 }
