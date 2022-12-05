@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 body{
    height: 100vh;
    background: #FFEAE9 !important;
@@ -16,7 +17,7 @@ body{
   
 }
  .card{
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
    overflow: hidden;
    border: 0 !important;
    border-radius: 20px !important;
@@ -25,7 +26,7 @@ body{
  
  .img-left{
    width: 45%;
-   background: url('login.jpg') center;
+   background: url('../img/login.jpg') center;
    background-size: cover;
  }
  
@@ -35,7 +36,10 @@ body{
  
  .title{
    margin-bottom: 1rem;
-   font-weight: 500;
+   font-weight:600;
+   font-family: 'Montserrat', serif;
+
+  
  }
  
  .form-input{
@@ -88,7 +92,6 @@ body{
    color: #fff;
    font-size: 1.1rem;
    font-weight: bold;
-   letter-spacing: .1rem;
    transition: 0.5s;
    padding: 12px;
  }
