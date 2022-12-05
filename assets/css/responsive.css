@@ -28,6 +28,10 @@
         font-size: 0.8rem;
         padding: 0;
     }
+    section{
+        
+        width: 100%;
+    }
     .promotion-product .product{
 
     }
