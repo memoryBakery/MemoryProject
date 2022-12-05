@@ -1,5 +1,6 @@
 /* Khai báo biến màu */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800');
 :root {
     --primary_color: #E75C6B;
     --color_button: #F38A95;
@@ -31,7 +32,10 @@ ol li {
 
 /*  */
 .left {
-    text-align: left;
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+
 }
 .right {
     text-align: right;
@@ -83,12 +87,17 @@ ol li {
 /* Mô tả */
 .title {
     text-align: left;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary_color)
 }
 
 :root {
     --height: 35px;
+}
+.price {
+    font-family: 'Inter', sans-serif;
 }
 
 .old-price{
@@ -104,12 +113,15 @@ ol li {
 
 .sub_title {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .description {
-    font-size: 17px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.7;
     text-align: justify;
+    font-family: 'Inter', sans-serif;
 }
 .quantity {
     display: flex;
@@ -181,15 +193,18 @@ ol li {
 
 .star{
     color: yellow;
- 
+    
 }
-
+.star2 {
+    font-size: 22px;
+}
 
 
 /* Bình luận */
 
 .review {
     margin: auto !important;
+    margin-top: 10px !important;
 
 }
 
@@ -203,3 +218,8 @@ ol li {
     border-radius: 50px;
 }
 
+.review_button {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}

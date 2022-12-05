@@ -14,7 +14,79 @@
 </head>
 <body>
     <div class="header">
-
+        <div class="header-top">
+           <div class="logo">
+                <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
+           </div>
+           <div class="btn-search" >
+            <form class="inputSearch" onsubmit="submitForm(event)">
+                <input
+                    type="text" class="search" id="inputvalue"> 
+                </input>
+                <button class="ti-search"></button>
+            </form>
+           </div> 
+            <div class="right-header-top">
+                <div class="account">
+                    <a href="" >
+                        <i class="fa-solid fa-user"></i>
+                       <span>Tài khoản</span> 
+                    </a>
+                    <ul class="sub-nav">
+                        <li>
+                            <a href="./myAccount.html">
+                                <i class="fa-solid fa-user"></i> Tài khoản của tôi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./register.html">
+                                <i class="fa-solid fa-user-plus"></i> Đăng kí
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./login.html">
+                                <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
+                            </a>
+                        </li>
+                      
+                    </ul>
+                </div>
+                <div class="cart">
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Giỏ hàng</span></a>
+                </div>
+                <div class="phone">
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span> 0905792559</span>
+                    </a>
+                </div>   
+            </div>
+        </div>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li>
+                        <a href="../html/listProduct.html">
+                            <i class="fa-sharp fa-solid fa-list"></i>
+                            Danh mục sản phẩm
+                            <i class="nav-arrow-down ti-angle-down"></i>
+                        </a>
+                        <ul class="sub-nav">
+                            <li class="type_category"><a href="./productBanhkem.html"> Bánh kem</a></li>
+                            <li class="type_category"><a href="./productCupcakes.html"> Cupcakes</a></li>
+                            <li class="type_category"><a href="./productBanhquy.html"> Bánh quy</a></li>
+                            <li class="type_category"><a href="./productDonuts.html"> Donuts</a></li>
+                            <li class="type_category"><a href="./productBanhmi.html"> Bánh mì</a></li>
+                        </ul>
+                </li>
+                <li class="main btnn"><a href="../html/main.html"><span> Trang chủ</span></a></li>
+                <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
+                <li class="story btnn"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
+                <li class="blog"><a href="./blog.html">Tin tức</a></li>
+                <li class="contact"><a href="./contact.html">Liên hệ</a></li> 
+            </ul>
+        </div>
     </div>
 
     <!-- Thanh điều hướng -->
@@ -23,7 +95,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./main.html">Trang chủ</a></li>
                 <li class="breadcrumb-item"><a href="./listProduct.html">Tất cả sản phẩm</a></li>
-                <li class="breadcrumb-item"><a href="#">Bánh kem</a></li>
+                <li class="breadcrumb-item"><a href="./productBanhkem.html">Bánh kem</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Bánh kem Cat Cake</li>
             </ol>
           </nav>
@@ -96,7 +168,7 @@
                         </div>
                         <!-- Đánh sao -->
                         <div class="row" style="text-align: left;">
-                            <div><span class="star"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span><span>530</span></div> 
+                            <div><span class="star star2"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span><span>530</span></div> 
                         </div>
                   
                         <div class="row">
@@ -181,7 +253,7 @@
                     <div class="col left" style="display:flex;font-weight: bold;">Thanh Thuỳ
                         <div><span class="star star1"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span></div>
                     </div>
-                    <div class="col left">Bài viết hữu ích quá Memory ơi. Trào lưu bánh này thật sự thú vị. Còn có nhiều chiếc bánh ngọt độc lạ hơn nhiêu luôn đó ạ. Hihi</div>
+                    <div class="col left">Bánh kem ngon lắm luôn shop ơi. Ăn xong một bánh mà em lên cân quá trời luôn hihi. Mong shop ra nhiều bánh kem xinh đẹp nữa nha</div>
                   </div>
                 </div>
             </div>
@@ -194,12 +266,75 @@
                     <div class="col left" style="display:flex;font-weight: bold;">Thuyên Thuyên
                         <div><span class="star star1"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span></div>
                     </div>
-                    <div class="col left">Trên đời này cái quái gì cũng xảy ra được luôn. Con người luôn không ngừng sáng tạo, phát minh những cái rất mới lạ. Cảm ơn shop đã mang đến bài viết vừa hài hước vừa bổ ích. Thôi em làm BA tiếp đây shop ơi.</div>
+                    <div class="col left">Trên đời này cái quái gì cũng xảy ra được luôn. Bánh quá ư là tuyệt vời. Bồ em nó nghiện như nghiện em luôn. Sẽ ủng hộ shop dài dài ạ, hy vọng mỗi dịp quan trọng được Memory đồng hành</div>
                   </div>
                 </div>
-            </div>         
+            </div>    
+            <div class="input-group text-center review_button">
+                <input type="text" class="form-control" placeholder="Nhập đánh giá..." id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Gửi</button>
+              </div>     
         </div>
-
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top__left">
+                    <i class="ti-email"></i>
+                    <div class="content">
+                        <p class="title" style="font-family: 'Montserrat', sans-serif;">ĐĂNG KÍ NHẬN BẢN TIN</p>
+                        <p class="para">Bạn sẽ luôn nhận được thông tin khuyến mãi mới và đặc biệt nhất!</p>
+                    </div>
+                </div>
+                <div class="footer-top__right">
+                    <input type="text" placeholder="Nhập email của bạn tại đây!">
+                    <button type="button" class="btn btn-primary input">
+                        Gửi
+                    </button>
+    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="introduction col-5">
+                    <h5>Giới thiệu</h5>
+                    <p>Memory Bakery là một kênh bán hàng trực tuyến chuyên cung cấp các mặt hàng bánh ngọt bao gồm các loại bánh và phụ kiện dành cho các buổi tiệc. Memory Bakery hướng tới cung cấp một kênh bán hàng sinh động, đơn giản nhưng đầy đủ các tính năng cần thiết để mang tới những trải nghiệm tốt nhất cho khách hàng</p>
+                    <a href=""><img src="../assets/img/logo.jpg" alt=""></a><br>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a> 
+                </div>
+                <div class="contact col-3" >
+                    <h5>Thông tin liên hệ</h5>
+                    <span style="display:flex"><i style="margin-top: 5px;padding-right: 10px;" class="fa-solid fa-location-dot"></i> Ký túc xá khu B, Linh Trung, Thủ Đức, Hồ Chí Minh</span>
+                    <span><i class="fa-solid fa-phone"></i> 0905792559</span> <br>
+                    <span><i class="fa-solid fa-fax"></i> 1900.900.900</span><br>
+                    <span><i class="fa-sharp fa-solid fa-envelope"></i> memory@gmail.com</span>
+                    <h5>Phương thức thanh toán</h5>
+                    <div class="payment-top">
+                        <img class="payment-method" src="../assets/img/PHƯƠNG THỨC THANH TOÁN/DOB.png" alt="">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/Momo.png" alt="" class="payment-method">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/Mastercard.png" alt="" class="payment-method">
+                    </div>
+                    <div class="payment-bottom">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/JCB.png" alt="" class="payment-method">
+                        <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/VISA.png" alt="" class="payment-method">
+                    </div>
+                </div>
+                <div class="support col-2" >
+                    <h5>Hỗ trợ</h5>
+                    <a href="">Tìm kiếm</a><br>
+                    <a href="">Giới thiệu</a><br>
+                    <a href="">Chính sách thanh toán</a><br>
+                    <a href="">Chính sách bảo mật</a><br>
+                    <a href="">Liên hệ</a>
+                </div>
+                <div class="link col-2">
+                    <h5>Liên kết</h5>
+                    <a href="">Bánh kem</a><br>
+                    <a href="">Bánh quy</a><br>
+                    <a href="">Cupcakes</a><br>
+                    <a href="">Donuts</a><br>
+                    <a href="">Bánh mì</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

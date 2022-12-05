@@ -302,3 +302,9 @@ hr {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);;
 }
+
+#all, #pr1 {
+    accent-color: var(--primary_color);
+    width: 15px;
+    height: 15px;
+}
