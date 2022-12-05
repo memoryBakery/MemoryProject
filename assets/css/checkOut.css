@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800');
 :root {
     --primary_color: #E75C6B;
     --color_button: #F38A95;
@@ -6,31 +8,39 @@
     --button_hover: #81C6E8;
 }
 .body {
-
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
     display: flex;
     margin-top: 0 !important;
 }
-.main {
+.main1 {
     margin: auto;
     margin-top: 35px;
 }
 /* CSS cho title */
-.main-title {
+#main h4 {
     width: 100%;
-    font-size: 30px;
+    font-size: 40px;
     color: var(--primary_color);
     font-weight: bold;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row h4 {
+    font-weight: bold;
+    color: var(--primary_color);
+    font-size: 26px;
 }
 /* CSS cho sub title Địa chỉ, phương thức */
 .sub_title {
-    font-size: 18px;
+    font-size: 26px;
     color: var(--primary_color);
     font-weight: bold;
     text-align: left;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 .line {
     background-color: var(--primary_color);
@@ -136,10 +146,14 @@ ol li {
 }
 
 .order_title {
-    font-size: 18px;
     color: var(--primary_color);
     font-weight: bold;
     padding: 10px;
+}
+.row-header .order_title {
+    color: white !important;
+    background-color: var(--primary_color);
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Mặc định */
@@ -171,6 +185,7 @@ ol li {
 }
 .row-info {
     height: var(--height);
+    margin-bottom: 20px;
 }
 
 .info-center {
@@ -187,27 +202,13 @@ ol li {
     height: 100%;
     border-radius: 20px;
 }
-
-#input-reminder {
-    border-radius: 20px  20px  20px 20px;
-    border: 1px solid var(--hover);
-    background-color: white;
-    color: black;
-    font-style: bold;
-    text-align: center;
-    width: 85%;
+.input-reminder {
     height: 150px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 
 ::placeholder {
     word-break: break-all;
-}
-
-.left-title {
-    text-align: left;
 }
 .right-title {
     text-align: right;
@@ -223,7 +224,11 @@ ol li {
     font-weight: bold;
 }
 
-
+input[type=radio] {
+    accent-color: var(--primary_color);
+    width: 15px;
+    height: 15px;
+}
 .input {
     background-color: var(--primary_color);
     color: white;
@@ -416,4 +421,49 @@ ol li {
 }
 .activate{
     display: block;
+}
+
+.payment .row {
+    --height:40px;
+    height: var(--height);
+    line-height: var(--height);
+}
+.col-12 {
+    font-size: 23px;
+}
+.payment{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);;
+}
+
+.payment .row {
+    font-family: 'Montserrat', sans-serif;
+}
+.left-title {
+    text-align: left;
+    font-size: 26px;
+}
+.right-title {
+    text-align: right;
+}
+.total-payment {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--primary_color);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container1 {
+    margin: 20px 0;
+}
+
+textarea {
+    font-family: 'Inter', sans-serif;
+    margin-left: 20px;
 }

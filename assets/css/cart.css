@@ -62,7 +62,6 @@ h4 {
     align-items: center;
     font-weight: bold;
     font-size: 26px;
-    color: var(--primary_color);
     padding: 20px 0 20px 0;
     background-color: var(--primary_color);
     color: white;
@@ -311,4 +310,13 @@ h4 {
 #all,#pr1 {
     width: 15px;
     height: 15px;
+}
+
+.payment.row {
+    --height:40px;
+    height: var(--height);
+    line-height: var(--height);
+}
+.col-12 {
+    font-size: 23px;
 }
