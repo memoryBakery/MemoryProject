@@ -463,7 +463,8 @@ input[type=radio] {
     margin: 20px 0;
 }
 
-textarea {
+.input-reminder textarea {
     font-family: 'Inter', sans-serif;
     margin-left: 20px;
+    height: 150px;
 }

@@ -11,12 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/checkOut.css">
     <link rel="stylesheet" href="../assets/css/styte.css">
-    <link rel="stylesheet" href="../assets/css/myAddress.css">
-    <link rel="stylesheet" href="../assets/css/updateAddress.css">
-    <link rel="stylesheet" href="../assets/css/newAddress.css">
+    <link rel="stylesheet" href="../assets/css/modal.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-
- 
 </head>
 <body>
     <!-- Phần header -->
@@ -94,7 +90,7 @@
               <li class="contact"><a href="./contact.html">Liên hệ</a></li> 
           </ul>
       </div>
-  </div>
+    </div>
     
     <!-- Navigation -->
 
@@ -273,8 +269,8 @@
                         Lời nhắc
                       </h4>
                     </div>
-                    <div>
-                        <textarea class="form-control input-reminder" id="exampleFormControlTextarea1" rows="3" placeholder="Hãy để lại những lời bạn muốn nhắn gửi đến Memory nhé!"></textarea>
+                    <div class="">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hãy để lại những lời bạn muốn nhắn gửi đến Memory nhé!"></textarea>
                     </div>
                 </div>
                 <div class="col-5 payment">
@@ -321,51 +317,6 @@
                 
             </div>
         </div>
-
-          <!-- <div class="container text-center">
-            <div class="row sub_title">
-              <div class="col">
-                Lời nhắc
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4 reminder">
-                <textarea placeholder="Hãy để lại lời mà bạn muốn gửi đến Memory nhé!" id="input-reminder"></textarea>
-              </div>
-    
-              <div class="col-3"></div>
-              <div class="col-5 payment-info">
-                <div class="row">
-                  <div class="col-6 left-title">Tổng tiền hàng</div>
-                  <div class="col-5 left-title">
-                      520.000 VNĐ
-                  </div>
-                </div>
-    
-                <div class="row">
-                  <div class="col-6 left-title">Giảm giá</div>
-                  <div class="col-5 left-title ">
-                      20.000 VNĐ
-                  </div>
-                </div>
-    
-                <div class="row">
-                  <div class="col-6 left-title">Phí vận chuyển</div>
-                  <div class="col-5 left-title ">
-                      20.000 VNĐ
-                  </div>
-                </div>
-      
-                <div class="row">
-                  <div class="col-6 left-title">Tổng thanh toán</div>
-                  <div class="col-5 left-title total-payment">
-                      520.000 VNĐ
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
           <hr>
 
           <div class="button">
@@ -395,23 +346,19 @@
               <div class="modal__inner">
                   <!-- Form thêm địa chỉ mới -->
                   <div class="main-sub">
-                    <div class="main-title">
-                        Địa chỉ của tôi
-                    </div>
-            
-                    <div class="line"></div>
-            
-                    <div class="list_info">
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                      <h1 class="modal-title">Địa chỉ của tôi</h1>
+                      <div class="list_info">
                         <div class="list list1">
                             <div><input type="radio" name="default" id="default1" checked></div>
                             <div class="info">
-                                <span class="name">Phạm Quang Linh</span> | (+84) 773928913 <br> <br>
+                                <span class="name">Phạm Quang Linh</span> | (+84) 773928913 <br>
                                 98/21, đường Nguyễn Văn Trỗi, khu phố Thắng Lợi, phường Dĩ An, thị xã Dĩ An, tỉnh Bình Dương.
                                 <div class="def"> Mặc định </div>
                             </div>
-                            <div class="button">
-                                <a href="#" onclick="showModal2() & hideModal() ">Cập nhật |</a>
-                                <a href="" >Xoá</a>
+                            <div class="modal-button">
+                                <a href="#" onclick="showModal2() & hideModal()">Cập nhật |</a>
+                                <a href="">Xoá</a>
                             </div>
                             
                         </div>
@@ -420,176 +367,194 @@
                         <div class="list list2">
                             <div><input type="radio" name="default" id="info2"></div>
                             <div class="info">
-                                <span class="name">Linh Phạm</span> | (+84) 395593395 <br> <br>
+                                <span class="name">Linh Phạm</span> | (+84) 395593395 <br>
                                 Số 669 Quốc lộ 1, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh <br>
+                                <a href="#" onclick="showModal3() & hideModal()">
+                                    <button type="modal-button" class="btn btn-primary input_add main-input" >
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Thêm địa chỉ mới</span> 
+                                    </button>
+                                </a>
                             </div>
             
-                            <div class="button">
-                                <a href="#" onclick="showModal2() & hideModal() ">Cập nhật |</a>
+                            <div class="modal-button">
+                                <a href="#" onclick="showModal2() & hideModal()">Cập nhật |</a>
                                 <a href="">Xoá</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="add">
-                        <img src="../assets/img/plus.png" alt="">
-                        <button onclick="showModal3() & hideModal()" >Thêm địa chỉ mới</button>
-                    </div>
-                    <div class="line"></div>
-                    <div class="button">
-                            <a href="#">
-                                <button type="button" class="btn btn-primary input" onclick="hideModal()">Huỷ</button>
+                      </div>
+                        <div class="button">
+                            <a href="#" onclick="hideModal()">
+                                <button type="modal-button" class="btn btn-primary main-input" >
+                                    Huỷ
+                                </button>
                             </a>
-                            <a href="#">
-                              <button type="button" class="btn btn-primary input" onclick="hideModal()">
-                                  Xác nhận
-                              </button>
-                          </a>
+
+                            <a href="#" onclick="hideModal()">
+                                <button type="modal-button" class="btn btn-primary main-input" >
+                                    Xác nhận
+                                </button>
+                            </a>
+                        </div>
+                           
                     </div>
-                  </div>
+                </div>
               </div>
           </div>
         </div>
 
         <div class="modal2">
-          <div class="modal__overlay"></div>
-          <div class="modal__body">
-            <div class="modal__inner">
-                <div class="main-3">
-                    <div class="title">
-                        <span class="main-title">Cập nhật địa chỉ</span> <br>
-                    </div>
-                    <div class="main-3">
-                        <form action="#" method="get">
-                            <div class="form__row form__row1" id="row1">
-                                <input type="email" class="form-control fname" id="exampleFormControlInput1 fname" value="Phạm Quang Linh">
-                                <input type="email" class="form-control phone" id="exampleFormControlInput1 phone" value="(+84) 773928913">
-                            </div>
-            
-                            <div class="form__row form__row2" id="row2">
-                                <select class="form-select city" aria-label="Default select example">
-                                    <option value="bd">Tỉnh Bình Dương</option>
-                                    <option value="hcm" selected>Thành phố Hồ Chí Minh</option>
-                                </select>
-    
-                                <select class="form-select district" aria-label="Default select example">
-                                    <option value="td" selected>Quận Thủ Đức</option>
-                                    <option value="q12">Quận 12</option>
-                                    <option value="q1">Quận 1</option>
-                                    <option value="q9">Quận 9</option>
-                                    <option value="gv">Quận Gò Vấp</option>
-                                    <option value="bth">Quận Bình Thành</option>
-                                    <option value="da">Thành phố Dĩ An</option>
-                                    <option value="ta">Thành phố Thuận An</option>
-                                    <option value="tu">Thị xã Tân Uyên</option>
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+              <div class="modal__inner">
+                  <div class="main-3">
+                      <div class="title">
+                          <span class="modal-title">Cập nhật địa chỉ</span> <br>
+                      </div>
+                      <div class="main-3">
+                          <form action="#" method="get">
+                              <div class="form__row form__row1" id="row1">
+                                  <input type="email" class="form-control fname" id="exampleFormControlInput1 fname" value="Phạm Quang Linh">
+                                  <input type="email" class="form-control phone" id="exampleFormControlInput1 phone" value="(+84) 773928913">
+                              </div>
+              
+                              <div class="form__row form__row2" id="row2">
+                                  <select class="form-select city" aria-label="Default select example">
+                                      <option value="bd">Tỉnh Bình Dương</option>
+                                      <option value="hcm" selected>Thành phố Hồ Chí Minh</option>
                                   </select>
-    
-                                <select class="form-select wards" aria-label="Default select example">
-                                    <option value="" selected>Phường Linh Xuân</option>
-                                    <option value="">Phường Linh Tây</option>
-                                    <option value="">Phường Linh Trung</option>
-                                    <option value="">Phường Hiệp Phú</option>
-                                    <option value="">Phường Bến Thành</option>
-                                    <option value="">Phường Bến Nghé</option>
-                                    <option value="">Phường Dĩ An</option>
-                                    <option value="">Phường Tân Đông Hiệp </option>
-                                </select>
-                            </div>
-            
-                            <div class="form__row form__row3">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Địa chỉ cụ thể"></textarea>
-    
-                            </div>
-                        </form>
-            
-                        <div class="default">
-                            <input type="checkbox" name="default" id="default" checked> Đặt làm địa chỉ mặc định
-                        </div>
-            
-                        <div class="button">
-                            <a href="#">
-                                <button type="button" class="btn btn-primary input" onclick="hideModal2() & showModal()">Trở lại</button>
+      
+                                  <select class="form-select district" aria-label="Default select example">
+                                      <option value="td" selected>Quận Thủ Đức</option>
+                                      <option value="q12">Quận 12</option>
+                                      <option value="q1">Quận 1</option>
+                                      <option value="q9">Quận 9</option>
+                                      <option value="gv">Quận Gò Vấp</option>
+                                      <option value="bth">Quận Bình Thành</option>
+                                      <option value="da">Thành phố Dĩ An</option>
+                                      <option value="ta">Thành phố Thuận An</option>
+                                      <option value="tu">Thị xã Tân Uyên</option>
+                                    </select>
+      
+                                  <select class="form-select wards" aria-label="Default select example">
+                                      <option value="" selected>Phường Linh Xuân</option>
+                                      <option value="">Phường Linh Tây</option>
+                                      <option value="">Phường Linh Trung</option>
+                                      <option value="">Phường Hiệp Phú</option>
+                                      <option value="">Phường Bến Thành</option>
+                                      <option value="">Phường Bến Nghé</option>
+                                      <option value="">Phường Dĩ An</option>
+                                      <option value="">Phường Tân Đông Hiệp </option>
+                                  </select>
+                              </div>
+              
+                              <div class="form__row form__row3">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Địa chỉ cụ thể"></textarea>
+      
+                              </div>
+                          </form>
+              
+                          <div class="default">
+                              <input type="checkbox" name="default" id="default" checked> Đặt làm địa chỉ mặc định
+                          </div>
+              
+                          <div class="button">
+                            <a href="#" onclick="hideModal2() & showModal()">
+                                <button type="modal-button" class="btn btn-primary main-input" >
+                                    Trở lại
+                                </button>
                             </a>
-                            <button type="button" class="btn btn-primary input" onclick="hideModal2() & showModal()">Hoàn thành</button>
-                        </div>
+
+                            <a href="#" onclick="hideModal2() & showModal()">
+                                <button type="modal-button" class="btn btn-primary main-input" >
+                                    Hoàn thành
+                                </button>
+                            </a>
+                          </div>
+                      </div>
                     </div>
+              </div>
+    
             </div>
-
-            </div>
-
-
-          </div>
         </div>
-
+    
         <div class="modal3">
-          <div class="modal__overlay"></div>
-          <div class="modal__body">
-            <div class="modal__inner">
-                <div class="main-3">
-                <div class="title">
-                    <span class="main-title">Địa chỉ mới</span> <br>
-                    <span>Để đặt hàng, vui lòng thêm địa chỉ nhận hàng</div></span>
-                </div>
-                <div class="main-3">
-                    <form action="#" method="get">
-                        <div class="form__row form__row1" id="row1">
-                            <input type="email" class="form-control fname" id="exampleFormControlInput1 fname" placeholder="Họ và tên">
-                            <input type="email" class="form-control phone" id="exampleFormControlInput1 phone" placeholder="Số điện thoại">
-                        </div>
-        
-                        <div class="form__row form__row2" id="row2">
-                            <select class="form-select city" aria-label="Default select example">
-                                <option value="" disabled selected>Tỉnh/Thành phố</option>
-                                <option value="bd">Tỉnh Bình Dương</option>
-                                <option value="hcm">Thành phố Hồ Chí Minh</option>
-                            </select>
-
-                            <select class="form-select district" aria-label="Default select example">
-                                <option value="" disabled selected>Quận/Huyện</option>
-                                <option value="td">Quận Thủ Đức</option>
-                                <option value="q12">Quận 12</option>
-                                <option value="q1">Quận 1</option>
-                                <option value="q9">Quận 9</option>
-                                <option value="gv">Quận Gò Vấp</option>
-                                <option value="bth">Quận Bình Thành</option>
-                                <option value="da">Thành phố Dĩ An</option>
-                                <option value="ta">Thành phố Thuận An</option>
-                                <option value="tu">Thị xã Tân Uyên</option>
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+              <div class="modal__inner">
+                  <div class="main-3">
+                  <div class="title">
+                      <span class="modal-title">Địa chỉ mới</span> <br>
+                      <span class="note">Để đặt hàng, vui lòng thêm địa chỉ nhận hàng</div></span>
+                  </div>
+                  <div class="main-3">
+                      <form action="#" method="get">
+                          <div class="form__row form__row1" id="row1">
+                              <input type="email" class="form-control fname" id="exampleFormControlInput1 fname" placeholder="Họ và tên">
+                              <input type="email" class="form-control phone" id="exampleFormControlInput1 phone" placeholder="Số điện thoại">
+                          </div>
+          
+                          <div class="form__row form__row2" id="row2">
+                              <select class="form-select city" aria-label="Default select example">
+                                  <option value="" disabled selected>Tỉnh/Thành phố</option>
+                                  <option value="bd">Tỉnh Bình Dương</option>
+                                  <option value="hcm">Thành phố Hồ Chí Minh</option>
                               </select>
-
-                            <select class="form-select wards" aria-label="Default select example">
-                                <option value="" disabled selected>Phường/Xã</option>
-                                <option value="">Phường Linh Xuân</option>
-                                <option value="">Phường Linh Tây</option>
-                                <option value="">Phường Linh Trung</option>
-                                <option value="">Phường Hiệp Phú</option>
-                                <option value="">Phường Bến Thành</option>
-                                <option value="">Phường Bến Nghé</option>
-                                <option value="">Phường Dĩ An</option>
-                                <option value="">Phường Tân Đông Hiệp </option>
-                            </select>
-                        </div>
-        
-                        <div class="form__row form__row3">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Địa chỉ cụ thể"></textarea>
-
-                        </div>
-                    </form>
-        
-                    <div class="default">
-                        <input type="checkbox" name="default" id="default" checked> Đặt làm địa chỉ mặc định
-                    </div>
-        
-                    <div class="button">
-                        <a href="#">
-                            <button type="button" class="btn btn-primary input" onclick="hideModal3() & showModal()">Trở lại</button>
+    
+                              <select class="form-select district" aria-label="Default select example">
+                                  <option value="" disabled selected>Quận/Huyện</option>
+                                  <option value="td">Quận Thủ Đức</option>
+                                  <option value="q12">Quận 12</option>
+                                  <option value="q1">Quận 1</option>
+                                  <option value="q9">Quận 9</option>
+                                  <option value="gv">Quận Gò Vấp</option>
+                                  <option value="bth">Quận Bình Thành</option>
+                                  <option value="da">Thành phố Dĩ An</option>
+                                  <option value="ta">Thành phố Thuận An</option>
+                                  <option value="tu">Thị xã Tân Uyên</option>
+                                </select>
+    
+                              <select class="form-select wards" aria-label="Default select example">
+                                  <option value="" disabled selected>Phường/Xã</option>
+                                  <option value="">Phường Linh Xuân</option>
+                                  <option value="">Phường Linh Tây</option>
+                                  <option value="">Phường Linh Trung</option>
+                                  <option value="">Phường Hiệp Phú</option>
+                                  <option value="">Phường Bến Thành</option>
+                                  <option value="">Phường Bến Nghé</option>
+                                  <option value="">Phường Dĩ An</option>
+                                  <option value="">Phường Tân Đông Hiệp </option>
+                              </select>
+                          </div>
+          
+                          <div class="form__row form__row3">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Địa chỉ cụ thể"></textarea>
+    
+                          </div>
+                      </form>
+          
+                      <div class="default">
+                          <input type="checkbox" name="default" id="default" checked> Đặt làm địa chỉ mặc định
+                      </div>
+          
+                      <div class="button">
+                        <a href="#" onclick="hideModal3() & showModal()">
+                            <button type="modal-button" class="btn btn-primary main-input" >
+                                Trở lại
+                            </button>
                         </a>
-                        <button type="button" class="btn btn-primary input" onclick="hideModal3() & showModal()">Hoàn thành</button>
-                    </div>
-                </div>
+
+                        <a href="#" onclick="hideModal3() & showModal()">
+                            <button type="modal-button" class="btn btn-primary main-input" >
+                                Hoàn thành
+                            </button>
+                        </a>
+                      </div>
+                  </div>
+              </div>
             </div>
-          </div>
         </div>
-        <div class="footer">
+    <div class="footer">
           <div class="footer-top">
               <div class="footer-top__left">
                   <i class="ti-email"></i>
@@ -645,7 +610,7 @@
                   <a href="">Bánh mì</a>
               </div>
           </div>
-      </div>
+    </div>
         <script>
             const modal = document.querySelector(".modal")
             function showModal() {
