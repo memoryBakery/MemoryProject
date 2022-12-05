@@ -17,11 +17,11 @@
 .account_nav .nav{
     font-size: 22px;
 }
-.account_nav .nav .sub-nav{
+.account_nav .nav #sub_nav{
     display: none;
 }
-.account_nav .nav:hover .sub-nav a{
-    background-color: white;
+.account_nav .nav:hover #sub_nav a{
+    /* background-color: white; */
 }
 
 .profile{
@@ -45,4 +45,8 @@ i{
     width: 100%;
     padding: 0 20px;
     height: 100vh;
+}
+
+.account_nav .nav #sub_nav.activate{
+    display: block
 }

@@ -1,9 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .body{
     display: flex;
+    margin-top: 140px;
+    
 }
 .body-left{
     width: 618px;
     padding: 0 20px
+}
+.body-right{
+    margin-left: 50px;
 }
 h2{
     color: #E75C6B;
@@ -13,8 +22,8 @@ h2{
     background-color: #FFEAE9;
     width: 771px;
     height: 572px;
-    text-align: center;
-     border-radius: 25px;
+    /* text-align: center; */
+    border-radius: 25px;
 }
 .form__row{
     padding-top:  12px ;
@@ -24,20 +33,25 @@ h2{
 }
 
 .form__label{
-    float: left;
-    max-width: 200px;
+    /* float: left; */
+    /* max-width: 500px; */
+    text-align: left    ;
     color: #E75C6B;
     font-weight: bold;
     padding-left: 100px;
 }
 .form__input{
-    width: 570px;
+    text-align: left;
+    width: 500px;
     height: 54px;
     border-radius: 25px;
     border-bottom: solid rgb(227, 224, 221) 5px;
     border-top: solid #FFFF 5px;
     border-left: solid #FFFF 5px;;
     border-right:solid #FFFF 5px;;
+}
+.form_input{
+    padding-left: 100px;
 }
 #message{
     height: 111px;

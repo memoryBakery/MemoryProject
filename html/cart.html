@@ -22,30 +22,32 @@
                 <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
            </div>
            <div class="btn-search" >
-                <input 
-                    type="text" class="search"> 
+            <form class="inputSearch" onsubmit="submitForm(event)">
+                <input
+                    type="text" class="search" id="inputvalue"> 
                 </input>
-                <i class="ti-search"></i>
+                <button class="ti-search"></button>
+            </form>
            </div> 
             <div class="right-header-top">
                 <div class="account">
                     <a href="" >
                         <i class="fa-solid fa-user"></i>
-                        Tài khoản
+                       <span>Tài khoản</span> 
                     </a>
                     <ul class="sub-nav">
                         <li>
-                            <a href="../html/account_voucher.html">
+                            <a href="./myAccount.html">
                                 <i class="fa-solid fa-user"></i> Tài khoản của tôi
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="./register.html">
                                 <i class="fa-solid fa-user-plus"></i> Đăng kí
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="./login.html">
                                 <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
                             </a>
                         </li>
@@ -55,38 +57,37 @@
                 <div class="cart">
                     <a href="./cart.html">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        Giỏ hàng</a>
+                        <span>Giỏ hàng</span></a>
                 </div>
                 <div class="phone">
-                    <a href="" >
+                    <a href="">
                         <i class="fa-solid fa-phone"></i>
-                        0905792559
+                        <span> 0905792559</span>
                     </a>
                 </div>   
             </div>
         </div>
         <div class="header-bottom">
             <ul class="nav">
-            <li >
-                    <a href="../html/listProduct.html">
-                        <i class="fa-sharp fa-solid fa-list"></i>
-                        Danh mục sản phẩm
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                   
-                    <ul class="sub-nav">
-                        <li><a href=""> Bánh kem</a></li>
-                        <li><a href=""> Cupcakes</a></li>
-                        <li><a href=""> Bánh quy</a></li>
-                        <li><a href=""> Donuts</a></li>
-                        <li><a href=""> Phụ kiện</a></li>
-                    </ul>
-            </li>
-            <li class="main"><a href="../html/main.html">Trang chủ</a></li>
-            <li class="story"><a href="./">Câu chuyện thương hiệu</a></li>
-            <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
-            <li class="blog"><a href="">Tin tức</a></li>
-            <li class="contact"><a href="">Liên hệ</a></li> 
+                <li>
+                        <a href="../html/listProduct.html">
+                            <i class="fa-sharp fa-solid fa-list"></i>
+                            Danh mục sản phẩm
+                            <i class="nav-arrow-down ti-angle-down"></i>
+                        </a>
+                        <ul class="sub-nav">
+                            <li class="type_category"><a href="./productBanhkem.html"> Bánh kem</a></li>
+                            <li class="type_category"><a href="./productCupcakes.html"> Cupcakes</a></li>
+                            <li class="type_category"><a href="./productBanhquy.html"> Bánh quy</a></li>
+                            <li class="type_category"><a href="./productDonuts.html"> Donuts</a></li>
+                            <li class="type_category"><a href="./productBanhmi.html"> Bánh mì</a></li>
+                        </ul>
+                </li>
+                <li class="main btnn"><a href="../html/main.html"><span> Trang chủ</span></a></li>
+                <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
+                <li class="story btnn"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
+                <li class="blog"><a href="./blog.html">Tin tức</a></li>
+                <li class="contact"><a href="./contact.html">Liên hệ</a></li> 
             </ul>
         </div>
     </div>
@@ -330,7 +331,7 @@
                 </div>
     
                 <div class="button_right">
-                    <a href="#">
+                    <a href="./checkout.html">
                         <button type="button" class="btn btn-primary input">
                             Đặt hàng
                         </button>
@@ -367,7 +368,7 @@
             <div class="contact col-3" >
                 <h5>Thông tin liên hệ</h5>
                 <span style="display:flex"><i style="margin-top: 5px;padding-right: 10px;" class="fa-solid fa-location-dot"></i> Ký túc xá khu B, Linh Trung, Thủ Đức, Hồ Chí Minh</span>
-                <span><i class="fa-solid fa-phone"></i> 0395.663.068</span> <br>
+                <span><i class="fa-solid fa-phone"></i> 0905792559</span> <br>
                 <span><i class="fa-solid fa-fax"></i> 1900.900.900</span><br>
                 <span><i class="fa-sharp fa-solid fa-envelope"></i> memory@gmail.com</span>
                 <h5>Phương thức thanh toán</h5>
@@ -395,7 +396,7 @@
                 <a href="">Bánh quy</a><br>
                 <a href="">Cupcakes</a><br>
                 <a href="">Donuts</a><br>
-                <a href="">Phụ kiện</a>
+                <a href="">Bánh mì</a>
             </div>
         </div>
     </div>

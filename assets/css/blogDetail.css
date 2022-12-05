@@ -4,7 +4,6 @@
 }
 html{
     font-family: Montserrat;
-    font-size: 15px;
 }  
 .blogdetail{
     margin-top: 40px;
@@ -145,7 +144,7 @@ hr{
     outline: none;
     font-family: Montserrat;
     margin-right: 50px;
-
+    padding: 10px 60px;
 }
 .binhluan-input button{
     height: 35px;
