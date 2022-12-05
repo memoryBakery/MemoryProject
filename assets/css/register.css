@@ -86,10 +86,9 @@ body{
    margin-top: 1rem;
    border: none;
    cursor: pointer;
-   border-radius: 50px;
-   background: #F38A95;
+   border-radius: 10px;
+   background: #E75C6B;
    color: #fff;
-   font-weight: bold;
    padding: 5px;
  }
  
