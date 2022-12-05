@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800');
 .cart-container{
     padding: 0;
     margin: 0 100px 0 100px;
@@ -40,34 +41,31 @@ ol li {
 }
 
 .cart-title{
-    background-color: rgb(212, 224, 224);
+    /* background-color: var(--background-color); */
     padding: 15px;
     margin-bottom: 10px;
 }
 h4 {
     width: 100%;
-    font-size: 25px;
+    font-size: 40px;
     color: var(--primary_color);
     font-weight: bold;
     margin: auto ;
+    font-family: 'Montserrat', sans-serif;
 }
 
-hr {
-    background-color: #E75C6B;
-    height: 2px;
-}
 
 .cart-header {
     display: grid;
     grid-template-columns: 0.5fr 3fr 2fr 1.5fr 2fr 0.5fr;
-    /* background-color: var(--primary_color); */
     text-align: center;
     align-items: center;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 26px;
     color: var(--primary_color);
     padding: 20px 0 20px 0;
-    background-color: var(--button_hover);
+    background-color: var(--primary_color);
+    color: white;
 }
 
 .cart-product {
@@ -76,8 +74,14 @@ hr {
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 19px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    word-spacing: 3px;
     /* margin: 5% 2%; */
+}
+
+.cart-product:hover {
+    background-color: var(--button_hover);
 }
 
 .cart-info {
@@ -276,6 +280,7 @@ hr {
 
 .left-title {
     text-align: left;
+    font-size: 26px;
 }
 .right-title {
     text-align: right;
@@ -303,8 +308,7 @@ hr {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);;
 }
 
-#all, #pr1 {
-    accent-color: var(--primary_color);
+#all,#pr1 {
     width: 15px;
     height: 15px;
 }
