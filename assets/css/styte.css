@@ -25,6 +25,8 @@ html{
     z-index: 99;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: 126px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px; 
 }
 a{
     text-decoration: none;
@@ -365,9 +367,6 @@ section{
 }
 
 
-
-
-
 /* Prommote Product */
 .promotion-product{
     background-color: #f9f2f2;
@@ -465,7 +464,9 @@ section{
     font-weight: bold;
     font-size: 25px;
 }
-
+.introduction p {
+    text-align: justify;
+}
 
 .footer-top__right input{
     width: 500px;
