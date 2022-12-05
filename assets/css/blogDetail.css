@@ -12,6 +12,7 @@ html{
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
+    margin-top: 140px;
 }
 /* bên trái */
 /* baivietnoibat */
@@ -19,6 +20,7 @@ html{
     display: flex;
     flex-direction: column;
     flex-basis: 500px;
+    font-family: 'Inter', sans-serif;
 }
 .baivietnoibat h2{
     font-size: 30px;
@@ -48,6 +50,7 @@ hr{
     color: #EB7884;
     font-size: 18px;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* bên phải */
@@ -105,7 +108,8 @@ hr{
 }
 .binhluan h3{
     color: #EB7884;
-    font-size: 30px;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
 }
 .binhluan-item{
     display: flex;
@@ -123,8 +127,12 @@ hr{
 .binhluan-content{
     margin-left: 10px;
 }
+
+.binhluan-content p{
+    font-size: 19px;
+}
 .binhluan-item h4{
-    font-size: 18px;
+    font-size: 20px;
 }
 .binhluan-item img{
     width: 70px;

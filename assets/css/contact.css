@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800');
+:root {
+    --primary_color: #E75C6B;
+    --color_button: #F38A95;
+    --background-color: #F9F2F2;
+    --button: #F38A95;
+    --button_hover: #81C6E8;
+}
 *{
     padding: 0;
     margin: 0;
 }
 .body{
-    display: flex;
+    margin-bottom: 50px;
     margin-top: 140px;
+    font-family: 'Inter', sans-serif;
     
 }
 .body-left{
@@ -16,6 +26,9 @@
 }
 h2{
     color: #E75C6B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
 }
 .form{
     padding-top: 40px;
@@ -76,3 +89,32 @@ h2{
 }
 
 
+.body-left i {
+    color: var(--primary_color);
+    margin-top: 20px;
+}
+
+.company {
+    display: flex;
+}
+
+.submit {
+    background-color: var(--primary_color);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15px;
+    font-size: 22px;
+    width: 20%;
+}
+
+.submit:hover {
+    background-color: var(--button_hover);
+    color: black;
+
+}
