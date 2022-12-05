@@ -3,7 +3,8 @@
     margin: 0;
 }
 html{
-
+    font-family: Montserrat;
+    font-size: 15px;
 }  
 .chinhsachbaomat{
     margin-top: 40px;
@@ -12,9 +13,6 @@ html{
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
-    font-family: Montserrat;
-    font-size: 15px;
-    margin-top: 140px;
 }
 hr{
     width: 250px;
