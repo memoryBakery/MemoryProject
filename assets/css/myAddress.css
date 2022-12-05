@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800');
 :root {
     --primary_color: #E75C6B;
     --color_button: #F38A95;
@@ -12,9 +13,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     max-width: 1000px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .line {
@@ -33,10 +34,10 @@
 .def {
     border: 1px solid var(--primary_color);
     color: var(--primary_color);
-    width: 80px;
+    width: 70px;
     margin-top: 10px;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -67,19 +68,12 @@ input[type=radio] {
     width: 26%;
 } */
 .add {
-    display: flex;
     border: 1px solid var(--primary_color);
     border-radius: 20px;
     background-color: var(--sub_color);
     width: 250px;
     padding: 5px;
     margin-top: 10px;
-}
-.add img {
-    width: 18px;
-    height: 18px;
-    margin-top: 8px;
-    margin-left: 3px;
 }
 .add:hover {
     color: black;
