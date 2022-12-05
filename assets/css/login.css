@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800');
 
 body{
    height: 100vh;
@@ -11,13 +12,10 @@ body{
  .row-cols-1{
   align-content: center;
   float: right;
-  border-radius: 10px;
-  background-color: #FFEAE9;
   padding: 3px 3px;
   
 }
  .card{
-  font-family: 'Montserrat', sans-serif;
    overflow: hidden;
    border: 0 !important;
    border-radius: 20px !important;
@@ -26,7 +24,7 @@ body{
  
  .img-left{
    width: 45%;
-   background: url('login.jpg') center;
+   background: url('/assets/img/login.jpg') center;
    background-size: cover;
  }
  
@@ -35,8 +33,10 @@ body{
  }
  
  .title{
+    font-family: 'Montserrat', serif;
    margin-bottom: 1rem;
-   font-weight: 500;
+   font-weight: 600;
+
  }
  
  .form-input{
@@ -44,6 +44,7 @@ body{
  }
  
  .form-input input{
+   font-family: 'Inter', sans-serif;
     width: 100%;
     height: 45px;
     padding-left: 40px;
@@ -63,7 +64,7 @@ body{
  }
  
  .form-input input::placeholder{
-   color: black;
+   color: #6c757d;
    padding-left: 0px;
  }
  
@@ -81,17 +82,16 @@ body{
  }
  
  .form-box button[type="submit"]{
-   margin-top: 10px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   margin-top: 1rem;
    border: none;
    cursor: pointer;
-   border-radius: 50px;
-   background: #F38A95;
+   border-radius: 10px;
+   background: #E75C6B;
    color: #fff;
-   font-size: 1.1rem;
-   font-weight: bold;
-   letter-spacing: .1rem;
    transition: 0.5s;
-   padding: 12px;
+   padding: 5px;
  }
  
  .form-box button[type="submit"]:hover{
@@ -100,6 +100,7 @@ body{
  }
  
  .forget-link, .register-link{
+  font-family: 'Montserrat', serif;
    color: #E75C6B;
    font-weight: bold;
  }
@@ -116,10 +117,12 @@ body{
  }
  
  .form-box .btn-facebook{
+  font-family: 'Montserrat', serif;
    background: #4866a8;
  }
  
  .form-box .btn-google{
+  font-family: 'Montserrat', serif;
    background: #da3f34;
  }
  
