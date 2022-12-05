@@ -5,6 +5,7 @@ body {
 h1, h2, h3{
     text-decoration: none;
     color: #E75C6B;
+    
 }
 .center{
 display: flex;
