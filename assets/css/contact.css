@@ -116,5 +116,9 @@ h2{
 .submit:hover {
     background-color: var(--button_hover);
     color: black;
+}
 
+.form-control input:focus {
+    border: 1px solid var(--primary_color);
+    outline: none;
 }
