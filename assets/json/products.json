@@ -108,7 +108,7 @@
     },
     {
         "id": 8,
-        "name":"Bánh Kem Chocolate Fruit",
+        "name":"Bánh Kem Choco Fruit",
         "newPrice":"210.000",
         "oldPrice":"240.000",
         "description":"Thành phần: Bánh kem tươi cốt bánh 6 lớp vani nhân kem tươi, trang trí socola nhiều màu.",
@@ -168,7 +168,7 @@
     },
     {
         "id": 12,
-        "name":"Flourless Chocolate Cupcake",
+        "name":"Flourless Chocolate",
         "newPrice":"140.000",
         "oldPrice":"155.000",
         "description":"Bánh thơm nồng quyện cùng socola vụn rải đều khắp bánh. Vừa mềm mịn lại bùi béo ngọt thanh. Sản phẩm từ thiên nhiên: bột mì hảo hạng, hương hoa cúc tự nhiên, bơ thực vật cao cấp, đường kính, mật ong, trứng, sữa. Khối lượng bơ rất lớn trong thành phần của bánh nên nó giúp cho bánh khi ăn luôn có sự béo ngậy, đậm đà nhưng không hề bị ngấy. Tính chất bánh mềm, mịn, dẻo, ngọt thanh rất dễ ăn.Bánh mì mềm nướng thơm nồng quyện cùng socola vụn rải đều khắp bánh. Vừa mềm mịn lại bùi béo ngọt thanh.",
@@ -198,7 +198,7 @@
     },
     {
         "id": 14,
-        "name":"Standard Cupcake - Sprinkles",
+        "name":"Standard Cupcake",
         "newPrice":"120.000",
         "oldPrice":"134.000",
         "description":"Với hương vị thơm ngon, hấp dẫn, bánh mì phô mai bơ tỏi được rất nhiều người ưa thích, có thể sử dụng làm bữa sáng dinh dưỡng cho cả gia đình hoặc món ăn vặt trong ngày.Thành phần:  Bột mì, Đường, Trứng, Muối, Sữa tươi, Men, Bơ lạt, Whipping cream, Bơ lạt",
@@ -228,7 +228,7 @@
     },
     {
         "id": 16,
-        "name":"Wholesome Bluberry Donuts",
+        "name":"Wholesome Bluberry",
         "newPrice":"50.000",
         "oldPrice":"65.000",
         "description":"Thành phần: Bột mì, đậu xanh (15%), sữa tươi, đường, nước, bột nếp, đường mạch nha, dầu thực vật, shortening, men, muối, chất tạo xốp (E500ii, E450i, E341i), hương sữa tổng hợp, hương đậu xanh tổng hợp, bột trà xanh.",
@@ -382,7 +382,7 @@
 
     {
         "id": 26 ,
-        "name":"Parmesan Cheese And Seaweed Cookies",
+        "name":"Parmesan Cheese",
         "newPrice":"80.000",
         "oldPrice":"100.000",
         "description":"Đây là sự hòa quyện hoàn hảo của miếng chocolate ở giữa cùng với hai miếng bánh quy đặc biệt. Việc kết hợp cứng và mềm trong thành phần của bánh đã cho người dùng cảm nhận vừa mềm vừa thơm. Bạn sẽ cảm nhận được hậu vị của bơ và vị ngọt của chocolate trong khoang miệng khi dùng loại bánh này. ",
