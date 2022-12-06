@@ -616,7 +616,14 @@ input[type=radio] {
 }
 .input_add {
     margin: 5px;
-    font-size: 13px;
+    font-size: 16px;
     color: black;
     background-color: var(--color_button);
+}
+.list1 {
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+.list2 {
+    margin-top: 26px;
 }
