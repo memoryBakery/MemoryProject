@@ -24,6 +24,7 @@
     border: 3px solid var(--primary_color);
     border-radius: 50px;
     margin: 9px;
+    background-color: var(--sub_color);
 }
 .col {
     border-left:3px solid var(--primary_color); ;
