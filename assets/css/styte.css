@@ -663,6 +663,61 @@ h5 {
     right: 20px;
 }
 
+.header-chatWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.header-chatWrapper img{
+    width: 60px;
+    border-radius: 50%;
+}
+#chatWrapper .close{
+    cursor: pointer;
+}
+#chatWrapper{
+    width: 410px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    position: fixed;
+    bottom: 210px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+    animation: chatFadeIn ease-in-out 0.2s;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: chatFadeIn;
+}
+
+#chatWrapper.showchat {
+    display: block;
+}
+
+#chatWrapper h4{
+    margin-top: 20px;
+}
+#chatWrapper p{
+    margin-top: 30px;
+}
+
+#chatWrapper button{
+    border: none;
+    border-radius: 20px;
+    background-color: var(--button_color);
+    width: 300px;
+    color: white;
+    margin-top: 100px;
+    padding: 10px;
+    
+}
 
 
 
