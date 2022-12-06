@@ -62,8 +62,7 @@
 .navigation {
     width: auto;
     height: 35px;
-    background-color: var(--background-color);
-    margin: 140px 0 0px 0;   
+    background-color: var(--background-color); 
 }
 
 ol {

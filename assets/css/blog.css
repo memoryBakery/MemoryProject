@@ -33,6 +33,7 @@ html{
 .baivietnoibat h2{
     font-size: 30px;
     /* margin-left: 18px; */
+    font-weight: bold;
 }
 hr{
     width: 440px;
@@ -46,14 +47,14 @@ hr{
     display: flex;
 }
 .baiviet-img img{
-    width: 120px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 }
 .baiviet-mota{
     float: right;
     margin-left: 10px;
     margin-top: -5px;
-    font-size: 12px;
+    font-size: 15px;
 
 }
 .baiviet-tieude a{
@@ -63,12 +64,12 @@ hr{
     justify-content: center;
 
 }
-/* .baiviet-ngaydang{
-    margin: 4px 0px 4px 30px;
+.baiviet-ngaydang p{
+    margin-bottom: 5px;
 }
 .baiviet-tacgia{
-    margin-left: 30px;
-} */
+
+}
 /* tintuc */
 .tintuc h1{
     font-size: 45px;
@@ -79,8 +80,8 @@ hr{
     display: flex;
 }
 .tintuc-img img{
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
 }
 .tintuc-mota{
     margin-left: 10px;
@@ -89,7 +90,7 @@ hr{
 .tintuc-tieude a{
     text-decoration: none;
     color: #EB7884;
-    font-size: 25px;
+    font-size: 28px;
 }
 .tintuc-tieude a:hover {
     color:#81C6E8 ;
@@ -98,11 +99,11 @@ hr{
     color:#81C6E8 ;
 }
 .tintuc-nguoiviet{
-    font-size: 12px;
+    font-size: 15px;
 }
 .tintuc-mieuta{
     margin-top: 7px;
-    font-size: 15px;
+    font-size: 17px;
     text-align: justify;
 }
 .tintuc{

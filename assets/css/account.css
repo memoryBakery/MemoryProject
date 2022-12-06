@@ -4,15 +4,15 @@
 }
 .body{
     display: flex;
-    padding-top: 30px;
-    display: flex;
+    margin-top: 20px;
 }
+
 
 .account_nav{
     border: 2px solid #E75C6B;
     border-radius: 50px;
     height: fit-content;
-    width: 600px;
+    width: 570px;
 }
 .account_nav .nav{
     font-size: 22px;

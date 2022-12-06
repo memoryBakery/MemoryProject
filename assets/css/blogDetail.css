@@ -23,6 +23,7 @@ html{
 }
 .baivietnoibat h2{
     font-size: 30px;
+    font-weight: bold;
 }
 hr{
     width: 440px;
@@ -35,14 +36,14 @@ hr{
     display: flex;
 }
 .baiviet-img img{
-    width: 120px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 }
 .baiviet-mota{
     float: right;
     margin-left: 10px;
     margin-top: -5px;
-    font-size: 12px;
+    font-size: 15px;
 }
 .baiviet-tieude a{
     text-decoration: none;
@@ -51,7 +52,9 @@ hr{
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
 }
-
+.baiviet-ngaydang p{
+    margin-bottom: 5px;
+}
 /* bên phải */
 /* banner */
 /* blog detail */
