@@ -18,12 +18,20 @@
     <script>
         let search= document.querySelectorAll(".ti-search")
         search.onclick = submitForm(event)
+
+
+
+        let click = document.querySelectorAll(".main")
+        function changeColor(color){
+            document.querySelector('.main').styte.color=color;
+        }
+        click.onclick=changeColor('blue')
     </script>
 </head>
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header">
+        <div id="header">
             <div class="header-top">
                <div class="logo">
                     <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
@@ -509,13 +517,16 @@
             </div>
         </div>
     </div>
+    <div id="backtop">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
     </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="../assets/javascript/main.js"></script>
     <!-- Initialize Swiper -->
-
 </body>
 
 </html>

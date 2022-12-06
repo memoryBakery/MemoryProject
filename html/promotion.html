@@ -15,14 +15,17 @@
     <link rel="stylesheet" href="../assets/css/promotion.css">
     <script>
          function showProduct(){
+        const current=event.target; 
         document.getElementById("continute-product").classList.toggle("activate");
+        current.textContent = current.textContent.includes('Xem thêm sản phẩm')?
+        "Đóng dùm":"Xem thêm sản phẩm";
        }
       
     </script>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <div id="header">
             <div class="header-top">
                <div class="logo">
                     <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
@@ -426,6 +429,16 @@
     </div>
     </div>
 </body>
-<script src="../assets/javascript/main.js">
+<script>
+    var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").classList.remove('show');
+        }
+        else { document.getElementById("header").classList.add('show');
+        }
+        prevScrollpos = currentScrollPos;
+        }
 </script>
 </html>

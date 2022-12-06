@@ -12,7 +12,7 @@
 
 @media (max-width: 1023px) and (min-width: 740px) {
     
-    .header{
+    #header{
         font-size: 0.8rem;
     }
     .story{
