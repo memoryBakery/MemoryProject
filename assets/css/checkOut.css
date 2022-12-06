@@ -60,6 +60,7 @@
 
 /* Thanh điều hướng */
 .navigation {
+    margin-top: 15px;
     width: auto;
     height: 35px;
     background-color: var(--background-color); 
