@@ -13,13 +13,19 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-        @import url('https://fonts.googleapis.com/css?family=Inter:400,800');   
+        @import url('https://fonts.googleapis.com/css?family=Inter:400,800');  
+        :root {
+            --primary_color: #E75C6B;
+            --color_button: #F38A95;
+            --background-color: #F9F2F2;
+            --button: #F38A95;
+            --button_hover: #81C6E8;
+        } 
         .cart-container{
                 padding: 0;
-                margin: 0 140px 0 140px;
+                margin: 0 0px 0 140px;
                 box-sizing: border-box;
                 font-family: 'Montserrat', sans-serif;
-                margin-top: 140px;
             }
         .cart-title{
             /* background-color: var(--background-color); */
@@ -45,10 +51,13 @@
         .content p{
             font-size: 25px;
         }
-        a {
+        .content a {
             color: var(--primary_color);
             text-decoration: underline;
             font-style: italic;
+        }
+        .content a:hover {
+            color: var(--button_hover);
         }
     </style>
     <script>
@@ -61,7 +70,7 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header">
+        <div id="header">
             <div class="header-top">
                <div class="logo">
                     <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
@@ -128,7 +137,7 @@
                                 <li class="type_category"><a href="./productBanhmi.html"> Bánh mì</a></li>
                             </ul>
                     </li>
-                    <li class="main btnn"><a href="../html/main.html"><span> Trang chủ</span></a></li>
+                    <li class="main now"><a href="../html/main.html"><span> Trang chủ</span></a></li>
                     <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
                     <li class="story btnn"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
                     <li class="blog"><a href="./blog.html">Tin tức</a></li>
