@@ -14,79 +14,6 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
   
     <script>
-        function LoadJson(){
-    fetch("../assets/json/products.json")
-    .then(function(response){
-        if(!response.ok){
-            throw new Error("Đã có lỗi xảy ra :(")
-        }
-        return response.json()
-    })
-    .then(function(data){
-        let html="";
-        for (let p of data){
-          if(p.category=='Bánh mỳ'){
-            html+="<div class='product'>";
-            html+="<div class='img-product'>";
-            html+="<a href='./productDetail.html'><img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'></a>";
-            html+="<div class='cart-love'>";
-            html+="<a href=''><i class='fa-solid fa-cart-shopping'></i> </a><a href=''><i class='fa-solid fa-heart'></i></a>"
-            html+="</div>"
-            html+="</div>"
-            html+="<p class='name'>"+ p.name+"</p>";
-            html+="<p class='price'><span class='old-price'>"+p.oldPrice+" VNĐ "+"</span><span class='new-price'>"+p.newPrice+" VNĐ"+"</span></p>";
-            html+="<div class='vote'><span class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i></span> "+ p.vote  ;              
-            html+= "</div>";
-            html+= "</div>";
-          }}
-        
-        document.getElementById("products").innerHTML=html;
-        const typeCategorys = document.querySelectorAll(".type_category");
-            for(let i=0; i<typeCategorys.length;i++){
-                typeCategorys[i].onclick=function(){
-                    var ma="";
-                        switch (i){
-                            case 0: 
-                                ma ='Bánh kem'
-                                break;
-                            case 1: 
-                                ma ='Bánh quy'
-                                break;
-                            case 2: 
-                                ma ='Cupcakes'
-                                break;
-                            case 3: 
-                                ma ='Donuts'
-                                break;
-                            case 4:
-                                ma='Bánh mỳ'}
-
-                           let html=""     
-                    for(let p of data){
-                        if(p.category == ma){
-                          html+="<div class='product'>";
-                          html+="<div class='img-product'>";
-                          html+="<a href='./productDetail.html'><img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'></a>";
-                          html+="<div class='cart-love'>";
-                          html+="<a href=''><i class='fa-solid fa-cart-shopping'></i> </a><a href=''><i class='fa-solid fa-heart'></i></a>"
-                          html+="</div>"
-                          html+="</div>"
-                          html+="<p class='name'>"+ p.name+"</p>";
-                          html+="<p class='price'><span class='old-price'>"+p.oldPrice+" VNĐ "+"</span><span class='new-price'>"+p.newPrice+" VNĐ"+"</span></p>";
-                          html+="<div class='vote'><span class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i></span> "+ p.vote  ;              
-                          html+= "</div>";
-                          html+= "</div>";
-                          document.getElementById("products").innerHTML=html;
-                        }}
-                       
-                        // return product1;  
-                }
-    }
-  })
-    .catch(function(err){
-        throw new Error(err.message);
-    })
-}
         window.onload=function(){
                     LoadJson()
                 }
@@ -95,7 +22,7 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header">
+        <div id="header">
             <div class="header-top">
                <div class="logo">
                     <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
@@ -148,7 +75,7 @@
             </div>
             <div class="header-bottom">
                 <ul class="nav">
-                    <li>
+                    <li class="now">
                             <a href="../html/listProduct.html">
                                 <i class="fa-sharp fa-solid fa-list"></i>
                                 Danh mục sản phẩm
@@ -177,11 +104,11 @@
                 <hr>
                 <ul>
                     <a href="./listProduct.html" ><li>Tất cả</li></a>
-                    <a href="#" class="type_category"> <li>Bánh kem</li></a>
-                    <a href="#" class="type_category"> <li>Bánh quy</li></a>
-                    <a href="#" class="type_category"> <li>Cupcakes</li></a>
-                    <a href="#" class="type_category"> <li>Donuts</li></a>
-                    <a href="#" class="type_category"> <li>Bánh mì</li></a>
+                    <a href="./productBanhkem.html" class="type_category"> <li>Bánh kem</li></a>
+                    <a href="./productBanhquy.html" class="type_category"> <li>Bánh quy</li></a>
+                    <a href="./productCupcakes.html" class="type_category"> <li>Cupcakes</li></a>
+                    <a href="./productDonuts.html" class="type_category"> <li>Donuts</li></a>
+                   <span class="now"><a href="./productBanhmi.html" class="type_category"> <li>Bánh mì</li></a></span> 
                 </ul>
                 <p class="title">Khoảng giá</p>
                 <hr>
@@ -270,5 +197,118 @@
         </div>
     </div>
 </body>
+<script>
+    var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").classList.remove('show');
+        }
+        else { document.getElementById("header").classList.add('show');
+        }
+        prevScrollpos = currentScrollPos;
+        }
 
+</script>
+<script>
+            function LoadJson(){
+    fetch("../assets/json/products.json")
+    .then(function(response){
+        if(!response.ok){
+            throw new Error("Đã có lỗi xảy ra :(")
+        }
+        return response.json()
+    })
+    .then(function(data){
+        let html="";
+        for (let p of data){
+          if(p.category=='Bánh mỳ'){
+            html+="<div class='product'>";
+            html+="<div class='img-product'>";
+            html+="<a href='./productDetail.html'><img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'></a>";
+            html+="<div class='cart-love'>";
+            html+="<a href=''><i class='fa-solid fa-cart-shopping'></i> </a><a href=''><i class='fa-solid fa-heart'></i></a>"
+            html+="</div>"
+            html+="</div>"
+            html+="<p class='name'>"+ p.name+"</p>";
+            html+="<p class='price'><span class='old-price'>"+p.oldPrice+" VNĐ "+"</span><span class='new-price'>"+p.newPrice+" VNĐ"+"</span></p>";
+            html+="<div class='vote'><span class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i></span> "+ p.vote  ;              
+            html+= "</div>";
+            html+= "</div>";
+          }}
+        
+        document.getElementById("products").innerHTML=html;
+        const typeCategorys = document.querySelectorAll(".type_category");
+            for(let i=0; i<typeCategorys.length;i++){
+                typeCategorys[i].onclick=function(){
+                    var ma="";
+                        switch (i){
+                            case 0: 
+                                ma ='Bánh kem'
+                                break;
+                            case 1: 
+                                ma ='Bánh quy'
+                                break;
+                            case 2: 
+                                ma ='Cupcakes'
+                                break;
+                            case 3: 
+                                ma ='Donuts'
+                                break;
+                            case 4:
+                                ma='Bánh mỳ'}
+
+                           let html=""     
+                    for(let p of data){
+                        if(p.category == ma){
+                          html+="<div class='product'>";
+                          html+="<div class='img-product'>";
+                          html+="<a href='./productDetail.html'><img src='../assets/img/ẢNH SẢN PHẨM/"+p.img[0]+"'></a>";
+                          html+="<div class='cart-love'>";
+                          html+="<a href=''><i class='fa-solid fa-cart-shopping'></i> </a><a href=''><i class='fa-solid fa-heart'></i></a>"
+                          html+="</div>"
+                          html+="</div>"
+                          html+="<p class='name'>"+ p.name+"</p>";
+                          html+="<p class='price'><span class='old-price'>"+p.oldPrice+" VNĐ "+"</span><span class='new-price'>"+p.newPrice+" VNĐ"+"</span></p>";
+                          html+="<div class='vote'><span class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i></span> "+ p.vote  ;              
+                          html+= "</div>";
+                          html+= "</div>";
+                          document.getElementById("products").innerHTML=html;
+                        }}
+                       
+                        // return product1;  
+                }
+    }
+  })
+    .catch(function(err){
+        throw new Error(err.message);
+    })
+}
+function submitForm(event){ 
+  event.preventDefault();
+  var ele = document.getElementById("inputvalue");                
+
+  if (ele.value =='bánh kem'){
+      window.location.replace("./productBanhkem.html")
+  }
+  else if (ele.value =="bánh quy"){
+  window.location.replace("./productBanhquy.html")
+  }
+  else if (ele.value +""==="bánh donuts"){
+  window.location.replace("./productDonuts.html")
+  }
+  else if (ele.value +""==="bánh mì"){
+  window.location.replace("./productBanhmi.html")
+  }
+  else if (ele.value +""==="cupcakes"){
+  window.location.replace("./productCupcakes.html")
+  }
+  else if (ele.value +""==="bánh donuts"){
+  window.location.replace("./productDonuts.html")
+  }
+  else{
+  window.location.replace("./noProduct.html")
+  }
+  }
+</script>
 </html>

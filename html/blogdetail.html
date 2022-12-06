@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="header">
+    <div id="header">
         <div class="header-top">
            <div class="logo">
                 <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
@@ -85,7 +85,7 @@
                 <li class="main btnn"><a href="../html/main.html"><span> Trang chủ</span></a></li>
                 <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
                 <li class="story btnn"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
-                <li class="blog"><a href="./blog.html">Tin tức</a></li>
+                <li class="blog now"><a href="./blog.html">Tin tức</a></li>
                 <li class="contact"><a href="./contact.html">Liên hệ</a></li> 
             </ul>
         </div>
@@ -261,4 +261,17 @@
         </div>
     </div>
 </body>
+<script>
+    var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").classList.remove('show');
+        }
+        else { document.getElementById("header").classList.add('show');
+        }
+        prevScrollpos = currentScrollPos;
+        }
+
+</script>   
 </html>

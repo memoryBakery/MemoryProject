@@ -200,7 +200,7 @@ ul{
     width: 100%;
     transform: scaleX(1);
 }
-.now a{
+.now>a{
     color: var(--hover_color)!important;
 }
 
@@ -322,7 +322,7 @@ h1 {
     height: 3rem;
 }
 .prev-newproduct, .next-newproduct{
-    background-color: var(--hover_color);
+    /* background-color: var(--hover_color); */
 }
 .carousel-control-next-icon{
     margin-left: 120px;
@@ -468,7 +468,7 @@ section{
 }
 
 .prev-comment, .next-comment{
-    background-color: var(--hover_color);
+    /* background-color: var(--hover_color); */
 }
 
 
