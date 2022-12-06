@@ -20,9 +20,6 @@
 .account_nav .nav #sub_nav{
     display: none;
 }
-.account_nav .nav:hover #sub_nav a{
-    /* background-color: white; */
-}
 
 .profile{
     display: flex;
@@ -44,7 +41,7 @@ i{
 .right{
     width: 100%;
     padding: 0 20px;
-    height: 100vh;
+    height: 150vh;
 }
 
 .account_nav .nav #sub_nav.activate{

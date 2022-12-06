@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <div class="header">
+    <div id="header">
         <div class="header-top">
            <div class="logo">
                 <a href=""><img src="../assets/img/logo.jpg" alt=""></a>
@@ -87,17 +87,16 @@
                             <li class="type_category"><a href="./productBanhmi.html"> Bánh mì</a></li>
                         </ul>
                 </li>
-                <li class="main btnn"><a href="../html/main.html"><span> Trang chủ</span></a></li>
+                <li class="main"><a href="../html/main.html"><span> Trang chủ</span></a></li>
                 <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
-                <li class="story btnn"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
-                <li class="blog"><a href="./blog.html">Tin tức</a></li>
+                <li class="story"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
+                <li class="blog now"><a href="./blog.html">Tin tức</a></li>
                 <li class="contact"><a href="./contact.html">Liên hệ</a></li> 
             </ul>
         </div>
     </div>
-        <div class="banner" style="margin-top:126px">
-            <img src="../assets/img/blog.png" alt="">
-            <a href="./blogdetail.html" class="readnow">Read Now</a>
+        <div class="banner">
+            <img src="../assets/img/blog.png" usemap="#readnow">
         </div>
         <div class="blogs">
             <div class="baivietnoibat">
@@ -304,5 +303,24 @@
                 </div>
             </div>
         </div>
+        <figure>
+        <map name="readnow">
+            <area href="./blogdetail.html" coords="253,385,263,366,266,363,353,363,393,363,437,366,447,367,463,372,449,399,266,398,250,366" shape="poly">
+        </map>
+    </figure>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header").classList.remove('show');
+            }
+            else { document.getElementById("header").classList.add('show');
+            }
+            prevScrollpos = currentScrollPos;
+            }
+    
+    </script>
 </body>
 </html>
