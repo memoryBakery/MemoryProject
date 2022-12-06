@@ -12,11 +12,7 @@
     <link rel="stylesheet" href="../assets/css/styte.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/account.css">
-    <script>
-        function showSublist() {
-        document.getElementById("sub_nav").classList.toggle("activate");
-       }
-   </script>
+    
 </head>
 <body>
     <div class="container">
@@ -109,21 +105,21 @@
                 <hr>
                 <div class="nav">
                     <ul>
-                        <li>
-                            <a href="#" onclick="showSublist()"><i class="fa-regular fa-user"></i> Tài khoản của tôi</a>
+                        <li id="nav-profile5" onclick="showColor5()">
+                            <a href="#" onclick="showSublist()" ><i class="fa-regular fa-user"></i> Tài khoản của tôi</a>
                             <div id="sub_nav">
                                 <ul >
-                                    <li><a href="./accountProfile.html" target="my_iframe"> Hồ sơ</a></li>
-                                    <li><a href="./accountChangePassWord.html" target="my_iframe"> Đổi mật khẩu</a></li>
-                                    <li><a href="./myAddress.html" target="my_iframe"> Địa chỉ</a></li>
+                                    <li id="sub-nav_profile1"><a onclick="showColor6()" href="./accountProfile.html" target="my_iframe"> Hồ sơ</a></li>
+                                    <li id="sub-nav_profile2"><a onclick="showColor7()" href="./accountChangePassWord.html" target="my_iframe"> Đổi mật khẩu</a></li>
+                                    <li id="sub-nav_profile3"><a onclick="showColor8()" href="./myAddress.html" target="my_iframe"> Địa chỉ</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="./accountOrder.html" target="my_iframe"> <i style="padding-right: 6px" class="fa-regular fa-clipboard"></i> <span> Đơn hàng</span></a></li>
-                        <li><a href="./account_voucher.html" target="my_iframe"> <i style="padding-right: 6px" class="fa-solid fa-tag"></i> <span> Voucher</span></a> </li>
-                        <li><a href="./myLoveproduct.html" target="my_iframe"> <i style="padding-right: 4px" class="fa-regular fa-heart"></i> <span> Sản phẩm yêu thích</span></a></li>
-                        <li><a href="./account_review.html" target="my_iframe"> <i class="fa-regular fa-comments"></i> <span> Đánh giá</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i style="padding-right: 3px" class="fa-solid fa-arrow-right-from-bracket"></i> <span> Đăng xuất</span></a>
+                        <li id="nav-profile1"><a href="./accountOrder.html" onclick="showColor1()" target="my_iframe"> <i style="padding-right: 6px" class="fa-regular fa-clipboard"></i> <span> Đơn hàng</span></a></li>
+                        <li id="nav-profile2"><a href="./account_voucher.html" onclick="showColor2()" target="my_iframe"> <i style="padding-right: 6px" class="fa-solid fa-tag"></i> <span> Voucher</span></a> </li>
+                        <li id="nav-profile3"><a href="./myLoveproduct.html" onclick="showColor3()"  target="my_iframe"> <i style="padding-right: 4px" class="fa-regular fa-heart"></i> <span> Sản phẩm yêu thích</span></a></li>
+                        <li id="nav-profile4"><a href="./account_review.html" onclick="showColor4()" target="my_iframe"> <i class="fa-regular fa-comments"></i> <span> Đánh giá</span></a></li>
+                        <li ><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i style="padding-right: 3px" class="fa-solid fa-arrow-right-from-bracket"></i> <span> Đăng xuất</span></a>
                         </li>
                     </ul>
                 </div>
@@ -221,4 +217,72 @@
     </div>
     </div>
 </body>
+<script>
+    function showSublist() {
+    document.getElementById("sub_nav").classList.toggle("activate");
+   }
+   
+   function showColor1(){
+   document.getElementById("nav-profile1").classList.add('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor2(){
+   document.getElementById("nav-profile2").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor3(){
+   document.getElementById("nav-profile3").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor4(){
+   document.getElementById("nav-profile4").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor5(){
+   document.getElementById("nav-profile5").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+    }
+    function showColor6(){
+   document.getElementById("sub-nav_profile1").classList.add('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+    }
+    function showColor7(){
+   document.getElementById("sub-nav_profile2").classList.add('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+    }
+    function showColor8(){
+   document.getElementById("sub-nav_profile3").classList.add('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+</script>
 </html>

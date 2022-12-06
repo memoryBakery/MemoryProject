@@ -634,6 +634,35 @@ h5 {
     bottom: 20px;
     right: 20px;
 }
+#chatbox{
+    width: 60px;
+    height: 60px;
+    background-color: var(--hover_color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+}
+#phone{
+    width: 60px;
+    height: 60px;
+    background-color: var(--hover_color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
+
 
 
 

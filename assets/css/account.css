@@ -47,3 +47,29 @@ i{
 .account_nav .nav #sub_nav.activate{
     display: block
 }
+
+#nav-profile1.color a{
+    color: var(--primary_color);
+}
+#nav-profile2.color a{
+    color: var(--primary_color);
+}
+#nav-profile3.color a{
+    color: var(--primary_color);
+}
+#nav-profile4.color a{
+    color: var(--primary_color);
+}
+#nav-profile5.color >a{
+    color: var(--primary_color);
+}
+
+#sub-nav_profile1.color a{
+    color: var(--hover_color);
+}
+#sub-nav_profile2.color a{
+    color: var(--hover_color);
+}
+#sub-nav_profile3.color a{
+    color: var(--hover_color);
+}
