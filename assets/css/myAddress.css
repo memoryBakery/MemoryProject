@@ -573,3 +573,12 @@ input[type=radio] {
     font-weight: 500;
     font-weight: 600;
 }
+.modal-button a {
+    text-decoration: none;
+    color: var(--primary_color);
+    font-size: 16px;
+}
+.modal-button a:hover {
+    text-decoration: underline;
+    color: var(--button_hover);
+}
