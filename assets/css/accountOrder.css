@@ -37,13 +37,7 @@
     font-weight: bold;
 }
 
-#waitting.activate a  {
-    text-decoration: underline  ;
-    font-weight: bold ;
-    color: var(--primary_color) ;
-}
-
-#all.activate a {
+#all.activate a,#waitting.activate a,#delivering.activate a,#delivered.activate a,#cancel.activate a  {
     text-decoration: underline  ;
     font-weight: bold ;
     color: var(--primary_color) ;

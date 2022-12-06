@@ -11,7 +11,67 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/styte.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/accountVoucher.css">
+    <style>
+        .vouchers {
+            margin-top: 0 !important;
+            max-width: 1000vw;
+            height: 100vh;
+        }
+
+        .vouchers .title{
+            display: flex;
+            justify-content: space-around;
+        }
+        .background-voucher{
+            background-color: #f0b8be;
+            border: 2px solid rgb(249, 247, 247);
+            margin: 20px;
+            width: 451px;
+        }
+        .vouchers .title input{
+            width: 300px;
+            height: 57px;
+            padding: 0 60px 0 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #f1b9b9;
+        }
+        .voucher{
+            display: inline-flex;
+            border: 2px solid rgb(248, 247, 247);
+            margin: 40px;
+            background-color: white;
+        }
+        .voucher .logo{
+            margin: auto;
+            border-right: 2px dashed rgb(126, 121, 121);
+            padding: 43px 10px;
+        }
+        .discount{
+            margin-left: 10px;
+            padding: 10px;
+        }
+        .discount input{
+            background-color:#E75C6B   ;
+            color: white;
+            border: 1px solid black;
+            border-radius: 10px;  
+        }
+        hr{
+            margin: 10px 0;  
+        }
+        .btn-input{
+            text-align: right;
+        }
+        .voucher .logo img{
+            width: 140px;
+        }
+
+        .list-voucher{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
 
@@ -93,42 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="background-voucher">
-                        <div class="voucher">
-                            <div class="logo">
-                                <img src="../assets/img/logo.jpg" alt="">
-                                <p>MEMORY Bakery</p>
-                            </div>
-                            <div class="discount">
-                                <h5>#SANDEALRE</h5>
-                                <span>Giảm 30k</span><br>
-                                <span style="font-size:15px">Cho đơn hàng trên 500k</span>
-                                <hr>
-                                <span>HSD: 27.12.2022</span><br>
-                                <div class="btn-input">
-                                    <input type="button" value="Sao chép">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="background-voucher">
-                        <div class="voucher">
-                            <div class="logo">
-                                <img src="../assets/img/logo.jpg" alt="">
-                                <p>MEMORY Bakery</p>
-                            </div>
-                            <div class="discount">
-                                <h5>#SANDEALRE</h5>
-                                <span>Giảm 25k</span><br>
-                                <span style="font-size:15px">Cho đơn hàng trên 400k</span>
-                                <hr>
-                                <span>HSD: 27.12.2022</span><br>
-                                <div class="btn-input">
-                                    <input type="button" value="Sao chép">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
     </div>
 </body>
