@@ -31,7 +31,7 @@
     border: 2px solid rgb(248, 247, 247);
     margin: 30px;
     background-color: white;
-    
+    width: 400px;
 }
 .voucher .logo{
     margin: auto;
@@ -61,6 +61,9 @@ hr{
     width: 140px;
 }
 
+.btn-input input:hover{
+    background-color: var(--hover_color);
+}
 
 .shortscut{
     display: flex;

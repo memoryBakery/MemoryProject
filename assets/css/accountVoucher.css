@@ -1,3 +1,4 @@
+
 .vouchers {
     margin-top: 0 !important;
     max-width: 1000px;
@@ -24,7 +25,7 @@
 .voucher{
     display: inline-flex;
     border: 2px solid rgb(248, 247, 247);
-    margin: 40px;
+    margin: 30px;
     background-color: white;
 }
 .voucher .logo{
