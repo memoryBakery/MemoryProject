@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+.title {
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .container{
-    border: 1px solid black;
-    height: 700px;
+    height: 1000px;
 }
 .product{
     background-color: #f0d9d8;
     text-align: center;
     border-radius: 10px;
-    /* margin: 30px; */
     display: inline-block;
     padding: 10px;
     border-radius: 25px;
-    margin: 20px 50px;
+    margin: 20px 5px;
 }
 .product > *{
     padding: 5px;

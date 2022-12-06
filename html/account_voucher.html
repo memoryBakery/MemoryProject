@@ -12,15 +12,20 @@
     <link rel="stylesheet" href="../assets/css/styte.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <style>
-        .vouchers {
+        .container {
             margin-top: 0 !important;
             max-width: 1000vw;
             height: 100vh;
         }
 
-        .vouchers .title{
+        .vouchers-container{
             display: flex;
             justify-content: space-around;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        .title {
+            font-size: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .background-voucher{
             background-color: #f0b8be;
@@ -28,7 +33,7 @@
             margin: 20px;
             width: 451px;
         }
-        .vouchers .title input{
+        .vouchers .vouchers-container input{
             width: 300px;
             height: 57px;
             padding: 0 60px 0 20px;
@@ -75,12 +80,12 @@
 </head>
 <body>
 
-    <div class="vouchers">
-                <div class="title">
-                    <h1 style="margin-bottom: 0">Kho mã giảm giá</h1>
-                    <input  type="text" name="" placeholder="Tìm thêm" id="">
-                </div>
-                <div class="list-voucher">
+    <div class="container">
+        <div class="vouchers-container">
+            <p class="title">Kho mã giảm giá</p>
+            <input  type="text" name="" placeholder="Tìm thêm" id="">
+        </div>
+        <div class="list-voucher">
                     <div class="background-voucher">
                         <div class="voucher">
                             <div class="logo">
@@ -154,7 +159,7 @@
                         </div>
                     </div>
 
-                </div>
+        </div>
     </div>
 </body>
 </html>
