@@ -6,6 +6,11 @@ h1, h2, h3{
     text-decoration: none;
     color: #E75C6B;
 }
+.title-intro{
+    font-weight: bold;
+    color: var(--primary_color);
+    font-size: 30px;
+}
 p {
     font-family: 'Inter', sans-serif;
     text-align: justify;
@@ -17,6 +22,7 @@ p {
     text-align: center;
 }
 .center{
+    margin-top: 30px;
 display: flex;
 align-items: center;
 justify-content: center;

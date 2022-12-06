@@ -468,7 +468,7 @@ section{
 }
 
 .prev-comment, .next-comment{
-    /* background-color: var(--hover_color); */
+    background-color: rgb(226, 226, 247);
 }
 
 

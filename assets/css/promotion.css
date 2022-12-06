@@ -24,12 +24,12 @@
     background-color: #f0b8be;
     border: 2px solid rgb(249, 247, 247);
     margin: 20px;
-    width: 451px;
+    /* width: 451px; */
 }
 .voucher{
     display: inline-flex;
     border: 2px solid rgb(248, 247, 247);
-    margin: 40px;
+    margin: 30px;
     background-color: white;
     
 }
@@ -48,7 +48,7 @@
 .discount input{
     background-color:#E75C6B   ;
     color: white;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;  
 }
 hr{
@@ -100,8 +100,13 @@ hr{
 .vouchers{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f9f2f2;
 }
 .list-voucher{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #f9f2f2;
     margin-top: 50px;
     padding: 20px 0;
