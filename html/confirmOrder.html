@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất cả đơn hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/styte.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/account.css">
+    <script>
+        function showAll() {
+            document.getElementById("all").classList.add("activate");
+            document.getElementById("waitting").classList.remove("activate");
+        }
+
+        function hideAll() {
+          document.getElementById("all").classList.remove("activate");
+        }
+        
+        function showWaitting() {
+            document.getElementById("waitting").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+        }
+        function hideWaitting() {
+          document.getElementById("waitting").classList.remove("activate");
+        }
+
+        function showDelivering() {
+            document.getElementById("delivering").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+            document.getElementById("waitting").classList.remove("activate");
+        }
+        function hideDelivering() {
+          document.getElementById("delivering").classList.remove("activate");
+        }
+
+        function showDelivered() {
+            document.getElementById("delivered").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+            document.getElementById("waitting").classList.remove("activate");
+            document.getElementById("delivering").classList.remove("activate");
+        }
+        function hideDelivered() {
+          document.getElementById("delivered").classList.remove("activate");
+        }
+
+        function showCancel() {
+            document.getElementById("cancel").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+            document.getElementById("waitting").classList.remove("activate");
+            document.getElementById("delivering").classList.remove("activate");
+            document.getElementById("delivered").classList.remove("activate");
+            
+        }
+        function hideCancel() {
+          document.getElementById("cancel").classList.remove("activate");
+        }
+        
+
+    </script>
+    <style>
+        :root {
+    --primary_color: #E75C6B;
+    --sub_color: #FFEAE9;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        .title {
+            font-size: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            max-width: 1000px;
+        }
+        .right1 {
+            height: 700px;
+            max-width: 1000px;
+        }
+
+        .subtitle {
+            border: 3px solid var(--primary_color);
+            border-radius: 50px;
+            margin: 9px;
+            background-color: var(--sub_color);
+        }
+        .sub-col {
+            border-left:3px solid var(--primary_color); ;
+        }
+        .sub-col:nth-child(1) {
+            border: none;
+        }
+
+        .sub-col a {
+            text-decoration: none;
+            color: black;
+        }
+        .sub-col a:hover {
+            text-decoration: underline;
+            color: var(--primary_color);
+            font-weight: bold;
+        }
+
+        #all.activate a,#waitting.activate a,#delivering.activate a,#delivered.activate a,#cancel.activate a  {
+            text-decoration: underline  ;
+            font-weight: bold ;
+            color: var(--primary_color) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <p style="margin-bottom: 0">Đơn hàng</p>
+        </div>
+        <div class="main">
+            <div class="container text-center main">
+              <div class="row subtitle">
+                <div class="col sub-col" id="all">
+                  <a href="./allOrder.html" target="my_iframe1" onclick="showAll() & hideWaitting() &hideDelivered()&hideDelivering()&hideCancel()">Tất cả</a>
+                </div>
+                <div class="col sub-col activate" id="waitting">
+                  <a href="./waittingOrder.html" target="my_iframe1" onclick="showWaitting() & hideAll()&hideDelivered()&hideDelivering()&hideCancel()">Chờ xác nhận</a>
+                  
+                </div>
+                <div class="col sub-col" id="delivering">
+                  <a href="./allOrder.html" target="my_iframe1" onclick="showDelivering() & hideAll() & hideWaitting() &hideDelivered()&hideCancel()">Đang giao</a>
+                </div>
+                <div class="col sub-col" id="delivered">
+                  <a href="./allOrder.html" target="my_iframe1" onclick="showDelivered()&hideDelivering() & hideAll() & hideWaitting() &hideCancel()">Đã giao</a>
+                  
+                </div>
+                <div class="col sub-col" id="cancel">
+                  <a href="./waittingOrder.html" target="my_iframe1" onclick="showCancel()&hideDelivered()&hideDelivering() & hideAll() & hideWaitting()">Đã huỷ</a>
+                  
+                </div>
+              </div>
+            </div>
+      
+           
+            <div class="right1">
+                <iframe name="my_iframe1" src="./waittingOrder.html" frameborder="0" height="100%" width="100%"></iframe>
+            </div>
+        </div>
+
+</body>
+</html>
