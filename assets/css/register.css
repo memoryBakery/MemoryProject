@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 @import url('https://fonts.googleapis.com/css?family=Inter:400,800');
-
+:root{
+  --primary_color: #e75c6b;
+  --button_color:#F38a95;
+  --background_color:#f9f2f2;
+  --hover_color:#81C6E8;
+}
 
 body{
    height: 100vh;
@@ -132,3 +137,18 @@ body{
  }
  
  
+ .register{
+  background-color: var(--button_color);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+ }
+ .register:hover{
+  color: #000;
+  text-decoration: none;
+  background-color: var(--hover_color);
+ }
