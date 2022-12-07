@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../assets/font/themify-icons-font (1)/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/styte.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/account.css">
+    <script>
+        function showAll() {
+            document.getElementById("all").classList.add("activate");
+            document.getElementById("waitting").classList.remove("activate");
+        }
+
+        function hideAll() {
+          document.getElementById("all").classList.remove("activate");
+        }
+        
+        function showWaitting() {
+            document.getElementById("waitting").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+        }
+        function hideWaitting() {
+          document.getElementById("waitting").classList.remove("activate");
+        }
+
+        function showDelivering() {
+            document.getElementById("delivering").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+            document.getElementById("waitting").classList.remove("activate");
+        }
+        function hideDelivering() {
+          document.getElementById("delivering").classList.remove("activate");
+        }
+
+        function showDelivered() {
+            document.getElementById("delivered").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+            document.getElementById("waitting").classList.remove("activate");
+            document.getElementById("delivering").classList.remove("activate");
+        }
+        function hideDelivered() {
+          document.getElementById("delivered").classList.remove("activate");
+        }
+
+        function showCancel() {
+            document.getElementById("cancel").classList.add("activate");
+            document.getElementById("all").classList.remove("activate");
+            document.getElementById("waitting").classList.remove("activate");
+            document.getElementById("delivering").classList.remove("activate");
+            document.getElementById("delivered").classList.remove("activate");
+            
+        }
+        function hideCancel() {
+          document.getElementById("cancel").classList.remove("activate");
+        }
+
+    </script>
+    <style>
+        :root {
+    --primary_color: #E75C6B;
+    --sub_color: #FFEAE9;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        .title {
+            font-size: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            max-width: 1000px;
+        }
+        .right1 {
+            height: 700px;
+            max-width: 1000px;
+        }
+
+        .subtitle {
+            border: 3px solid var(--primary_color);
+            border-radius: 50px;
+            margin: 9px;
+            background-color: var(--sub_color);
+        }
+        .sub-col {
+            border-left:3px solid var(--primary_color); ;
+        }
+        .sub-col:nth-child(1) {
+            border: none;
+        }
+
+        .sub-col a {
+            text-decoration: none;
+            color: black;
+        }
+        .sub-col a:hover {
+            text-decoration: underline;
+            color: var(--primary_color);
+            font-weight: bold;
+        }
+
+        #all.activate a,#waitting.activate a,#delivering.activate a,#delivered.activate a,#cancel.activate a  {
+            text-decoration: underline  ;
+            font-weight: bold ;
+            color: var(--primary_color) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div id="header">
+         <div class="header-top">
+            <div class="logo">
+                 <a href="./main.html"><img src="../assets/img/logo.jpg" alt=""></a>
+            </div>
+            <div class="btn-search" >
+             <form class="inputSearch" onsubmit="submitForm(event)">
+                 <input
+                     type="text" class="search" id="inputvalue"> 
+                 </input>
+                 <button class="ti-search"></button>
+             </form>
+            </div> 
+             <div class="right-header-top">
+                 <div class="account">
+                     <a href="" >
+                         <i class="fa-solid fa-user"></i>
+                        <span>Tài khoản</span> 
+                     </a>
+                     <ul class="sub-nav">
+                         <li>
+                             <a href="./myAccount.html">
+                                 <i class="fa-solid fa-user"></i> Tài khoản của tôi
+                             </a>
+                         </li>
+                         <li>
+                             <a href="./register.html">
+                                 <i class="fa-solid fa-user-plus"></i> Đăng kí
+                             </a>
+                         </li>
+                         <li>
+                             <a href="./login.html">
+                                 <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
+                             </a>
+                         </li>
+                       
+                     </ul>
+                 </div>
+                 <div class="cart">
+                     <a href="./cart.html">
+                         <i class="fa-solid fa-cart-shopping"></i>
+                         <span>Giỏ hàng</span></a>
+                 </div>
+                 <div class="phone">
+                     <a href="">
+                         <i class="fa-solid fa-phone"></i>
+                         <span> 0905792559</span>
+                     </a>
+                 </div>   
+             </div>
+         </div>
+         <div class="header-bottom">
+             <ul class="nav">
+                 <li>
+                         <a href="../html/listProduct.html">
+                             <i class="fa-sharp fa-solid fa-list"></i>
+                             Danh mục sản phẩm
+                             <i class="nav-arrow-down ti-angle-down"></i>
+                         </a>
+                         <ul class="sub-nav">
+                             <li class="type_category"><a href="./productBanhkem.html"> Bánh kem</a></li>
+                             <li class="type_category"><a href="./productCupcakes.html"> Cupcakes</a></li>
+                             <li class="type_category"><a href="./productBanhquy.html"> Bánh quy</a></li>
+                             <li class="type_category"><a href="./productDonuts.html"> Donuts</a></li>
+                             <li class="type_category"><a href="./productBanhmi.html"> Bánh mì</a></li>
+                         </ul>
+                 </li>
+                 <li class=""><a href="../html/main.html"><span> Trang chủ</span></a></li>
+                 <li class="promotion"><a href="./promotion.html">Khuyến mãi</a></li>
+                 <li class="story btnn"><a href="./aboutUs.html">Câu chuyện thương hiệu</a></li>
+                 <li class="blog"><a href="./blog.html">Tin tức</a></li>
+                 <li class="contact"><a href="./contact.html">Liên hệ</a></li> 
+             </ul>
+         </div>
+         </div>
+         <div class="body">
+             
+             <div class="account_nav">
+                 <div class="profile">
+                     <img src="../assets/img/CUSTOMERS/QuangLinh.jpg" alt="">
+                     <div class="profile-right">
+                         <h3>Phạm Quang Linh</h3>
+                         <a href="./accountProfile.html" target="my_iframe"><i class="fa-solid fa-pen"></i> Sửa hồ sơ</a>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class="nav">
+                     <ul>
+                         <li id="nav-profile5" onclick="showColor5()">
+                             <a href="#" onclick="showSublist()" ><i class="fa-regular fa-user"></i> Tài khoản của tôi</a>
+                             <div id="sub_nav">
+                                 <ul >
+                                     <li id="sub-nav_profile1"><a onclick="showColor6()" href="./accountProfile.html" target="my_iframe"> Hồ sơ</a></li>
+                                     <li id="sub-nav_profile2"><a onclick="showColor7()" href="./accountChangePassWord.html" target="my_iframe"> Đổi mật khẩu</a></li>
+                                     <li id="sub-nav_profile3"><a onclick="showColor8()" href="./myAddress.html" target="my_iframe"> Địa chỉ</a></li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li id="nav-profile1"><a href="./accountOrder.html" onclick="showColor1()" target="my_iframe"> <i style="padding-right: 6px" class="fa-regular fa-clipboard"></i> <span> Đơn hàng</span></a></li>
+                         <li id="nav-profile2"><a href="./account_voucher.html" onclick="showColor2()" target="my_iframe"> <i style="padding-right: 6px" class="fa-solid fa-tag"></i> <span> Voucher</span></a> </li>
+                         <li id="nav-profile3"><a href="./myLoveproduct.html" onclick="showColor3()"  target="my_iframe"> <i style="padding-right: 4px" class="fa-regular fa-heart"></i> <span> Sản phẩm yêu thích</span></a></li>
+                         <li id="nav-profile4"><a href="./account_review.html" onclick="showColor4()" target="my_iframe"> <i class="fa-regular fa-comments"></i> <span> Đánh giá</span></a></li>
+                         <li ><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i style="padding-right: 3px" class="fa-solid fa-arrow-right-from-bracket"></i> <span> Đăng xuất</span></a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+ 
+ 
+             <div class="right">
+                 <iframe name="my_iframe" src="./confirmOrder.html" frameborder="0"  height="100%" width="100%"></iframe>
+                 <iframe name="my_iframe1" src="" frameborder="0" height="100%" width="100%"></iframe>
+ 
+ 
+             </div>
+         </div>
+ 
+ 
+         <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="modal-title fs-5" id="exampleModalLabel">Xác nhận</h1>
+         </div>
+         <div class="modal-body">
+           Bạn có muốn đăng xuất?
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-primary input" data-bs-dismiss="modal" style="background-color: gray;">Huỷ</button>
+           <a href="./main.html">
+             <button type="button" class="btn btn-primary input">Đồng ý</button>
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+          <!-- Footer -->
+       <div class="footer">
+         <div class="footer-top">
+             <div class="footer-top__left">
+                 <i class="ti-email"></i>
+                 <div class="content">
+                     <p class="title" style="font-family: 'Montserrat', sans-serif;">ĐĂNG KÍ NHẬN BẢN TIN</p>
+                     <p class="para">Bạn sẽ luôn nhận được thông tin khuyến mãi mới và đặc biệt nhất!</p>
+                 </div>
+             </div>
+             <div class="footer-top__right">
+                 <input type="text" placeholder="Nhập email của bạn tại đây!">
+                 <button type="button" class="btn btn-primary input">
+                     Gửi
+                 </button>
+ 
+             </div>
+         </div>
+         <div class="footer-bottom">
+             <div class="introduction col-5">
+                 <h5>Giới thiệu</h5>
+                 <p>Memory Bakery là một kênh bán hàng trực tuyến chuyên cung cấp các mặt hàng bánh ngọt bao gồm các loại bánh và phụ kiện dành cho các buổi tiệc. Memory Bakery hướng tới cung cấp một kênh bán hàng sinh động, đơn giản nhưng đầy đủ các tính năng cần thiết để mang tới những trải nghiệm tốt nhất cho khách hàng</p>
+                 <a href="./main.html"><img src="../assets/img/logo.jpg" alt=""></a><br>
+                 <a href=""><i class="fa-brands fa-facebook"></i></a>
+                 <a href=""><i class="fa-brands fa-youtube"></i></a> 
+             </div>
+             <div class="contact col-3" >
+                 <h5>Thông tin liên hệ</h5>
+                 <span style="display:flex"><i style="margin-top: 5px;padding-right: 10px;" class="fa-solid fa-location-dot"></i> Ký túc xá khu B, Linh Trung, Thủ Đức, Hồ Chí Minh</span>
+                 <span><i class="fa-solid fa-phone"></i> 0905792559</span> <br>
+                 <span><i class="fa-solid fa-fax"></i> 1900.900.900</span><br>
+                 <span><i class="fa-sharp fa-solid fa-envelope"></i> memory@gmail.com</span>
+                 <h5>Phương thức thanh toán</h5>
+                 <div class="payment-top">
+                     <img class="payment-method" src="../assets/img/PHƯƠNG THỨC THANH TOÁN/DOB.png" alt="">
+                     <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/Momo.png" alt="" class="payment-method">
+                     <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/Mastercard.png" alt="" class="payment-method">
+                 </div>
+                 <div class="payment-bottom">
+                     <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/JCB.png" alt="" class="payment-method">
+                     <img src="../assets/img/PHƯƠNG THỨC THANH TOÁN/VISA.png" alt="" class="payment-method">
+                 </div>
+             </div>
+             <div class="support col-2" >
+                 <h5>Hỗ trợ</h5>
+                 <a href="">Tìm kiếm</a><br>
+                 <a href="./aboutUs.html">Giới thiệu</a><br>
+                 <a href="./paymentPolicy.html">Chính sách thanh toán</a><br>
+                 <a href="./privacyPolicy.html">Chính sách bảo mật</a><br>
+                 <a href="./contact.html">Liên hệ</a>
+             </div>
+             <div class="link col-2">
+                 <h5>Liên kết</h5>
+                 <a href="./productBanhkem.html">Bánh kem</a><br>
+                 <a href="./productBanhquy.html">Bánh quy</a><br>
+                 <a href="./productCupcakes.html">Cupcakes</a><br>
+                 <a href="./productDonuts.html">Donuts</a><br>
+                 <a href="./productBanhmi.html">Bánh mì</a>
+             </div>
+         </div>
+     </div>
+     </div>
+<script>
+    function showSublist() {
+    document.getElementById("sub_nav").classList.toggle("activate");
+   }
+   
+   function showColor1(){
+   document.getElementById("nav-profile1").classList.add('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor2(){
+   document.getElementById("nav-profile2").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor3(){
+   document.getElementById("nav-profile3").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor4(){
+   document.getElementById("nav-profile4").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+   document.getElementById("nav-profile5").classList.remove('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+    function showColor5(){
+   document.getElementById("nav-profile5").classList.add('color')
+   document.getElementById("nav-profile1").classList.remove('color')
+   document.getElementById("nav-profile3").classList.remove('color')
+   document.getElementById("nav-profile4").classList.remove('color')
+   document.getElementById("nav-profile2").classList.remove('color')
+    }
+    function showColor6(){
+   document.getElementById("sub-nav_profile1").classList.add('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+    }
+    function showColor7(){
+   document.getElementById("sub-nav_profile2").classList.add('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+   document.getElementById("sub-nav_profile3").classList.remove('color')
+    }
+    function showColor8(){
+   document.getElementById("sub-nav_profile3").classList.add('color')
+   document.getElementById("sub-nav_profile2").classList.remove('color')
+   document.getElementById("sub-nav_profile1").classList.remove('color')
+    }
+</script>
+</body>
+</html>
