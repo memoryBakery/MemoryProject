@@ -21,6 +21,10 @@
 
         function showChatbox() {
         document.getElementById("chatWrapper").classList.toggle('showchat');
+
+        function btnshow(){
+        document.getElementById("close").classList.remove('showchat')
+        }
     }
     </script>
 </head>
@@ -530,7 +534,7 @@
     <div id="chatWrapper">
         <div class="header-chatWrapper">
             <img src="../assets/img/CUSTOMERS/QuangLinh.jpg" alt="">
-            <div class="close"><span> X </span></div>
+            <div id="close" onclick="btnclose()"><span><i style="margin-right: 10px" class="fa-solid fa-bars"></i>  <i class="fa-solid fa-minus"></i> </span></div>
         </div>
         <h4>Chat với Memory Bakery</h4>
         <p>Xin chào! Chúng tôi có thể giúp gì cho bạn?</p>

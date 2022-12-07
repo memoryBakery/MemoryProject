@@ -686,7 +686,8 @@ h5 {
     right: 20px;
     z-index: 99;
     display: none;
-    animation: chatFadeIn ease-in-out 0.2s;
+
+    /* animation: chatFadeIn ease-in-out 0.2s; */
     animation-duration: 0.2s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
@@ -697,7 +698,7 @@ h5 {
     animation-name: chatFadeIn;
 }
 
-#chatWrapper.showchat {
+#chatWrapper.showchat{
     display: block;
 }
 
@@ -707,7 +708,9 @@ h5 {
 #chatWrapper p{
     margin-top: 30px;
 }
-
+#chatWrapper #close{
+    cursor: pointer;
+}
 #chatWrapper button{
     border: none;
     border-radius: 20px;
@@ -716,7 +719,7 @@ h5 {
     color: white;
     margin-top: 100px;
     padding: 10px;
-    
+    margin-left: 40px;
 }
 
 
