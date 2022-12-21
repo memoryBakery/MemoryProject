@@ -26,7 +26,7 @@ body{
  
  .img-left{
    width: 45%;
-   background: url('/assets/img/register.jpg') center;
+   background: url('/assets/img/register.png') center;
    background-size: cover;
  }
  .row-cols-1{
