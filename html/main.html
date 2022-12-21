@@ -19,8 +19,15 @@
         let search= document.querySelectorAll(".ti-search")
         search.onclick = submitForm(event)
 
+
+        const btnshow=document.querySelector("#chatWrapper")
+
         function showChatbox() {
         document.getElementById("chatWrapper").classList.toggle('showchat');
+        
+        function btnclose(){
+        document.getElementById("close").classList.remove('showchat')
+        }
     }
     </script>
 </head>
@@ -530,11 +537,12 @@
     <div id="chatWrapper">
         <div class="header-chatWrapper">
             <img src="../assets/img/CUSTOMERS/QuangLinh.jpg" alt="">
-            <div class="close"><span> X </span></div>
+            <div id="close" onclick="btnclose()"><span><i class="fa-solid fa-minus"></i> </span></div>
         </div>
         <h4>Chat với Memory Bakery</h4>
         <p>Xin chào! Chúng tôi có thể giúp gì cho bạn?</p>
-        <button>Bắt đầu chat</button>
+        <button class="button1">Tiếp tục dưới tên Linh</button>
+        <button class="button2">Tiếp tục dưới vai trò khách</button>
     </div>
     </div>
     

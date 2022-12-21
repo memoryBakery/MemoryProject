@@ -27,7 +27,8 @@
                     </div>
                     <div class="modal-button">
                         <a href="#" onclick="showModal2() & hideModal()">Cập nhật |</a>
-                        <a href="">Xoá</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><span> Xoá</span></a>
+                        
                     </div>
                     
                 </div>
@@ -48,7 +49,7 @@
     
                     <div class="modal-button">
                         <a href="#" onclick="showModal2() & hideModal()">Cập nhật |</a>
-                        <a href="">Xoá</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><span> Xoá</span></a>
                     </div>
                 </div>
             </div>
@@ -190,7 +191,23 @@
                 </div>
             </div>
         </div>
-        
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thành công</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Bạn đã xoá địa chỉ thành công!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary input" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
 
       <script>
